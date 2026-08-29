@@ -55,6 +55,10 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 > **Note on seed variance:** P3 Top-5 ranges from 20.3% to 46.8% across seeds due to the small test set (3 trajectory blocks). Report the CI alongside the mean in any formal write-up.
 
+> **Note on split percentages:** The split is done by assigning trajectory **blocks** (not samples) in a 55/15/15/15% ratio by block count. Because trajectory blocks vary in length, the actual **sample-level** percentages are: train 37.8%, val 22.6%, calib 13.7%, test 25.8%. This is intentional — splitting by whole blocks prevents any temporal leakage between splits.
+
+> **Note on Exact-label CRC:** The 4.4% "miss" for Exact-label CRC is 1 − exact_coverage (95.6%), i.e. a Δ=0 dB exact-beam miss rate. It is **not** comparable to the Δ=3 dB miss rate used for Top-k, Static CRC, ACI, and PID. The average set size is 168.3 probes (search reduction 34.2%).
+
 ### Candidate Set Results (Phase 6)
 
 | Method | Exact Inclusion | Miss Rate (3 dB) | Avg Size | Search Reduction |
@@ -64,7 +68,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 | Top-5 | 46.8% | 16.4% | 5 | 98% |
 | Top-10 | 60.7% | 9.4% | 10 | 96% |
 | Top-15 | 66.4% | 6.2% | 15 | 94% |
-| Exact-label CRC (α=0.10) | — | — | 168 | 34% (coverage=95.6%) |
+| Exact-label CRC (α=0.10) | — | — (Δ=0 dB: 4.4%) | 168.3 | 34.2% (coverage=95.6%) |
 
 ### Online Risk Controller Results (Phase 7)
 
@@ -89,7 +93,7 @@ P3 vs P1 paired trajectory-block bootstrap: **+6.35%** Top-1 (95% CI: [+1.38%, +
 ├── data/
 │   ├── raw/                          # Raw scenario files (not committed)
 │   └── processed/
-│       ├── split_manifest.csv        # Leakage-safe 55/15/15/15 split (19 blocks)
+│       ├── split_manifest.csv        # Leakage-safe split by trajectory blocks (19 blocks)
 │       ├── gps_features_scaled.npy   # Cached GPS features (24704, 5, 9)
 │       ├── rgb_cache_96x96.pt        # Cached RGB frames (686 MB)
 │       └── eda_figures/              # 17 EDA output figures
