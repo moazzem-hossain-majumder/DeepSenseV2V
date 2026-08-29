@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and flags
+*.log
+pause.flag
+
+# Raw dataset files — never commit (large archives, licensed)
+data/raw/scenario36/
+data/raw/*.p
+data/raw/*.csv
+data/raw/*.mat
+data/raw/*.zip
+data/raw/*.tar.gz
+
+# Large binary model files — too big for GitHub
+results/checkpoints/*.pt
+results/checkpoints/*.pth
+results/checkpoints/*.bin
+
+# Large processed data binaries
+data/processed/*.pt
+data/processed/*.npy
+
+# Generic binary formats
+*.mat
+*.onnx
+*.ckpt
+
+# Keep these result files (tables, plots, JSONs, checklist)
+!results/ablation_table.csv
+!results/telecom_utility_table.csv
+!results/topk_candidate_sets.csv
+!results/significance_tests.csv
+!results/reliability_curves.png
+!results/near_optimal_set_sizes.png
+!results/blueprint_step_checklist.json
+!results/results_B1.json
+!results/results_B3.json
+!results/results_P1.json
+!results/results_P3.json
+!results/results_all_models.csv
+!results/results_summary.csv
+!results/eda/
+!results/eda/*.json
+!results/eda/*.png
+
+# Keep processed split CSVs (small, needed to reproduce splits)
+!data/processed/split_manifest.csv
+!data/processed/train.csv
+!data/processed/val.csv
+!data/processed/calib.csv
+!data/processed/test.csv
+!data/processed/annotated_scenario36_with_predictions.csv
+!data/processed/eda_figures/
+!data/processed/eda_figures/*.png
+
+# Keep .gitkeep files
+!data/raw/.gitkeep
+!data/processed/.gitkeep

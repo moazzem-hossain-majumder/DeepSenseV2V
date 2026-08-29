@@ -1,0 +1,24 @@
+{
+  "phase0_gpu": "cuda",
+  "phase1_argmax_match": 1.0,
+  "phase2_split_manifest": true,
+  "phase2_trajectory_guard_merge": {
+    "n_runs": 124,
+    "n_blocks": 19
+  },
+  "phase3_gps_rgb": true,
+  "phase3_train_augmentation_active": true,
+  "phase4_B1_B3": true,
+  "phase4_stretch_B0_B2_B4": true,
+  "phase5_P1_P3": true,
+  "phase5_P2_and_smoothness": true,
+  "phase6_topk_crc": true,
+  "phase6_exact_label_crc": true,
+  "phase6_multi_delta_reliability": true,
+  "phase7_aci_pid": true,
+  "phase8_tables": true,
+  "phase8_paired_bootstrap": true,
+  "eda_annotated_copied": true,
+  "eda_consolidated_notebook": "eda.ipynb (34-cell comprehensive EDA at project root)",
+  "readme_written": true
+}

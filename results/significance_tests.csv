@@ -1,0 +1,3 @@
+comparison,mean,ci_95_low,ci_95_high,seeds_trained,resample_unit
+P3_top1_block_bootstrap,0.1114470637986286,0.04779874213836478,0.151937309534175,"42 (Core models); protocol supports --seeds 42,7,13","trajectory block (seq_index), not frames"
+P3_minus_P1_top1_paired_block_bootstrap,0.0634893088596134,0.013836477987421388,0.08184588593818022,"42; run --seeds 42,7,13 for 3-seed protocol (Phase 8 blueprint)",trajectory block (seq_index)

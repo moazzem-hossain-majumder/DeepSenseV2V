@@ -1,0 +1,6 @@
+{
+  "majority_beam": 162,
+  "majority_test_top1": 0.20410401002506265,
+  "mean_profile_test_mae_db": 3.1066043315812006,
+  "phase1_majority_on_raw_frames": 0.16706318803177547
+}

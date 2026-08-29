@@ -1,0 +1,45 @@
+# GPU training for RTX 4060 (8 GB). Larger width/depth + bigger batches
+# keep the GPU busy; mixed precision keeps it in VRAM.
+
+model:
+  name: "P3"
+  hidden_dim: 256
+  gru_layers: 3
+  fusion_heads: 8
+  fusion_layers: 3
+  freeze_backbone_until: "layer2"
+  dropout: 0.12
+  n_beams: 256
+  head_hidden: 512
+
+training:
+  batch_size: 64
+  epochs: 80
+  learning_rate: 0.0001      # lowered from 4e-4: peak LR was too high, causing spike-then-collapse
+  weight_decay: 0.0003       # slightly stronger regularisation to help generalisation
+  optimizer: "AdamW"
+  scheduler: "OneCycleLR"
+  warmup_pct: 0.10           # longer warmup (10% = 8 epochs) to reach peak LR more gently
+  early_stopping:
+    patience: 15             # more patience: val has only 3 blocks so variance is high
+    min_epochs: 40           # must train at least 40 epochs before stopping
+  mixed_precision: "bfloat16"
+
+conformal:
+  target_alpha: 0.10
+  delta_db: 3.0
+  controller: "ACI"
+  eta_grid: [0.001, 0.005, 0.01, 0.05, 0.1]
+
+data:
+  num_workers: 0
+  pin_memory: true
+  persistent_workers: false
+  image_size: [96, 96]
+  seq_len_gps: 5
+  seq_len_img: 5
+
+hardware:
+  device: "cuda"
+  seed: 42
+  cudnn_benchmark: true

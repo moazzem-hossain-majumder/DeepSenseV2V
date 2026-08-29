@@ -1,0 +1,12 @@
+{
+  "match_rate": 1.0,
+  "majority_class_idx": 162,
+  "majority_class_acc": 0.16706318803177547,
+  "mean_beams_1db": 11.747651114964313,
+  "median_beams_1db": 3.0,
+  "mean_beams_3db": 29.686600266139763,
+  "median_beams_3db": 5.0,
+  "active_classes": 238,
+  "total_samples": 24799,
+  "units": "pickle unit1_pwr* are linear power; APL uses 10*log10 after reconstruction"
+}
