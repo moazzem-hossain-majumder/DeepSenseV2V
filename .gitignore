@@ -72,3 +72,9 @@ data/processed/*.npy
 # Keep .gitkeep files
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Training logs (large, regenerable)
+results/train_log_*.txt
+
+# Large derived CSVs (regenerable from raw data)
+data/processed/annotated_scenario36_with_predictions.csv
