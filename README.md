@@ -129,7 +129,7 @@ P3 vs P1 paired trajectory-block bootstrap: **+6.35%** Top-1 (95% CI: [+1.38%, +
 │   └── blueprint_step_checklist.json # All phases green ✓
 ├── paper/
 │   └── draft.md                      # Methodology notes & guarantee language
-├── eda.ipynb                         # Comprehensive EDA (34 cells, executed, 9 figures)
+├── analysis.ipynb                    # Dataset analysis and results (68 cells, executed)
 ├── train.py                          # Main training entry point
 ├── config.yaml                       # Hyperparameters
 ├── requirements.txt                  # Python dependencies
@@ -188,7 +188,7 @@ python train.py --model P3 --seed 42 --dry_run
 ### EDA
 
 ```bash
-jupyter notebook eda.ipynb
+jupyter notebook analysis.ipynb
 ```
 
 ### Phase 1 feasibility check only
