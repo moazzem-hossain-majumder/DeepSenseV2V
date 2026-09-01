@@ -6,8 +6,8 @@
 
 ## Guarantee language (Section 5a)
 
-- **Static CRC (Phase 6):** finite-sample conformal guarantees need exchangeability (or a stated extension). Chronological non-overlapping trajectory splits prevent *leakage*; they do **not** by themselves give exchangeability. Trajectories are temporally correlated.
-- **Online ACI / PID (Phase 7):** Adaptive Conformal Inference (Gibbs & Candès, 2021) and Conformal PID Control (Angelopoulos, Candès, Tibshirani, 2023) give long-run *time-averaged* risk control under their stated assumptions (bounded loss, the implemented update). That is a different object from split-conformal per-instance coverage. We report rolling empirical miss rate on the test stream.
+- **Static CRC:** finite-sample conformal guarantees need exchangeability (or a stated extension). Chronological non-overlapping trajectory splits prevent *leakage*; they do **not** by themselves give exchangeability. Trajectories are temporally correlated.
+- **Online ACI / PID:** Adaptive Conformal Inference (Gibbs & Candès, 2021) and Conformal PID Control (Angelopoulos, Candès, Tibshirani, 2023) give long-run *time-averaged* risk control under their stated assumptions (bounded loss, the implemented update). That is a different object from split-conformal per-instance coverage. We report rolling empirical miss rate on the test stream.
 - **Shift (RQ5, Stretch):** held-out day/night or scenario results are empirical robustness, not “guaranteed coverage,” unless a weighted-CRC density-ratio argument is supplied.
 
 If a formal theorem does not apply to the exact implementation, report measured rolling / worst-trajectory miss rate only.

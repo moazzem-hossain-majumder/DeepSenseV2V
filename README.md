@@ -59,7 +59,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 > **Note on Exact-label CRC:** The 4.4% "miss" for Exact-label CRC is 1 − exact_coverage (95.6%), i.e. a Δ=0 dB exact-beam miss rate. It is **not** comparable to the Δ=3 dB miss rate used for Top-k, Static CRC, ACI, and PID. The average set size is 168.3 probes (search reduction 34.2%).
 
-### Candidate Set Results (Phase 6)
+### Candidate Set Results
 
 | Method | Exact Inclusion | Miss Rate (3 dB) | Avg Size | Search Reduction |
 |--------|----------------|-----------------|---------|-----------------|
@@ -70,7 +70,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 | Top-15 | 66.4% | 6.2% | 15 | 94% |
 | Exact-label CRC (α=0.10) | — | — (Δ=0 dB: 4.4%) | 168.3 | 34.2% (coverage=95.6%) |
 
-### Online Risk Controller Results (Phase 7)
+### Online Risk Controller Results
 
 | Method | Miss Rate | Avg Probes | Search Reduction | APL (dB) |
 |--------|----------|-----------|-----------------|---------|
@@ -80,7 +80,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 *Target miss rate: α = 0.10 (10%)*
 
-### Statistical Significance (Phase 8)
+### Statistical Significance
 
 P3 vs P1 paired trajectory-block bootstrap: **+6.35%** Top-1 (95% CI: [+1.38%, +8.18%]) — CI excludes 0, result is **statistically significant**.
 
@@ -91,48 +91,48 @@ P3 vs P1 paired trajectory-block bootstrap: **+6.35%** Top-1 (95% CI: [+1.38%, +
 ```
 424_project-main/
 ├── data/
-│   ├── raw/                          # Raw scenario files (not committed)
-│   └── processed/
-│       ├── split_manifest.csv        # Leakage-safe split by trajectory blocks (19 blocks)
-│       ├── gps_features_scaled.npy   # Cached GPS features (24704, 5, 9)
-│       ├── rgb_cache_96x96.pt        # Cached RGB frames (686 MB)
-│       └── eda_figures/              # 17 EDA output figures
+│ ├── raw/ # Raw scenario files (not committed)
+│ └── processed/
+│ ├── split_manifest.csv # Leakage-safe split by trajectory blocks (19 blocks)
+│ ├── gps_features_scaled.npy # Cached GPS features (24704, 5, 9)
+│ ├── rgb_cache_96x96.pt # Cached RGB frames (686 MB)
+│ └── eda_figures/ # 17 EDA output figures
 ├── notebooks/
-│   └── 01–08_*.ipynb                 # Phase-specific implementation notebooks
+│ └── 01–08_*.ipynb # Phase-specific implementation notebooks
 ├── src/
-│   ├── beam_reconstruction.py        # Phase 1: 256-vector reconstruction & feasibility
-│   ├── partitioning.py               # Phase 2: leakage-safe trajectory block splits
-│   ├── gps_features.py               # Phase 3: GPS feature engineering (9-dim)
-│   ├── rgb_features.py               # Phase 3: RGB loading and transforms
-│   ├── dataset.py                    # PyTorch Dataset (in-memory RGB+GPS caching)
-│   ├── models.py                     # All 8 models: B0–B4, P1–P3
-│   ├── baseline_models.py            # Re-exports B0/B1/B2
-│   ├── fusion_models.py              # Re-exports B3/B4
-│   ├── profile_models.py             # Re-exports P1/P2/P3
-│   ├── candidate_sets.py             # Top-k, Static CRC, Exact-label CRC
-│   ├── online_controller.py          # ACI integral controller + Conformal PID
-│   ├── evaluate.py                   # Metrics + trajectory-block bootstrap CI
-│   ├── complete_blueprint_steps.py   # Full pipeline runner (all phases)
-│   └── paths.py                      # Raw data path resolver
+│ ├── beam_reconstruction.py # 256-vector reconstruction & feasibility check
+│ ├── partitioning.py # Leakage-safe trajectory block splits
+│ ├── gps_features.py # GPS feature engineering (9-dim)
+│ ├── rgb_features.py # RGB loading and transforms
+│ ├── dataset.py # PyTorch Dataset (in-memory RGB+GPS caching)
+│ ├── models.py # All 8 models: B0–B4, P1–P3
+│ ├── baseline_models.py # Re-exports B0/B1/B2
+│ ├── fusion_models.py # Re-exports B3/B4
+│ ├── profile_models.py # Re-exports P1/P2/P3
+│ ├── candidate_sets.py # Top-k, Static CRC, Exact-label CRC
+│ ├── online_controller.py # ACI integral controller + Conformal PID
+│ ├── evaluate.py # Metrics + trajectory-block bootstrap CI
+│ ├── complete_blueprint_steps.py # Full pipeline runner (all phases)
+│ └── paths.py # Raw data path resolver
 ├── results/
-│   ├── checkpoints/                  # best_model + latest_checkpoint per model/seed
-│   ├── eda/                          # Phase 1 feasibility outputs + trivial baselines
-│   ├── ablation_table.csv            # Model comparison (seed-42 best checkpoint)
-│   ├── telecom_utility_table.csv     # Controller probe efficiency
-│   ├── topk_candidate_sets.csv       # Fixed Top-k evaluation
-│   ├── significance_tests.csv        # Paired block bootstrap P3 vs P1
-│   ├── reliability_curves.png        # ACI vs PID rolling miss rate plot
-│   ├── results_B1.json               # Full 3-seed results for B1
-│   ├── results_B3.json               # Full 3-seed results for B3
-│   ├── results_P1.json               # Full 3-seed results for P1
-│   ├── results_P3.json               # Full 3-seed results for P3
-│   └── blueprint_step_checklist.json # All phases green ✓
+│ ├── checkpoints/ # best_model + latest_checkpoint per model/seed
+│ ├── eda/ # Feasibility outputs + trivial baselines
+│ ├── ablation_table.csv # Model comparison (seed-42 best checkpoint)
+│ ├── telecom_utility_table.csv # Controller probe efficiency
+│ ├── topk_candidate_sets.csv # Fixed Top-k evaluation
+│ ├── significance_tests.csv # Paired block bootstrap P3 vs P1
+│ ├── reliability_curves.png # ACI vs PID rolling miss rate plot
+│ ├── results_B1.json # Full 3-seed results for B1
+│ ├── results_B3.json # Full 3-seed results for B3
+│ ├── results_P1.json # Full 3-seed results for P1
+│ ├── results_P3.json # Full 3-seed results for P3
+│ └── blueprint_step_checklist.json # All phases green ✓
 ├── paper/
-│   └── draft.md                      # Methodology notes & guarantee language
-├── eda_and_results.ipynb             # EDA + model results (68 cells, executed)
-├── train.py                          # Main training entry point
-├── config.yaml                       # Hyperparameters
-├── requirements.txt                  # Python dependencies
+│ └── draft.md # Methodology notes & guarantee language
+├── eda_and_results.ipynb # EDA + model results (68 cells, executed)
+├── train.py # Main training entry point
+├── config.yaml # Hyperparameters
+├── requirements.txt # Python dependencies
 └── DEEPSENSE_PROJECT_BLUEPRINT_V4.md # Full project blueprint
 ```
 
@@ -154,9 +154,9 @@ Key dependencies: `torch>=2.1`, `torchvision>=0.16`, `pandas>=2.0`, `numpy>=1.24
 
 1. Register at [deepsense6g.net](https://deepsense6g.net) and download Scenario 36
 2. Place raw files so the path resolver finds them (tried in order):
-   - `D:\DeepSense_V2V\data\scenario36.csv` + `scenario36.p`
-   - Set env var: `DEEPSENSE_DATA_ROOT=<path>`
-   - Pass `--data_root <path>` to `train.py`
+ - `D:\DeepSense_V2V\data\scenario36.csv` + `scenario36.p`
+ - Set env var: `DEEPSENSE_DATA_ROOT=<path>`
+ - Pass `--data_root <path>` to `train.py`
 3. Raw files are **not committed** — they are gitignored
 
 ---
@@ -185,13 +185,28 @@ python train.py --model P3 --seed 42 --dry_run
 # Available models: B0, B1, B2, B3, B4, P1, P2, P3
 ```
 
-### EDA
+### EDA and Results
+
+`eda_and_results.ipynb` is the single comprehensive notebook covering all dataset analysis and model results. It contains 68 cells across 20 sections:
+
+| Sections | Content |
+|----------|---------|
+| 1–3 | Setup, first look at raw data, data structure and schema |
+| 4 | Antenna panel dominance and bearing analysis |
+| 5 | GPS trajectory, route shape, engineered features |
+| 6–7 | RGB frame inspection, time-of-day/lighting |
+| 8–9 | GPS fix quality (HDOP), data quality checks |
+| 10–11 | Split statistics, feasibility checks |
+| 12 | Weak-link profile detection (6 dB threshold) |
+| 13–14 | Beam class distribution, trivial baselines |
+| 15–19 | Model comparison, candidate sets, ACI/PID controllers, significance, multi-delta reliability |
+| 20 | Key findings and research question answers |
 
 ```bash
 jupyter notebook eda_and_results.ipynb
 ```
 
-### Phase 1 feasibility check only
+### Feasibility check only
 
 ```bash
 python -c "from src.beam_reconstruction import verify_reconstruction_and_feasibility; verify_reconstruction_and_feasibility()"
@@ -237,9 +252,9 @@ Both provide long-run time-averaged risk control guarantees — distinct from sp
 
 ## Guarantee Language
 
-> **Static CRC (Phase 6):** Finite-sample conformal guarantees require exchangeability between calibration and test data. Chronological trajectory-block splitting prevents leakage but does not establish exchangeability — samples within a trajectory are temporally correlated.
+> **Static CRC:** Finite-sample conformal guarantees require exchangeability between calibration and test data. Chronological trajectory-block splitting prevents leakage but does not establish exchangeability — samples within a trajectory are temporally correlated.
 >
-> **Online ACI/PID (Phase 7):** These provide long-run *time-averaged* risk control (Gibbs & Candès 2021; Angelopoulos et al. 2023). This is a different guarantee from split-conformal per-instance coverage.
+> **Online ACI/PID:** These provide long-run *time-averaged* risk control (Gibbs & Candès 2021; Angelopoulos et al. 2023). This is a different guarantee from split-conformal per-instance coverage.
 >
 > **Shift results:** Day/night or held-out scenario results would be empirical robustness, not formal guarantees, unless a credible covariate-shift assumption backs a weighted-CRC claim.
 

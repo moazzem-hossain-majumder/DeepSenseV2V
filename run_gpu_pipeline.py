@@ -1,4 +1,4 @@
-"""End-to-end GPU pipeline: Phase 1 gate, Core models B1/B3/P1/P3, annotated EDA."""
+"""End-to-end GPU pipeline: feasibility check, models B1/B3/P1/P3, annotated EDA."""
 import os
 import sys
 import subprocess
@@ -22,7 +22,7 @@ def main():
     env.setdefault("DEEPSENSE_DATA_ROOT", r"D:\DeepSense_V2V\data")
     env["PYTHONUNBUFFERED"] = "1"
 
-    print("=== Phase 1: beam reconstruction / feasibility gates ===", flush=True)
+    print("=== Beam reconstruction and feasibility check ===", flush=True)
     run([PYTHON, "-m", "src.beam_reconstruction"])
 
     print("=== GPU dry-run (P3) ===", flush=True)
