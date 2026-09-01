@@ -107,7 +107,7 @@ def run_online_pid_controller(
 ):
     """
     Conformal PID Control (Angelopoulos, Candès, Tibshirani 2023) applied to
-    near-optimal-beam miss risk. Stretch Phase 7 comparison vs ACI/integral.
+    near-optimal-beam miss risk. Comparison controller vs ACI/integral.
     """
     T = len(pred_profile_db)
     q_history = np.zeros(T, dtype=np.float32)

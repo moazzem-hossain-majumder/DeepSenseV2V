@@ -32,7 +32,7 @@ def compute_power_gap_db(power_profile_db):
 
 def verify_reconstruction_and_feasibility(data_root=".", output_dir="results/eda"):
     """
-    Phase 1 Feasibility Gate:
+    Feasibility Check:
     1. Load scenario36 pickle and CSV
     2. Reconstruct 256-vector for all samples
     3. Verify argmax == unit1_overall-beam
@@ -105,7 +105,7 @@ def verify_reconstruction_and_feasibility(data_root=".", output_dir="results/eda
     plt.bar(classes, counts, width=1.0, color="#1f77b4")
     plt.xlabel("Best-beam class (0-255)")
     plt.ylabel("Count")
-    plt.title("Phase 1: Best-beam class imbalance (Scenario 36)")
+    plt.title("Best-beam class distribution (Scenario 36)")
     plt.tight_layout()
     class_plot = os.path.join(output_dir, "beam_class_distribution.png")
     plt.savefig(class_plot, dpi=200)

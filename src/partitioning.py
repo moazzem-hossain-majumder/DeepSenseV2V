@@ -91,7 +91,7 @@ def build_partition_manifest(data_root=".", output_dir="data/processed", guard_a
     """
     Full partitioning execution creating split_manifest.csv.
 
-    Phase 2 blueprint: trajectory runs closer than `guard_abs` frames are merged
+    Trajectory runs closer than `guard_abs` frames are merged
     into a single block via guard-interval union-find before split assignment.
     This prevents a trajectory that briefly pauses from being split across Train/Val.
     """
@@ -102,7 +102,7 @@ def build_partition_manifest(data_root=".", output_dir="data/processed", guard_a
 
     df = pd.read_csv(csv_path)
 
-    # Phase 2: merge close trajectory runs into contiguous blocks
+    # Merge close trajectory runs into contiguous blocks
     block_map = merge_close_trajectory_blocks(df, guard_abs=guard_abs)
     df["seq_index"] = df["seq_index"].map(block_map).fillna(df["seq_index"]).astype(int)
 
@@ -112,12 +112,12 @@ def build_partition_manifest(data_root=".", output_dir="data/processed", guard_a
     os.makedirs(os.path.join(os.path.abspath("."), "results", "eda"), exist_ok=True)
     with open(os.path.join(os.path.abspath("."), "results", "eda", "trajectory_guard_merge.json"), "w") as f:
         json.dump(merge_stats, f, indent=2)
-    print(f"[Phase 2] Merge stats saved: {merge_stats}")
+    print(f"[Partition] Merge stats saved: {merge_stats}")
 
     seq_df = create_sliding_window_sequences(df)
     seq_df = assign_leakage_free_splits(seq_df, df)
 
-    # Save parquet split tables (blueprint processed/ layout)
+    # Save split tables
     for split_name in ["train", "val", "calib", "test"]:
         sub = seq_df[seq_df["split"] == split_name].copy()
         if "x_indices" in sub.columns:
@@ -144,7 +144,7 @@ def build_partition_manifest(data_root=".", output_dir="data/processed", guard_a
 
 def merge_close_trajectory_blocks(raw_df, guard_abs=25):
     """
-    Phase 2: connect runs that sit closer than `guard_abs` in abs_index.
+    Connect trajectory runs that sit closer than `guard_abs` frames apart.
     Returns mapping original seq_index -> block_id.
     """
     first = raw_df.groupby("seq_index")["abs_index"].min().sort_values()
@@ -170,7 +170,7 @@ def merge_close_trajectory_blocks(raw_df, guard_abs=25):
             union(a, b)
     mapping = {int(r): int(find(r)) for r in runs}
     n_blocks = len(set(mapping.values()))
-    print(f"[Phase 2] Guard-interval merge (guard_abs={guard_abs}): {len(runs)} runs -> {n_blocks} blocks")
+    print(f"[Partition] Guard-interval merge (guard_abs={guard_abs}): {len(runs)} runs -> {n_blocks} blocks")
     return mapping
 
 

@@ -50,7 +50,7 @@ def extract_step_gps_features(u1_lat, u1_lon, u2_lat, u2_lon, u1_hdop=1.0, u2_hd
 def extract_sequence_gps_features(raw_df, seq_indices):
     """
     Given a list of row indices (length 5), extract (5, 9) array used by trained models.
-    Acceleration / turning are derived after the 9-d core (Phase 3 optional proxies).
+    Acceleration / turning are derived after the 9-d core (optional proxies).
     """
     rows = raw_df.iloc[seq_indices]
     u1_lats = rows["unit1_gps1_lat"].values
@@ -85,7 +85,7 @@ def extract_sequence_gps_features(raw_df, seq_indices):
 
 
 def extract_sequence_gps_features_extended(raw_df, seq_indices):
-    """Phase 3 optional: 9 core features + acceleration and turning proxies (5, 12)."""
+    """Extended: 9 core features + acceleration and turning proxies (5, 12)."""
     core = extract_sequence_gps_features(raw_df, seq_indices)
     ext = np.zeros((core.shape[0], 12), dtype=np.float32)
     ext[:, :9] = core

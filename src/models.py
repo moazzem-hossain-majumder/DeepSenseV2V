@@ -230,7 +230,7 @@ class B1_GPSOnly(nn.Module):
 
 
 class GatedConcatFusion(nn.Module):
-    """Phase 4 B3: gate RGB vs GPS then concatenate (blueprint gated/concat fusion)."""
+    """B3: gate RGB vs GPS then concatenate (gated/concat fusion)."""
 
     def __init__(self, d_model=256):
         super().__init__()

@@ -100,7 +100,7 @@ class StaticConformalRiskControl:
 
 class ExactLabelCRC:
     """
-    Split conformal risk control on exact best-beam labels (Phase 6 Core).
+    Split conformal risk control on exact best-beam labels.
     Nonconformity = 1 - softmax probability of the true class.
     """
 

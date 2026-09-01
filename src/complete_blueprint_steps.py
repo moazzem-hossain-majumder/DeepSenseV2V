@@ -1,4 +1,4 @@
-"""Fill remaining Blueprint V4 Core/Stretch artifacts without requiring metric quality."""
+"""Generate all evaluation tables, figures, and result artifacts."""
 import os
 import json
 import yaml
@@ -74,15 +74,15 @@ def main():
     kwargs = _model_kwargs(cfg)
     device = resolve_device("cuda")
 
-    print("=== Phase 1 feasibility artifacts ===")
+    print("=== Feasibility check ===")
     phase1 = verify_reconstruction_and_feasibility(output_dir="results/eda")
-    # also copy plot to results/ root per blueprint
+    # also copy plot to results/ root
     src_plot = os.path.join("results", "eda", "near_optimal_set_sizes.png")
     if os.path.exists(src_plot):
         import shutil
         shutil.copy(src_plot, os.path.join("results", "near_optimal_set_sizes.png"))
 
-    print("=== Phase 2 parquet + guard-interval audit ===")
+    print("=== Partitioning and guard-interval merge ===")
     # build_partition_manifest now internally calls merge_close_trajectory_blocks
     # (guard_abs=25) and writes results/eda/trajectory_guard_merge.json itself.
     # We call it here so the manifest is always regenerated with the merge applied.
@@ -102,7 +102,7 @@ def main():
             json.dump(merge_stats, f)
     print(f"  Merge stats: {merge_stats}")
 
-    print("=== Phase 1/5 trivial baselines (majority class + mean profile) ===")
+    print("=== Trivial baselines (majority class + mean profile) ===")
     train = seq_df[seq_df["split"] == "train"]
     test = seq_df[seq_df["split"] == "test"]
     maj = int(train["target_beam"].mode().iloc[0])
@@ -150,14 +150,14 @@ def main():
         print(f"  Stretch {name} forward pass OK")
 
     if "P3" not in evals:
-        raise SystemExit("P3 checkpoint required for Phase 6-8 tables")
+        raise SystemExit("P3 checkpoint required for evaluation tables")
 
     p3 = evals["P3"]
     calib_model = _load_ckpt("P3", device, kwargs)
     calib_eval = evaluate_model(calib_model, loaders["calib"], device=device, use_bf16=True)
     val_eval = evaluate_model(calib_model, loaders["val"], device=device, use_bf16=True)
 
-    print("=== Phase 6 fixed Top-k + static CRC + exact-label CRC ===")
+    print("=== Candidate sets: Top-k, Static CRC, Exact-label CRC ===")
     topk_rows = evaluate_fixed_topk(
         p3["logits"], p3["true_labels"], p3["true_profiles"], ks=(1, 3, 5, 10, 15), delta_db=3.0
     )
@@ -170,7 +170,7 @@ def main():
     exact_sizes = np.array([len(s) for s in exact_sets])
     exact_cov = float(np.mean([p3["true_labels"][i] in exact_sets[i] for i in range(len(exact_sets))]))
 
-    print("=== Phase 7 ACI + Conformal PID (eta on val only) ===")
+    print("=== Online risk controllers: ACI + Conformal PID ===")
     calib_gaps = np.max(calib_eval["true_profiles"], axis=1, keepdims=True) - calib_eval["true_profiles"]
     q_max = float(np.percentile(calib_gaps, 99))
     eta = select_best_eta_on_val(val_eval["pred_profiles"], val_eval["true_profiles"], q_init=q_hat, target_alpha=0.10, delta_db=3.0)
@@ -181,7 +181,7 @@ def main():
         p3["pred_profiles"], p3["true_profiles"], q_init=q_hat, eta_p=0.1, eta_i=0.01, eta_d=0.01, q_min=0.0, q_max=q_max
     )
 
-    print("=== Phase 8 tables, curves, bootstrap ===")
+    print("=== Evaluation tables, curves, bootstrap ===")
     ablation_rows = []
     for name, ev in evals.items():
         ablation_rows.append({
@@ -237,7 +237,7 @@ def main():
     plt.axhline(0.10, color="gray", linestyle="--", label="target alpha=0.10")
     plt.xlabel("Test-stream step (rolling window)")
     plt.ylabel("Rolling miss rate (3 dB)")
-    plt.title("Phase 7/8 reliability curves (val-tuned eta, test stream)")
+    plt.title("ACI vs PID reliability curves (val-tuned eta, test stream)")
     plt.legend()
     plt.tight_layout()
     plt.savefig("results/reliability_curves.png", dpi=200)
@@ -272,7 +272,7 @@ def main():
             "mean": paired["mean_diff"],
             "ci_95_low": paired["ci_95"][0],
             "ci_95_high": paired["ci_95"][1],
-            "seeds_trained": "42; run --seeds 42,7,13 for 3-seed protocol (Phase 8 blueprint)",
+            "seeds_trained": "42; run --seeds 42,7,13 for 3-seed protocol",
             "resample_unit": "trajectory block (seq_index)",
         })
     pd.DataFrame(sig_rows).to_csv("results/significance_tests.csv", index=False)
