@@ -82,7 +82,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 ### Statistical Significance
 
-P3 vs P1 paired trajectory-block bootstrap: **+6.35%** Top-1 (95% CI: [+1.38%, +8.18%]) — CI excludes 0, result is **statistically significant**.
+P3 vs P1 paired trajectory-block bootstrap: **+0.70%** Top-1 (95% CI: [−8.55%, +7.14%]) — CI includes 0, result is **not statistically significant** at the 5% level. The test set contains only 3 trajectory blocks; this small block count limits statistical power regardless of the point estimate.
 
 ---
 

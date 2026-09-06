@@ -1,3 +1,4 @@
-comparison,mean,ci_95_low,ci_95_high,seeds_trained,resample_unit
-P3_top1_block_bootstrap,0.1114470637986286,0.04779874213836478,0.151937309534175,"42 (Core models); protocol supports --seeds 42,7,13","trajectory block (seq_index), not frames"
-P3_minus_P1_top1_paired_block_bootstrap,0.0634893088596134,0.013836477987421388,0.08184588593818022,"42; run --seeds 42,7,13 for 3-seed protocol",trajectory block (seq_index)
+comparison,mean,ci_95_low,ci_95_high,seeds_trained,resample_unit,p3_seed,p1_seed,n_boot,significant
+P3_top1_block_bootstrap,0.11034026748736005,0.04779874213836478,0.152154984762734,"[7, 13, 42]","trajectory block (seq_index), not frames",,,,
+P1_top1_block_bootstrap,0.1033214870286495,0.0,0.13865912059207663,"[7, 13, 42]","trajectory block (seq_index), not frames",,,,
+P3_minus_P1_top1_paired_block_bootstrap,0.007018780458710532,-0.08553459119496855,0.07135678391959799,"[7, 13, 42]","trajectory block (seq_index), paired",42.0,7.0,1000.0,False
