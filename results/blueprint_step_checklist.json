@@ -18,7 +18,5 @@
   "phase7_aci_pid": true,
   "phase8_tables": true,
   "phase8_paired_bootstrap": true,
-  "eda_annotated_copied": true,
-  "eda_consolidated_notebook": "eda.ipynb (34-cell comprehensive EDA at project root)",
-  "readme_written": true
+  "eda_annotated_copied": false
 }

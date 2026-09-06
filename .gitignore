@@ -78,3 +78,7 @@ results/train_log_*.txt
 
 # Large derived CSVs (regenerable from raw data)
 data/processed/annotated_scenario36_with_predictions.csv
+
+# Stale training run summaries (regenerable)
+results/results_summary.csv
+results/train_log_*.txt
