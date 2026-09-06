@@ -20,8 +20,8 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 | RQ | Question | Answer |
 |----|----------|--------|
-| **RQ1** | Does full beam-power-profile supervision improve candidate-set efficiency over classification alone? | **Yes** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB); P3 Top-5 is 3× B1 Top-5 |
-| **RQ2** | Can online risk adaptation maintain rolling coverage better than static CRC under trajectory drift? | **Yes** — ACI achieves 7.5% miss at only 17 probes (93% search reduction vs 256-beam scan) |
+| **RQ1** | Does full beam-power-profile supervision improve beam-selection quality over classification-only prediction? | **Partially** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB), confirming the profile head learns real structure. For Top-5, P3 (46.8%) beats P1 (41.6%) at seed 42, but the 3-seed mean reverses (P3 33.5% < P1 37.8%), so the classification benefit is not consistent across seeds. |
+| **RQ2** | Does online risk adaptation achieve the target miss rate with fewer probes than a static conformal threshold? | **Yes** — ACI meets the 10% miss-rate target at 17 avg probes vs static CRC's 32 probes (47% further reduction), while both stay within the α = 0.10 guarantee. |
 | **RQ3** | Does multimodal RGB+GPS improve beam-selection utility relative to GPS-only prediction? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (6.88 dB improvement from adding RGB) |
 
 ---
