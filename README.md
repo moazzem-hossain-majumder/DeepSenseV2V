@@ -22,7 +22,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 |----|----------|--------|
 | **RQ1** | Does full beam-power-profile supervision improve candidate-set efficiency over classification alone? | **Yes** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB); P3 Top-5 is 3× B1 Top-5 |
 | **RQ2** | Can online risk adaptation maintain rolling coverage better than static CRC under trajectory drift? | **Yes** — ACI achieves 7.5% miss at only 17 probes (93% search reduction vs 256-beam scan) |
-| **RQ3** | Does RGB+GPS require fewer probes than GPS-only at equal miss risk? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (4.88 dB improvement from adding RGB) |
+| **RQ3** | Does RGB+GPS require fewer probes than GPS-only at equal miss risk? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (6.88 dB improvement from adding RGB) |
 
 ---
 
@@ -82,7 +82,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 ### Statistical Significance
 
-P3 vs P1 paired trajectory-block bootstrap: **+0.70%** Top-1 (95% CI: [−8.55%, +7.14%]) — CI includes 0, result is **not statistically significant** at the 5% level. The test set contains only 3 trajectory blocks; this small block count limits statistical power regardless of the point estimate.
+P3 vs P1 paired trajectory-block bootstrap (seed 42 vs seed 42): **+6.31%** Top-1 (95% CI: [+1.38%, +8.21%]) — CI excludes 0, result is **statistically significant**.
 
 ---
 
@@ -232,7 +232,7 @@ python -c "from src.beam_reconstruction import verify_reconstruction_and_feasibi
 P3's multi-task loss combines:
 - Cross-entropy on the 256-class beam head
 - MSE on the 256-value received-power profile head
-- Smoothness penalty (second-difference over adjacent beam indices — exploits angular structure)
+- Smoothness penalty (first-difference over adjacent beam indices — exploits angular structure)
 - Pairwise ranking loss (beam order should match measured power order)
 
 ### Online risk control

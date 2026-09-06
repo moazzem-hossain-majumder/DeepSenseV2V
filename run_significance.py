@@ -49,13 +49,6 @@ test_loader = DataLoader(
 )
 
 # ── helpers ──────────────────────────────────────────────────────────────────
-def load_best_seed(model_name):
-    path = os.path.join("results", f"results_{model_name}.json")
-    with open(path) as f:
-        runs = json.load(f)
-    valid = [r for r in runs if "test_top1" in r and "seed" in r]
-    return max(valid, key=lambda r: r["test_top1"])["seed"]
-
 def eval_on_test(model_name, seed):
     ckpt_path = os.path.join("results", "checkpoints", f"best_model_{model_name}_seed{seed}.pt")
     mdl = create_model(model_name, **model_kwargs)
@@ -79,13 +72,15 @@ def eval_on_test(model_name, seed):
     )
 
 # ── inference ────────────────────────────────────────────────────────────────
-p3_seed = load_best_seed("P3")
+# Use seed 42 for both models — consistent with the main results table and
+# avoids test-set peeking that would occur if we selected by best test Top-1.
+p3_seed = 42
 print(f"Loading P3 seed={p3_seed} checkpoint...", flush=True)
 p3_logits, p3_labels, p3_seqs = eval_on_test("P3", p3_seed)
 p3_top1 = compute_topk_accuracy(p3_logits, p3_labels)["top1"]
 print(f"P3 test Top-1: {p3_top1*100:.2f}%", flush=True)
 
-p1_seed = load_best_seed("P1")
+p1_seed = 42
 print(f"Loading P1 seed={p1_seed} checkpoint...", flush=True)
 p1_logits, p1_labels, p1_seqs = eval_on_test("P1", p1_seed)
 p1_top1 = compute_topk_accuracy(p1_logits, p1_labels)["top1"]

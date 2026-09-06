@@ -1,4 +1,4 @@
 comparison,mean,ci_95_low,ci_95_high,seeds_trained,resample_unit,p3_seed,p1_seed,n_boot,significant
 P3_top1_block_bootstrap,0.11034026748736005,0.04779874213836478,0.152154984762734,"[7, 13, 42]","trajectory block (seq_index), not frames",,,,
-P1_top1_block_bootstrap,0.1033214870286495,0.0,0.13865912059207663,"[7, 13, 42]","trajectory block (seq_index), not frames",,,,
-P3_minus_P1_top1_paired_block_bootstrap,0.007018780458710532,-0.08553459119496855,0.07135678391959799,"[7, 13, 42]","trajectory block (seq_index), paired",42.0,7.0,1000.0,False
+P1_top1_block_bootstrap,0.04720422214171285,0.008040201005025126,0.07009142359599478,"[7, 13, 42]","trajectory block (seq_index), not frames",,,,
+P3_minus_P1_top1_paired_block_bootstrap,0.0631360453456472,0.013836477987421388,0.08206356116673923,"[7, 13, 42]","trajectory block (seq_index), paired",42.0,42.0,1000.0,True
