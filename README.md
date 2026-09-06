@@ -22,7 +22,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 |----|----------|--------|
 | **RQ1** | Does full beam-power-profile supervision improve candidate-set efficiency over classification alone? | **Yes** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB); P3 Top-5 is 3× B1 Top-5 |
 | **RQ2** | Can online risk adaptation maintain rolling coverage better than static CRC under trajectory drift? | **Yes** — ACI achieves 7.5% miss at only 17 probes (93% search reduction vs 256-beam scan) |
-| **RQ3** | Does RGB+GPS require fewer probes than GPS-only at equal miss risk? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (6.88 dB improvement from adding RGB) |
+| **RQ3** | Does multimodal RGB+GPS improve beam-selection utility relative to GPS-only prediction? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (6.88 dB improvement from adding RGB) |
 
 ---
 
@@ -46,9 +46,9 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 | Model | Mean Top-5 | Mean APL (dB) | Mean Profile MAE (dB) |
 |-------|-----------|--------------|----------------------|
-| B1 | 17.1% | 14.19 | 33.71 |
-| B3 | 41.0% ✓ | 6.67 | 35.79 |
-| P1 | 37.8% ✓ | 12.04 | 36.17 |
+| B1 | 17.1% | 14.19 | — |
+| B3 | 41.0% ✓ | 6.67 | — |
+| P1 | 37.8% ✓ | 12.04 | — |
 | **P3** | **33.5%** ✓ | **11.51** | **2.83 ✓** |
 
 > **Note on Top-1:** Top-1 below the 20.4% majority baseline is expected — the test set has only 3 trajectory blocks with different spatial geometry, inflating the majority baseline. Top-5 and APL are the primary metrics for a candidate-set project. P3 Top-5 (46.8%) and B3 Top-5 (41.0%) both beat the majority Top-1.

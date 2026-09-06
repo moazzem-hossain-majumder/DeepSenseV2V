@@ -126,6 +126,7 @@ def evaluate_model(model, loader, device="cuda", use_bf16=True):
     all_true_labels = []
     all_true_profiles = []
     all_seq_indices = []
+    has_profile_head = False  # set True if any batch returns a real pred_profile
 
     is_cuda = (dev.type == "cuda" and torch.cuda.is_available())
     autocast_dtype = torch.bfloat16 if (use_bf16 and is_cuda) else torch.float32
@@ -152,19 +153,30 @@ def evaluate_model(model, loader, device="cuda", use_bf16=True):
 
             if "pred_profile" in out:
                 all_pred_profiles.append(out["pred_profile"].float().cpu().numpy())
+                has_profile_head = True
             else:
-                all_pred_profiles.append(logits)
+                all_pred_profiles.append(None)
 
     all_logits = np.concatenate(all_logits, axis=0)
-    all_pred_profiles = np.concatenate(all_pred_profiles, axis=0)
     all_true_labels = np.concatenate(all_true_labels, axis=0)
     all_true_profiles = np.concatenate(all_true_profiles, axis=0)
     all_seq_indices = np.concatenate(all_seq_indices, axis=0)
 
+    # For models with a profile head, concatenate real profiles.
+    # For classification-only models (no profile head), fall back to logits so
+    # downstream callers (CRC, ACI) still receive a valid (N, 256) array.
+    # Profile MAE is suppressed via has_profile_head to avoid reporting
+    # meaningless values computed from raw logits.
+    if has_profile_head:
+        all_pred_profiles = np.concatenate(all_pred_profiles, axis=0)
+        prof_metrics = compute_profile_metrics(all_pred_profiles, all_true_profiles)
+    else:
+        all_pred_profiles = all_logits
+        prof_metrics = {"profile_mae_db": None, "profile_rmse_db": None, "profile_rank_corr": None}
+
     topk = compute_topk_accuracy(all_logits, all_true_labels, topk=(1, 3, 5, 13))
     chosen_beams = np.argmax(all_logits, axis=1)
     apl, _ = compute_average_power_loss(chosen_beams, all_true_profiles)
-    prof_metrics = compute_profile_metrics(all_pred_profiles, all_true_profiles)
 
     return {
         "top1": topk["top1"],
@@ -399,7 +411,7 @@ def train_single_run(args, datasets, seed=42):
         print(f"\n{get_current_timestamp()} [EPOCH {epoch:02d} SUMMARY]", flush=True)
         print(f"  Train: Loss = {avg_train_loss:.4f} | Top-1 Acc = {train_acc*100:6.2f}%", flush=True)
         print(f"  Val:   Top-1 Acc = {val_res['top1']*100:6.2f}% | Top-3 = {val_res['top3']*100:6.2f}% | Top-5 = {val_res['top5']*100:6.2f}%", flush=True)
-        print(f"         APL = {val_res['apl_db']:5.2f} dB | Profile MAE = {val_res['profile_mae_db']:5.2f} dB (Rank Corr: {val_res['profile_rank_corr']:.3f})", flush=True)
+        print(f"         APL = {val_res['apl_db']:5.2f} dB | Profile MAE = {val_res['profile_mae_db']:5.2f} dB (Rank Corr: {val_res['profile_rank_corr']:.3f})" if val_res['profile_mae_db'] is not None else f"         APL = {val_res['apl_db']:5.2f} dB | Profile MAE = N/A (no profile head)", flush=True)
         print(f"  Time:  Epoch = {epoch_duration:.1f}s (Val Eval: {val_duration:.1f}s) | Total Elapsed = {format_time_duration(total_elapsed_time)} | ETA: {format_time_duration(eta_seconds)}", flush=True)
 
         epoch_record = {
@@ -565,8 +577,11 @@ def train_single_run(args, datasets, seed=42):
     print(f"  Top-5 Accuracy:            {results['test_top5']*100:.2f}%", flush=True)
     print(f"  Top-13 Accuracy:           {results['test_top13']*100:.2f}%", flush=True)
     print(f"  Average Power Loss (APL):  {results['test_apl_db']:.2f} dB", flush=True)
-    print(f"  Profile MAE:               {results['test_profile_mae_db']:.2f} dB (Rank Corr: {results['test_profile_rank_corr']:.3f})", flush=True)
-    print(f"  Profile RMSE:              {results['test_profile_rmse_db']:.2f} dB", flush=True)
+    _mae = results['test_profile_mae_db']
+    _corr = results['test_profile_rank_corr']
+    _rmse = results['test_profile_rmse_db']
+    print(f"  Profile MAE:               {f'{_mae:.2f} dB (Rank Corr: {_corr:.3f})' if _mae is not None else 'N/A (no profile head)'}", flush=True)
+    print(f"  Profile RMSE:              {f'{_rmse:.2f} dB' if _rmse is not None else 'N/A'}", flush=True)
     print(f"  Static CRC (power-aware):  Miss Rate = {results['static_crc_miss_rate']*100:.2f}%  |  Avg Set Size = {results['static_crc_avg_size']:.1f}", flush=True)
     print(f"    Multi-delta: 0dB miss={multi_delta_res.get('miss_rate_delta_0.0db', 0)*100:.1f}%  1dB miss={multi_delta_res.get('miss_rate_delta_1.0db', 0)*100:.1f}%  3dB miss={multi_delta_res.get('miss_rate_delta_3.0db', 0)*100:.1f}%", flush=True)
     print(f"  Exact-label CRC:           Coverage = {exact_label_hits*100:.2f}%  |  Avg Set Size = {exact_avg_size:.1f}", flush=True)
