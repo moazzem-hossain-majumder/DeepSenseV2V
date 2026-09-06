@@ -21,7 +21,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 | RQ | Question | Answer |
 |----|----------|--------|
 | **RQ1** | Does full beam-power-profile supervision improve beam-selection quality over classification-only prediction? | **Partially** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB), confirming the profile head learns real structure. For Top-5, P3 (46.8%) beats P1 (41.6%) at seed 42, but the 3-seed mean reverses (P3 33.5% < P1 37.8%), so the classification benefit is not consistent across seeds. |
-| **RQ2** | Does online risk adaptation achieve the target miss rate with fewer probes than a static conformal threshold? | **Yes** — ACI meets the 10% miss-rate target at 17 avg probes vs static CRC's 32 probes (47% further reduction), while both stay within the α = 0.10 guarantee. |
+| **RQ2** | Does online risk adaptation achieve the target miss rate with fewer probes than a static conformal threshold? | **Yes** — ACI meets the 10% miss-rate target at 17 avg probes vs static CRC's 32 probes (47% further reduction), while both satisfy the α = 0.10 empirical miss-rate target. |
 | **RQ3** | Does multimodal RGB+GPS improve beam-selection utility relative to GPS-only prediction? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (6.88 dB improvement from adding RGB) |
 
 ---
@@ -40,7 +40,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 | P1 | Classification-only Transformer | 5.59% | 41.64% | 62.94% | 12.33 | — |
 | **P3** | **Multi-task profile (proposed)** | **12.66%** | **46.79%** | **63.22%** | **10.17** | **2.49 ✓** |
 | — | Majority-class baseline | 20.41% | — | — | — | — |
-| — | Mean-profile MAE floor | — | — | — | — | 3.11 |
+| — | Mean-profile MAE baseline | — | — | — | — | 3.11 |
 
 ### 3-Seed Mean Results (seeds 42, 7, 13)
 

@@ -18,5 +18,5 @@
   "phase7_aci_pid": true,
   "phase8_tables": true,
   "phase8_paired_bootstrap": true,
-  "eda_annotated_copied": false
+  "eda_annotated_copied": true
 }

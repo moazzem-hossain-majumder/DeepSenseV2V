@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  lint-and-import-check:
+    name: Syntax & Import Check (Python 3.11)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install CPU-only dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Install torch CPU-only build to keep the runner fast (no CUDA needed for syntax checks)
+          pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install \
+            numpy>=1.24.0 \
+            pandas>=2.0.0 \
+            scipy>=1.10.0 \
+            scikit-learn>=1.2.0 \
+            matplotlib>=3.7.0 \
+            seaborn>=0.12.0 \
+            Pillow>=10.0.0 \
+            pyyaml>=6.0 \
+            tqdm>=4.65.0
+
+      - name: Check Python syntax (compile all .py files)
+        run: |
+          echo "Checking syntax of all Python source files..."
+          find . -name "*.py" \
+            -not -path "./.git/*" \
+            -not -path "./notebooks/*" \
+            | sort \
+            | xargs python -m py_compile \
+            && echo "All files pass syntax check."
+
+      - name: Verify core module imports
+        run: |
+          python - <<'EOF'
+          import sys
+          failures = []
+
+          modules = [
+              ("src.evaluate",           "evaluate"),
+              ("src.candidate_sets",     "candidate_sets"),
+              ("src.online_controller",  "online_controller"),
+              ("src.models",             "models"),
+              ("src.dataset",            "dataset"),
+              ("src.gps_features",       "gps_features"),
+              ("src.partitioning",       "partitioning"),
+              ("src.beam_reconstruction","beam_reconstruction"),
+              ("src.paths",              "paths"),
+          ]
+
+          for mod, label in modules:
+              try:
+                  __import__(mod)
+                  print(f"  OK  {label}")
+              except Exception as e:
+                  print(f"  FAIL {label}: {e}")
+                  failures.append(label)
+
+          if failures:
+              print(f"\nFailed imports: {failures}", file=sys.stderr)
+              sys.exit(1)
+          else:
+              print("\nAll core modules imported successfully.")
+          EOF
+
+      - name: Validate config.yaml is parseable
+        run: |
+          python - <<'EOF'
+          import yaml, sys
+          with open("config.yaml") as f:
+              cfg = yaml.safe_load(f)
+          assert cfg is not None, "config.yaml parsed to None"
+          print("config.yaml OK:", list(cfg.keys()))
+          EOF
+
+      - name: Verify evaluate.py paired bootstrap function signature
+        run: |
+          python - <<'EOF'
+          import inspect
+          from src.evaluate import paired_trajectory_bootstrap_diff, trajectory_block_bootstrap_ci
+          for fn in [paired_trajectory_bootstrap_diff, trajectory_block_bootstrap_ci]:
+              sig = inspect.signature(fn)
+              params = list(sig.parameters)
+              print(f"  {fn.__name__}: {params}")
+              assert "seq_indices" in params, f"Missing seq_indices in {fn.__name__}"
+              assert "n_boot" in params,      f"Missing n_boot in {fn.__name__}"
+          print("Function signatures OK.")
+          EOF
