@@ -290,7 +290,7 @@ def train_single_run(args, datasets, seed=42):
     latest_checkpoint_path = os.path.join(checkpoints_dir, f"latest_checkpoint_{args.model}_seed{seed}.pt")
     pause_checkpoint_path = os.path.join(checkpoints_dir, f"pause_checkpoint_{args.model}_seed{seed}.pt")
 
-    # Handle Resume
+  # Handle Resume
     resume_target = None
     if args.resume:
         if os.path.exists(pause_checkpoint_path):
@@ -376,7 +376,7 @@ def train_single_run(args, datasets, seed=42):
                 "lr": f"{current_lr:.1e}"
             })
 
-            # Check pause trigger mid-epoch
+      # Check pause trigger mid-epoch
             if check_pause_flag(args.output_dir):
                 break
 
@@ -385,12 +385,12 @@ def train_single_run(args, datasets, seed=42):
         train_acc = train_correct / max(train_total, 1)
         avg_train_loss = train_loss / max(train_total, 1)
 
-        # Validation evaluation
+    # Validation evaluation
         val_eval_start = time.time()
         val_res = evaluate_model(model, loaders["val"], device=device, use_bf16=use_bf16)
         val_duration = time.time() - val_eval_start
 
-        # Calculate ETA
+    # Calculate ETA
         epochs_done = epoch
         epochs_left = args.epochs - epoch
         avg_epoch_time = total_elapsed_time / (epoch - start_epoch + 1 if epoch >= start_epoch else 1)
@@ -421,7 +421,7 @@ def train_single_run(args, datasets, seed=42):
         }
         epoch_logs.append(epoch_record)
 
-        # Checkpointing
+    # Checkpointing
         is_best = False
         if val_res["top1"] > best_val_top1:
             best_val_top1 = val_res["top1"]
@@ -433,10 +433,10 @@ def train_single_run(args, datasets, seed=42):
             patience_counter += 1
             print(f"  -> [INFO] No improvement for {patience_counter}/{args.patience} epochs (Best: {best_val_top1*100:.2f}%)", flush=True)
 
-        # Always save latest state
+    # Always save latest state
         save_full_checkpoint(latest_checkpoint_path, model, optimizer, scheduler, epoch, best_val_top1, patience_counter, total_elapsed_time, epoch_logs, args)
 
-        # Handle Pause request
+    # Handle Pause request
         if PAUSE_REQUESTED or check_pause_flag(args.output_dir):
             save_full_checkpoint(pause_checkpoint_path, model, optimizer, scheduler, epoch, best_val_top1, patience_counter, total_elapsed_time, epoch_logs, args)
             print(f"\n================================================================================", flush=True)
@@ -458,19 +458,19 @@ def train_single_run(args, datasets, seed=42):
                 "epoch_logs": epoch_logs
             }
 
-        # Early Stopping
+    # Early Stopping
         if epoch >= args.min_epochs and patience_counter >= args.patience:
             print(f"\n{get_current_timestamp()} [Early Stopping] Triggered after {patience_counter} epochs without improvement. Stopping at Epoch {epoch}.", flush=True)
             break
 
     finish_timestamp_str = time.strftime("%Y-%m-%d %H:%M:%S")
 
-    # Load best checkpoint for final evaluation
+  # Load best checkpoint for final evaluation
     if os.path.exists(best_checkpoint_path):
         load_full_checkpoint(best_checkpoint_path, model, device=device)
         print(f"\n{get_current_timestamp()} Loaded best model checkpoint for final Conformal & Test evaluation.", flush=True)
 
-    # Conformal Calibration & Online Test Evaluation
+  # Conformal Calibration & Online Test Evaluation
     print(f"\n================================================================================", flush=True)
     print(f"{get_current_timestamp()} RUNNING CONFORMAL RISK CONTROL & TEST STREAMING EVALUATION", flush=True)
     print(f"================================================================================", flush=True)
@@ -479,7 +479,7 @@ def train_single_run(args, datasets, seed=42):
     calib_eval = evaluate_model(model, loaders["calib"], device=device, use_bf16=use_bf16)
     test_eval = evaluate_model(model, loaders["test"], device=device, use_bf16=use_bf16)
 
-    # 1. Static CRC on Calibration split
+  # 1. Static CRC on Calibration split
     crc = StaticConformalRiskControl(target_alpha=args.target_alpha, delta_db=args.delta_db)
     q_calib = crc.fit(calib_eval["pred_profiles"], calib_eval["true_profiles"])
     crc_test_sets, crc_test_res = crc.predict(test_eval["pred_profiles"], test_eval["true_profiles"])
@@ -488,7 +488,7 @@ def train_single_run(args, datasets, seed=42):
     q_max = float(np.percentile(calib_gaps, 99))
     q_min = 0.0
 
-    # 1b. Exact-label CRC (Phase 6 Core — label-set conformal predictor)
+  # 1b. Exact-label CRC ( Core — label-set conformal predictor)
     exact_crc = ExactLabelCRC(target_alpha=args.target_alpha)
     exact_crc.fit(calib_eval["logits"], calib_eval["true_labels"])
     exact_test_sets = exact_crc.predict(test_eval["logits"])
@@ -498,12 +498,12 @@ def train_single_run(args, datasets, seed=42):
     ]))
     exact_avg_size = float(np.mean([len(s) for s in exact_test_sets]))
 
-    # 1c. Multi-delta reliability on the power-CRC candidate sets (Phase 8 Core)
+  # 1c. Multi-delta reliability on the power-CRC candidate sets ( Core)
     multi_delta_res = compute_multi_delta_reliability(
         crc_test_sets, test_eval["true_profiles"], deltas=(0.0, 1.0, 3.0)
     )
 
-    # 2. ACI / Online Controller on Test stream (eta + q bounds chosen on val/calib only)
+  # 2. ACI / Online Controller on Test stream (eta + q bounds chosen on val/calib only)
     best_eta = select_best_eta_on_val(val_eval["pred_profiles"], val_eval["true_profiles"], q_init=q_calib, target_alpha=args.target_alpha, delta_db=args.delta_db)
     aci_test_res = run_online_aci_controller(
         test_eval["pred_profiles"], test_eval["true_profiles"],
@@ -511,7 +511,7 @@ def train_single_run(args, datasets, seed=42):
         q_min=q_min, q_max=q_max
     )
 
-    # 3. Trajectory-block bootstrap CI on test Top-1
+  # 3. Trajectory-block bootstrap CI on test Top-1
     test_logits = test_eval["logits"]
     test_labels = test_eval["true_labels"]
     test_seqs = test_eval["seq_indices"]
@@ -540,17 +540,17 @@ def train_single_run(args, datasets, seed=42):
         "test_profile_rmse_db": test_eval["profile_rmse_db"],
         "test_profile_rank_corr": test_eval["profile_rank_corr"],
         "test_top1_bootstrap_ci": boot_ci["ci_95"],
-        # Phase 6 Core: static power-aware CRC
+    # Core: static power-aware CRC
         "static_crc_calib_q": q_calib,
         "static_crc_miss_rate": crc_test_res["miss_rate"],
         "static_crc_avg_size": crc_test_res["avg_size"],
         "static_crc_miss_rate_delta_0db": multi_delta_res.get("miss_rate_delta_0.0db"),
         "static_crc_miss_rate_delta_1db": multi_delta_res.get("miss_rate_delta_1.0db"),
         "static_crc_miss_rate_delta_3db": multi_delta_res.get("miss_rate_delta_3.0db"),
-        # Phase 6 Core: exact-label CRC
+    # Core: exact-label CRC
         "exact_label_crc_coverage": exact_label_hits,
         "exact_label_crc_avg_size": exact_avg_size,
-        # Phase 7 Core: online ACI
+    # Core: online ACI
         "online_aci_eta": best_eta,
         "online_aci_miss_rate": aci_test_res["miss_rate"],
         "online_aci_avg_size": aci_test_res["avg_size"],
@@ -601,11 +601,11 @@ def _run_paired_significance_if_ready(args):
         with open(p1_path) as f:
             p1_runs = json.load(f)
 
-        # Use the first seed's stored scalar test_top1 for a lightweight comparison.
-        # For full per-sample paired bootstrap the caller would need to re-run
-        # evaluate_model and pass the arrays; the per-run scalar gives a reliable
-        # point-estimate and the block-bootstrap CI is computed below using stored
-        # bootstrap-CI endpoints already in each JSON.
+    # Use the first seed's stored scalar test_top1 for a lightweight comparison.
+    # For full per-sample paired bootstrap the caller would need to re-run
+    # evaluate_model and pass the arrays; the per-run scalar gives a reliable
+    # point-estimate and the block-bootstrap CI is computed below using stored
+    # bootstrap-CI endpoints already in each JSON.
         p3_top1_vals = [r["test_top1"] for r in p3_runs if "test_top1" in r]
         p1_top1_vals = [r["test_top1"] for r in p1_runs if "test_top1" in r]
         seeds_used = sorted(set(
@@ -613,12 +613,12 @@ def _run_paired_significance_if_ready(args):
             [r["seed"] for r in p1_runs if "seed" in r]
         ))
 
-        # Simple mean difference with existing single-seed bootstrap CIs reported
+    # Simple mean difference with existing single-seed bootstrap CIs reported
         mean_p3 = float(np.mean(p3_top1_vals)) if p3_top1_vals else None
         mean_p1 = float(np.mean(p1_top1_vals)) if p1_top1_vals else None
         mean_diff = (mean_p3 - mean_p1) if (mean_p3 is not None and mean_p1 is not None) else None
 
-        # Re-use each run's stored bootstrap CI endpoints to derive a rough diff CI
+    # Re-use each run's stored bootstrap CI endpoints to derive a rough diff CI
         p3_ci_rows = [r.get("test_top1_bootstrap_ci", [None, None]) for r in p3_runs]
         p1_ci_rows = [r.get("test_top1_bootstrap_ci", [None, None]) for r in p1_runs]
         p3_ci_lo = float(np.mean([c[0] for c in p3_ci_rows if c[0] is not None])) if p3_ci_rows else None
@@ -735,9 +735,9 @@ def main():
             pd.DataFrame(summary_rows).to_csv(os.path.join(args.output_dir, "results_summary.csv"), index=False)
             print(f"{get_current_timestamp()} Saved summary CSV to {os.path.join(args.output_dir, 'results_summary.csv')}", flush=True)
 
-        # Phase 8 Core — paired block-bootstrap significance test (P3 vs P1).
-        # Runs automatically when both results JSONs exist on disk so a single
-        # re-run of either model triggers the comparison without extra steps.
+    # Core — paired block-bootstrap significance test (P3 vs P1).
+    # Runs automatically when both results JSONs exist on disk so a single
+    # re-run of either model triggers the comparison without extra steps.
         _run_paired_significance_if_ready(args)
 
 if __name__ == "__main__":
