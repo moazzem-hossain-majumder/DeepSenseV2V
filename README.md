@@ -49,11 +49,11 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 | B1 | 17.1% | 14.19 | 33.71 |
 | B3 | 41.0% ✓ | 6.67 | 35.79 |
 | P1 | 37.8% ✓ | 12.04 | 36.17 |
-| **P3** | **32.8%** ✓ | **11.60** | **2.84 ✓** |
+| **P3** | **33.5%** ✓ | **11.51** | **2.83 ✓** |
 
 > **Note on Top-1:** Top-1 below the 20.4% majority baseline is expected — the test set has only 3 trajectory blocks with different spatial geometry, inflating the majority baseline. Top-5 and APL are the primary metrics for a candidate-set project. P3 Top-5 (46.8%) and B3 Top-5 (41.0%) both beat the majority Top-1.
 
-> **Note on seed variance:** P3 Top-5 ranges from 20.3% to 46.8% across seeds due to the small test set (3 trajectory blocks). Report the CI alongside the mean in any formal write-up.
+> **Note on seed variance:** P3 Top-5 ranges from 22.4% to 46.8% across seeds due to the small test set (3 trajectory blocks). Seed 13 completed full training but is a genuinely weak initialization. Report the CI alongside the mean in any formal write-up.
 
 > **Note on split percentages:** The split is done by assigning trajectory **blocks** (not samples) in a 55/15/15/15% ratio by block count. Because trajectory blocks vary in length, the actual **sample-level** percentages are: train 37.8%, val 22.6%, calib 13.7%, test 25.8%. This is intentional — splitting by whole blocks prevents any temporal leakage between splits.
 
