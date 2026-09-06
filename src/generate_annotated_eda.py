@@ -223,19 +223,87 @@ def main():
             is_cov = (opt_powers[i] - best_cand_power) <= 3.0
             conf_covered.append(bool(is_cov))
 
+        # ------------------------------------------------------------------
+        # Pre-compute ENU positions and speeds for this split's sequences.
+        # Strategy:
+        #   1. Convert unit1 and unit2 WGS-84 lat/lon to local ENU using a
+        #      single reference origin (first valid unit1 fix in the split).
+        #   2. Derive unit1 speed from first-difference of ENU East/North
+        #      across consecutive frames within the same trajectory block.
+        #      Frames at a trajectory boundary get speed = 0 (no prior frame).
+        # ------------------------------------------------------------------
+
+        _R_EARTH = 6_378_137.0  # WGS-84 semi-major axis in metres
+
+        def _wgs84_to_local_enu(lat_deg, lon_deg, lat0_deg, lon0_deg):
+            """Convert WGS-84 (lat, lon) to local ENU (east, north) in metres."""
+            dlat = np.radians(lat_deg - lat0_deg)
+            dlon = np.radians(lon_deg - lon0_deg)
+            lat0_r = np.radians(lat0_deg)
+            north = _R_EARTH * dlat
+            east  = _R_EARTH * np.cos(lat0_r) * dlon
+            return east, north
+
+        # Find reference origin: first row in this split that has valid GPS
+        lat0, lon0 = None, None
+        for _i in range(len(seq_df)):
+            _y = seq_df.iloc[_i]["y_index"]
+            _m = metadata_df.iloc[_y]
+            _lat = _m.get("unit1_gps1_lat", np.nan)
+            _lon = _m.get("unit1_gps1_lon", np.nan)
+            if _lat is not None and not (isinstance(_lat, float) and np.isnan(_lat)):
+                lat0, lon0 = float(_lat), float(_lon)
+                break
+        if lat0 is None:
+            lat0, lon0 = 0.0, 0.0  # fallback if no GPS at all
+
+        # Build per-row ENU arrays in seq_df order
+        u1_east_arr  = np.zeros(len(seq_df))
+        u1_north_arr = np.zeros(len(seq_df))
+        u2_east_arr  = np.zeros(len(seq_df))
+        u2_north_arr = np.zeros(len(seq_df))
+
+        for _i in range(len(seq_df)):
+            _y  = seq_df.iloc[_i]["y_index"]
+            _m  = metadata_df.iloc[_y]
+            u1e, u1n = _wgs84_to_local_enu(
+                float(_m.get("unit1_gps1_lat", lat0) or lat0),
+                float(_m.get("unit1_gps1_lon", lon0) or lon0),
+                lat0, lon0
+            )
+            u2e, u2n = _wgs84_to_local_enu(
+                float(_m.get("unit2_gps1_lat", lat0) or lat0),
+                float(_m.get("unit2_gps1_lon", lon0) or lon0),
+                lat0, lon0
+            )
+            u1_east_arr[_i]  = u1e
+            u1_north_arr[_i] = u1n
+            u2_east_arr[_i]  = u2e
+            u2_north_arr[_i] = u2n
+
+        # Derive speed from temporal ENU first-differences within trajectory blocks.
+        # Assume 10 Hz sampling (100 ms per frame) — matches DeepSense Scenario 36.
+        _DT = 0.1  # seconds per sample
+        speed_arr = np.zeros(len(seq_df))
+        seq_ids = seq_df["seq_index"].values
+        for _i in range(1, len(seq_df)):
+            if seq_ids[_i] == seq_ids[_i - 1]:   # same trajectory block
+                de = u1_east_arr[_i]  - u1_east_arr[_i - 1]
+                dn = u1_north_arr[_i] - u1_north_arr[_i - 1]
+                speed_arr[_i] = np.sqrt(de**2 + dn**2) / _DT
+            # else: boundary → speed stays 0
+
         # Build records
         for i in range(len(seq_df)):
             row = seq_df.iloc[i]
             y_idx = row["y_index"]
             raw_meta = metadata_df.iloc[y_idx]
 
-            # GPS Kinematic Features
-            u1_x, u1_y = raw_meta.get("unit1_loc_x", 0.0), raw_meta.get("unit1_loc_y", 0.0)
-            u2_x, u2_y = raw_meta.get("unit2_loc_x", 0.0), raw_meta.get("unit2_loc_y", 0.0)
-            e_rel = u2_x - u1_x
-            n_rel = u2_y - u1_y
-            dist = np.sqrt(e_rel**2 + n_rel**2)
-            speed = np.sqrt(raw_meta.get("unit1_speed_x", 0.0)**2 + raw_meta.get("unit1_speed_y", 0.0)**2)
+            # GPS Kinematic Features (ENU, metres)
+            e_rel = u2_east_arr[i]  - u1_east_arr[i]
+            n_rel = u2_north_arr[i] - u1_north_arr[i]
+            dist  = np.sqrt(e_rel**2 + n_rel**2)
+            speed = speed_arr[i]
             rot_z = raw_meta.get("unit1_rot_z", 0.0)
 
             annotated_rows.append({

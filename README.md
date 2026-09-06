@@ -22,7 +22,7 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 |----|----------|--------|
 | **RQ1** | Does full beam-power-profile supervision improve candidate-set efficiency over classification alone? | **Yes** — P3 profile MAE (2.49 dB, seed 42) beats the mean-profile floor (3.11 dB); P3 Top-5 is 3× B1 Top-5 |
 | **RQ2** | Can online risk adaptation maintain rolling coverage better than static CRC under trajectory drift? | **Yes** — ACI achieves 7.5% miss at only 17 probes (93% search reduction vs 256-beam scan) |
-| **RQ3** | Does RGB+GPS require fewer probes than GPS-only at equal miss risk? | **Yes** — P3 APL = 10.2 dB vs B1 APL = 14.2 dB (4 dB improvement) |
+| **RQ3** | Does RGB+GPS require fewer probes than GPS-only at equal miss risk? | **Yes** — B3 APL = 7.29 dB vs B1 APL = 14.17 dB (4.88 dB improvement from adding RGB) |
 
 ---
 
@@ -34,10 +34,10 @@ This project addresses exhaustive beam training overhead in 256-beam 60 GHz V2V 
 
 | Model | Description | Top-1 | Top-5 | Top-13 | APL (dB) | Profile MAE (dB) |
 |-------|-------------|-------|-------|--------|----------|-----------------|
-| B0 | Geometric baseline (no learning) | 0.67% | 0.88% | 1.03% | 11.07 | 13.14 |
-| B1 | GPS-only BiGRU (Core baseline) | 0.96% | 15.30% | 39.25% | 14.17 | 34.63 |
-| B3 | RGB+GPS Gated Fusion (Core baseline) | 12.09% | 31.05% | 35.17% | 7.29 | 36.96 |
-| P1 | Classification-only Transformer | 5.59% | 41.64% | 62.94% | 12.33 | 35.99 |
+| B0 | Geometric baseline (no learning) | 0.67% | 0.88% | 1.03% | 11.07 | — |
+| B1 | GPS-only BiGRU (Core baseline) | 0.96% | 15.30% | 39.25% | 14.17 | — |
+| B3 | RGB+GPS Gated Fusion (Core baseline) | 12.09% | 31.05% | 35.17% | 7.29 | — |
+| P1 | Classification-only Transformer | 5.59% | 41.64% | 62.94% | 12.33 | — |
 | **P3** | **Multi-task profile (proposed)** | **12.66%** | **46.79%** | **63.22%** | **10.17** | **2.49 ✓** |
 | — | Majority-class baseline | 20.41% | — | — | — | — |
 | — | Mean-profile MAE floor | — | — | — | — | 3.11 |
@@ -231,7 +231,7 @@ python -c "from src.beam_reconstruction import verify_reconstruction_and_feasibi
 
 P3's multi-task loss combines:
 - Cross-entropy on the 256-class beam head
-- MSE on the 256-value power-gap profile head
+- MSE on the 256-value received-power profile head
 - Smoothness penalty (second-difference over adjacent beam indices — exploits angular structure)
 - Pairwise ranking loss (beam order should match measured power order)
 
@@ -264,13 +264,13 @@ Both provide long-run time-averaged risk control guarantees — distinct from sp
 
 Prior work predicts a best beam or a calibrated subset using conformal risk control (including SCAN-BEST, 2025/2026). This project differentiates on three points:
 
-1. Predicts the **complete future 256-beam measured power-gap profile** (not just a single beam or a subset)
+1. Predicts the **complete future 256-beam measured received-power profile** (not just a single beam or a subset)
 2. Uses an **online trajectory-adaptive utility-risk controller** that updates sequentially during vehicle motion
 3. Explicitly separates offline exchangeable coverage from online time-averaged reliability guarantees
 
 See `DEEPSENSE_PROJECT_BLUEPRINT_V4.md` Section 1b for the full novelty audit against published baselines including SCAN-BEST, AMBER, CLBP, and the 2026 adaptive-probing work.
 
-> **Do not claim** "first-ever conformal beam selection" — SCAN-BEST already exists. The correct claim is that no prior work predicts the *complete future 256-beam power-gap profile* and uses an online trajectory-adaptive controller to maintain near-optimal-beam miss rate under non-stationary V2V conditions.
+> **Do not claim** "first-ever conformal beam selection" — SCAN-BEST already exists. The correct claim is that no prior work predicts the *complete future 256-beam received-power profile* and uses an online trajectory-adaptive controller to maintain near-optimal-beam miss rate under non-stationary V2V conditions.
 
 ---
 

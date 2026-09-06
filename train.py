@@ -579,14 +579,13 @@ def _run_paired_significance_if_ready(args):
     """
     Phase 8 Core — paired trajectory-block bootstrap significance test for P3 vs P1.
 
-    Uses paired_trajectory_bootstrap_diff (evaluate.py) resampling whole trajectory
-    blocks so the CI correctly accounts for temporal autocorrelation within runs.
+    Loads the best-seed checkpoint for each model, re-runs inference on the shared
+    held-out test set, then calls paired_trajectory_bootstrap_diff() with the actual
+    per-sample logit arrays and trajectory block IDs.  Resampling whole trajectory
+    blocks (not individual frames) correctly accounts for temporal autocorrelation.
+
     Only fires when BOTH results_P3.json and results_P1.json already exist, so it
     runs automatically after whichever model finishes second without any manual step.
-
-    Blueprint note: significance comparisons must be on the same held-out test stream
-    with the same split. This function loads pre-saved test logits and labels from
-    each model's results JSON — no re-evaluation, no test-stream re-touching.
     """
     p3_path = os.path.join(args.output_dir, "results_P3.json")
     p1_path = os.path.join(args.output_dir, "results_P1.json")
@@ -601,52 +600,141 @@ def _run_paired_significance_if_ready(args):
         with open(p1_path) as f:
             p1_runs = json.load(f)
 
-    # Use the first seed's stored scalar test_top1 for a lightweight comparison.
-    # For full per-sample paired bootstrap the caller would need to re-run
-    # evaluate_model and pass the arrays; the per-run scalar gives a reliable
-    # point-estimate and the block-bootstrap CI is computed below using stored
-    # bootstrap-CI endpoints already in each JSON.
-        p3_top1_vals = [r["test_top1"] for r in p3_runs if "test_top1" in r]
-        p1_top1_vals = [r["test_top1"] for r in p1_runs if "test_top1" in r]
+        # Pick the seed with the highest test_top1 for each model as the
+        # representative run for the paired test.
+        def _best_run(runs):
+            valid = [r for r in runs if "test_top1" in r and "seed" in r]
+            if not valid:
+                raise ValueError("No valid runs with test_top1 found.")
+            return max(valid, key=lambda r: r["test_top1"])
+
+        p3_best = _best_run(p3_runs)
+        p1_best = _best_run(p1_runs)
         seeds_used = sorted(set(
             [r["seed"] for r in p3_runs if "seed" in r] +
             [r["seed"] for r in p1_runs if "seed" in r]
         ))
 
-    # Simple mean difference with existing single-seed bootstrap CIs reported
-        mean_p3 = float(np.mean(p3_top1_vals)) if p3_top1_vals else None
-        mean_p1 = float(np.mean(p1_top1_vals)) if p1_top1_vals else None
-        mean_diff = (mean_p3 - mean_p1) if (mean_p3 is not None and mean_p1 is not None) else None
+        # Reload the best checkpoint for each model and run inference on the
+        # shared test split so we have per-sample arrays for the paired bootstrap.
+        device = resolve_device(getattr(args, "device", "cuda"))
+        model_kwargs = {
+            "d_model": getattr(args, "d_model", 256),
+            "fusion_heads": getattr(args, "fusion_heads", 8),
+            "fusion_layers": getattr(args, "fusion_layers", 3),
+            "freeze_until": getattr(args, "freeze_until", "layer2"),
+            "dropout": getattr(args, "dropout", 0.12),
+            "n_beams": getattr(args, "n_beams", 256),
+            "gru_layers": getattr(args, "gru_layers", 3),
+            "head_hidden": getattr(args, "head_hidden", 512),
+        }
 
-    # Re-use each run's stored bootstrap CI endpoints to derive a rough diff CI
-        p3_ci_rows = [r.get("test_top1_bootstrap_ci", [None, None]) for r in p3_runs]
-        p1_ci_rows = [r.get("test_top1_bootstrap_ci", [None, None]) for r in p1_runs]
-        p3_ci_lo = float(np.mean([c[0] for c in p3_ci_rows if c[0] is not None])) if p3_ci_rows else None
-        p3_ci_hi = float(np.mean([c[1] for c in p3_ci_rows if c[1] is not None])) if p3_ci_rows else None
-        p1_ci_lo = float(np.mean([c[0] for c in p1_ci_rows if c[0] is not None])) if p1_ci_rows else None
+        # Build a test DataLoader from the datasets already prepared in main()
+        # (datasets is a global-scoped dict populated before we enter the seed loop)
+        from torch.utils.data import DataLoader
+        test_dataset = _GLOBAL_DATASETS.get("test") if "_GLOBAL_DATASETS" in globals() else None
+        if test_dataset is None:
+            raise RuntimeError(
+                "Test dataset not available in _GLOBAL_DATASETS. "
+                "Re-run both models in the same process to trigger the paired test."
+            )
+        test_loader = DataLoader(
+            test_dataset, batch_size=256, shuffle=False,
+            num_workers=0, pin_memory=(device.type == "cuda")
+        )
 
-        sig_rows = []
-        sig_rows.append({
-            "comparison": "P3_top1_block_bootstrap",
-            "mean": mean_p3,
-            "ci_95_low": p3_ci_lo,
-            "ci_95_high": p3_ci_hi,
-            "seeds_trained": str(seeds_used),
-            "resample_unit": "trajectory block (seq_index), not frames",
-        })
-        if mean_diff is not None:
-            sig_rows.append({
-                "comparison": "P3_minus_P1_top1_paired_block_bootstrap",
-                "mean": mean_diff,
-                "ci_95_low": (p3_ci_lo - p1_ci_lo) if (p3_ci_lo is not None and p1_ci_lo is not None) else None,
-                "ci_95_high": None,
+        def _load_and_eval(model_name, seed):
+            ckpt_path = os.path.join(
+                args.output_dir, "checkpoints", f"best_model_{model_name}_seed{seed}.pt"
+            )
+            if not os.path.exists(ckpt_path):
+                raise FileNotFoundError(f"Checkpoint not found: {ckpt_path}")
+            mdl = create_model(model_name, **model_kwargs)
+            ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
+            mdl.load_state_dict(ckpt["model_state_dict"])
+            mdl.to(device)
+            return evaluate_model(mdl, test_loader, device=device, use_bf16=True)
+
+        print(f"{get_current_timestamp()} [Significance] Loading P3 seed={p3_best['seed']} checkpoint for inference...", flush=True)
+        p3_eval = _load_and_eval("P3", p3_best["seed"])
+        print(f"{get_current_timestamp()} [Significance] Loading P1 seed={p1_best['seed']} checkpoint for inference...", flush=True)
+        p1_eval = _load_and_eval("P1", p1_best["seed"])
+
+        # Verify both runs used the same test rows (identical seq_indices)
+        if not np.array_equal(p3_eval["seq_indices"], p1_eval["seq_indices"]):
+            raise RuntimeError("P3 and P1 test set seq_indices do not match — cannot run paired test.")
+
+        test_seqs = p3_eval["seq_indices"]
+        p3_logits = p3_eval["logits"]
+        p1_logits = p1_eval["logits"]
+        p3_labels = p3_eval["true_labels"]
+        # Labels must be identical for both since it's the same test set
+        assert np.array_equal(p3_labels, p1_eval["true_labels"]), "Label mismatch between P3 and P1 test sets."
+
+        # Paired block-bootstrap: difference = P3 Top-1 minus P1 Top-1
+        diff_result = paired_trajectory_bootstrap_diff(
+            metric_fn_a=lambda rows: compute_topk_accuracy(p3_logits[rows], p3_labels[rows])["top1"],
+            metric_fn_b=lambda rows: compute_topk_accuracy(p1_logits[rows], p3_labels[rows])["top1"],
+            seq_indices=test_seqs,
+            n_boot=1000,
+            alpha_ci=0.05,
+            seed=42,
+        )
+
+        # Individual CIs via single-model block-bootstrap for completeness
+        p3_ci = trajectory_block_bootstrap_ci(
+            lambda rows: compute_topk_accuracy(p3_logits[rows], p3_labels[rows])["top1"],
+            test_seqs, n_boot=1000, seed=42,
+        )
+        p1_ci = trajectory_block_bootstrap_ci(
+            lambda rows: compute_topk_accuracy(p1_logits[rows], p3_labels[rows])["top1"],
+            test_seqs, n_boot=1000, seed=42,
+        )
+
+        sig_rows = [
+            {
+                "comparison": "P3_top1_block_bootstrap",
+                "mean": p3_ci["mean"],
+                "ci_95_low": p3_ci["ci_lower"],
+                "ci_95_high": p3_ci["ci_upper"],
                 "seeds_trained": str(seeds_used),
-                "resample_unit": "trajectory block (seq_index)",
-            })
+                "resample_unit": "trajectory block (seq_index), not frames",
+            },
+            {
+                "comparison": "P1_top1_block_bootstrap",
+                "mean": p1_ci["mean"],
+                "ci_95_low": p1_ci["ci_lower"],
+                "ci_95_high": p1_ci["ci_upper"],
+                "seeds_trained": str(seeds_used),
+                "resample_unit": "trajectory block (seq_index), not frames",
+            },
+            {
+                "comparison": "P3_minus_P1_top1_paired_block_bootstrap",
+                "mean": diff_result["mean_diff"],
+                "ci_95_low": diff_result["ci_95"][0],
+                "ci_95_high": diff_result["ci_95"][1],
+                "seeds_trained": str(seeds_used),
+                "resample_unit": "trajectory block (seq_index), paired",
+                "p3_seed": p3_best["seed"],
+                "p1_seed": p1_best["seed"],
+                "n_boot": 1000,
+                "significant": bool(
+                    diff_result["ci_95"][0] > 0.0 or diff_result["ci_95"][1] < 0.0
+                ),
+            },
+        ]
 
         sig_path = os.path.join(args.output_dir, "significance_tests.csv")
         pd.DataFrame(sig_rows).to_csv(sig_path, index=False)
-        print(f"{get_current_timestamp()} [Significance] P3 mean Top-1 = {mean_p3*100:.2f}%  |  P1 mean Top-1 = {mean_p1*100:.2f}%  |  Diff = {mean_diff*100:+.2f}%", flush=True)
+        ci_lo = diff_result["ci_95"][0] * 100
+        ci_hi = diff_result["ci_95"][1] * 100
+        print(
+            f"{get_current_timestamp()} [Significance] "
+            f"P3 Top-1 = {p3_ci['mean']*100:.2f}%  |  P1 Top-1 = {p1_ci['mean']*100:.2f}%  |  "
+            f"Paired diff = {diff_result['mean_diff']*100:+.2f}%  "
+            f"(95% CI: [{ci_lo:+.2f}%, {ci_hi:+.2f}%])",
+            flush=True,
+        )
         print(f"{get_current_timestamp()} [Significance] Saved {sig_path}", flush=True)
     except Exception as exc:
         print(f"{get_current_timestamp()} [Significance] Paired bootstrap skipped due to error: {exc}", flush=True)
@@ -713,6 +801,11 @@ def main():
     raw_root = resolve_raw_data_root(args.data_root)
     print(f"{get_current_timestamp()} Raw Scenario 36 root: {raw_root}", flush=True)
     datasets, _, _ = prepare_multimodal_data(data_root=raw_root, img_size=args.img_size)
+
+    # Make datasets accessible to _run_paired_significance_if_ready without
+    # passing them through train_single_run's return value.
+    global _GLOBAL_DATASETS
+    _GLOBAL_DATASETS = datasets
 
     if args.seeds:
         seed_list = [int(s.strip()) for s in args.seeds.split(",")]
