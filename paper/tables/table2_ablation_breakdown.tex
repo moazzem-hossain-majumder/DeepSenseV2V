@@ -1,0 +1,17 @@
+% IEEE Ablation Breakdown Table
+\begin{table}[h]
+\centering
+\caption{Ablation Study Breakdown of PAR-Net Architectural & Loss Components.}
+\label{tab:ablation_breakdown}
+\begin{tabular}{lcccc}
+\hline
+Variant & Top-1 (\%) & Top-5 3dB (\%) & APL (dB) & $\Delta$ vs. A1 (\%) \\
+\hline
+M7: PAR-Net (Proposed Physically Anchored Residual) & 4.15 & 80.21 & 5.22 & -0.89 \\
+A1: PAR-Net w/o RGB (GPS + Geometry Only) & 25.95 & 81.10 & 4.37 & +0.00 \\
+A2: PAR-Net w/o Geometry Prior (Unconstrained) & 16.43 & 51.33 & 8.42 & -29.77 \\
+A3: PAR-Net w/o Main-Lobe Mask (Global 256-MSE) & 23.91 & 74.71 & 5.02 & -6.39 \\
+A4: PAR-Net w/o Intra-Panel Constraint (Cross-Panel Smoothing) & 24.70 & 77.20 & 4.65 & -3.90 \\
+\hline
+\end{tabular}
+\end{table}
