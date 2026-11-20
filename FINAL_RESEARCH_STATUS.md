@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This document establishes the definitive research status of the DeepSense-V2V project across its entire 299-stage lifecycle. It categorizes every experiment, documents validated findings, flags exploratory and superseded analyses, and provides the human author with an actionable roadmap for final submission to IEEE Transactions on Vehicular Technology.
+This document establishes the definitive research status of the DeepSense-V2V project across its entire 299-stage lifecycle. It categorizes every experiment, documents validated findings, flags exploratory and superseded analyses, indexes the complete IEEE scientific audit suite, and provides the human author with an actionable roadmap for final submission to IEEE Transactions on Vehicular Technology.
 
 ---
 
@@ -69,7 +69,20 @@ This document establishes the definitive research status of the DeepSense-V2V pr
 
 ---
 
-## 3. Actionable Path to Publication (Step-by-Step)
+## 3. Scientific Audit Deliverables Index
+
+The following authoritative audit reports provide complete technical, communication-theoretic, and statistical substantiation for the research findings:
+
+1. **[STAGE267_INDEPENDENT_AUDIT.md](STAGE267_INDEPENDENT_AUDIT.md):** Complete independent numerical verification of Stage 267 widecheck evidence across all 24 arm/fold/seed records. Mathematical resolution of the $-0.053$ dB paradox and analysis of candidate access scaling.
+2. **[NOVELTY_AND_BASELINE_REVIEW.md](NOVELTY_AND_BASELINE_REVIEW.md):** Critical literature positioning against published benchmarks (Alrabeiah 2020, Charan 2022, Fabiani 2024). Establishes true novelty in Candidate Exclusion Dominance (84.7%) and the Alternative-Beam Paradox ($H_2$). Documents Swin-B3 reproduction parameters and deviations.
+3. **[COMMUNICATION_COST_AUDIT.md](COMMUNICATION_COST_AUDIT.md):** Complete 60 GHz physical layer derivation (Doppler, coherence time $T_c \approx 4.16$ ms, beam probing overhead, closed-loop feedback latency $T_{\text{align}} \approx 0.85$ ms). Formal proof that $K=5$ maximizes effective data throughput, whereas large candidate sets ($K \ge 20$) degrade net link capacity.
+4. **[STATISTICAL_REVIEW.md](STATISTICAL_REVIEW.md):** Rigorous statistical methodology audit establishing effective sample size ($N_{\text{eff}} \approx 13.3$ from 10 recording blocks vs. 16,643 sliding windows), intra-cluster correlation ($\rho_{\text{ICC}} \approx 0.75$), bootstrap limits, Scenario 39 dominance, and family-wise error rate (FWER) Bonferroni robustness.
+5. **[IEEE_REVIEWER_REPORT.md](IEEE_REVIEWER_REPORT.md):** Three simulated full IEEE peer reviews (Vehicular Wireless, Multimodal ML, and Statistical Methodology) with rubric scores, detailed assessments, and formal recommendations (Major Revision), providing clear instructions for manuscript re-structuring.
+6. **[MINIMUM_REMAINING_EXPERIMENTS.md](MINIMUM_REMAINING_EXPERIMENTS.md):** Actionable, non-GPU analytical blueprint outlining five rapid diagnostics (Pareto frontier, RF link table, CE vs. soft margin diagnostics, S39 jackknife, and reserved test set protocol).
+
+---
+
+## 4. Actionable Path to Publication (Step-by-Step)
 
 ```
 +----------------------------------------------------------------------------------------------------+
@@ -106,7 +119,7 @@ This document establishes the definitive research status of the DeepSense-V2V pr
 
 ---
 
-## 4. Final Auditor Synthesis
+## 5. Final Auditor Synthesis
 
 The DeepSense-V2V project has generated an extraordinary body of empirical evidence. By discovering that **categorical cross-entropy destroys alternative-beam recovery in vehicular shortlists** and proving that **candidate exclusion drives 84.7% of severe communication failures**, this research provides real intellectual value to both the wireless communications and machine learning communities.
 

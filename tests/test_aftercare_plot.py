@@ -10,7 +10,7 @@ from src import aftercare_analysis as analysis
 
 class ImageEDAPlotTest(unittest.TestCase):
     def test_actual_installed_matplotlib_renders_four_scenario_eda(self):
-        with tempfile.TemporaryDirectory(prefix='deepsense_plot_check_') as d:
+        with tempfile.TemporaryDirectory(prefix='deepsense_plot_check_', ignore_cleanup_errors=True) as d:
             folder=Path(d);rng=np.random.default_rng(38)
             manifest=pd.DataFrame([dict(scenario=s,split='train',x_indices=[0,1,2,3,4]) for s in (36,37,38,39)])
             for s in (36,37,38,39):
