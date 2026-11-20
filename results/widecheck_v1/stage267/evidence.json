@@ -1,0 +1,383 @@
+{
+  "records": [
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "gps",
+      "success20": 0.8458747135217723,
+      "success40": 0.8405271199388846,
+      "mean20": 3.5980237131814543,
+      "mean40": 3.6956093612748124,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.015087853323147441,
+      "access_benefit_db": 0.016749182577985584
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "visual",
+      "success20": 0.8414820473644004,
+      "success40": 0.8405271199388846,
+      "mean20": 3.7020043216196066,
+      "mean40": 3.7125020048106507,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "gps",
+      "success20": 0.8456837280366692,
+      "success40": 0.8405271199388846,
+      "mean20": 3.598509791609529,
+      "mean40": 3.7161634716029566,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "visual",
+      "success20": 0.8435828877005348,
+      "success40": 0.8407181054239877,
+      "mean20": 3.67287044150853,
+      "mean40": 3.71117160017933,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "gps",
+      "success20": 0.8462566844919787,
+      "success40": 0.8405271199388846,
+      "mean20": 3.5931821191602302,
+      "mean40": 3.691124044819767,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.02291825821237586,
+      "access_benefit_db": 0.021435926851195358
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "visual",
+      "success20": 0.842436974789916,
+      "success40": 0.8407181054239877,
+      "mean20": 3.6946655423063826,
+      "mean40": 3.7139652122332905,
+      "geometry": 3.716081945927112,
+      "geometry_success": 0.8405271199388846,
+      "used_fraction": 0.0019098548510313217,
+      "access_benefit_db": -0.0001599557350572509
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "gps",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.48828433760901946,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "visual",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.49033156743235595,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "gps",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.48828433760901946,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "visual",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.48828433760901946,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "gps",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.48944845599252984,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "visual",
+      "success20": 0.9522830111065406,
+      "success40": 0.9522830111065406,
+      "mean20": 0.48828433760901946,
+      "mean40": 0.49033156743235595,
+      "geometry": 0.48828433760901946,
+      "geometry_success": 0.9522830111065406,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "gps",
+      "success20": 0.6999405822935235,
+      "success40": 0.7067736185383244,
+      "mean20": 6.542259778433429,
+      "mean40": 6.459211875665192,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "visual",
+      "success20": 0.7064765300059418,
+      "success40": 0.7070707070707071,
+      "mean20": 6.473174125210681,
+      "mean40": 6.448790076199257,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "gps",
+      "success20": 0.6999405822935235,
+      "success40": 0.7067736185383244,
+      "mean20": 6.556351854668989,
+      "mean40": 6.459211875665192,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "visual",
+      "success20": 0.7058823529411765,
+      "success40": 0.7064765300059418,
+      "mean20": 6.474360320787928,
+      "mean40": 6.453243342496618,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "gps",
+      "success20": 0.6990493166963755,
+      "success40": 0.7070707070707071,
+      "mean20": 6.579320583510225,
+      "mean40": 6.451148244332626,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "visual",
+      "success20": 0.7038027332144979,
+      "success40": 0.7070707070707071,
+      "mean20": 6.498816736266061,
+      "mean40": 6.45118076098608,
+      "geometry": 6.448790076199257,
+      "geometry_success": 0.7070707070707071,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "gps",
+      "success20": 0.6215791129285939,
+      "success40": 0.6215791129285939,
+      "mean20": 9.415143518730618,
+      "mean40": 9.404509290223153,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "visual",
+      "success20": 0.6215791129285939,
+      "success40": 0.6212645486001888,
+      "mean20": 9.4070529775936,
+      "mean40": 8.832143257702247,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.2598301352626612,
+      "access_benefit_db": 0.32721831124321626
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "gps",
+      "success20": 0.6215791129285939,
+      "success40": 0.6209499842717836,
+      "mean20": 9.415143518730618,
+      "mean40": 9.103471463733065,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.14501415539477824,
+      "access_benefit_db": 0.30138142253663336
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "visual",
+      "success20": 0.6215791129285939,
+      "success40": 0.6215791129285939,
+      "mean20": 9.415143518730618,
+      "mean40": 9.402069266935909,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.0,
+      "access_benefit_db": 0.0
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "gps",
+      "success20": 0.6215791129285939,
+      "success40": 0.6206354199433785,
+      "mean20": 9.415143518730618,
+      "mean40": 9.223577905747455,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.09845863479081472,
+      "access_benefit_db": 0.17418662614513397
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "visual",
+      "success20": 0.5803711859075181,
+      "success40": 0.6212645486001888,
+      "mean20": 9.4702558037094,
+      "mean40": 9.369147484259022,
+      "geometry": 9.415143518730618,
+      "geometry_success": 0.6215791129285939,
+      "used_fraction": 0.015099087763447625,
+      "access_benefit_db": 0.028829356790826394
+    }
+  ],
+  "contrasts": {
+    "visual_width": {
+      "success": {
+        "difference": 0.003291378940167867,
+        "interval": [
+          -0.0010612692046515575,
+          0.005760752418506428
+        ]
+      },
+      "loss_db": {
+        "difference": -0.059169693523644026,
+        "interval": [
+          -0.10024137990252327,
+          0.002836823314595205
+        ]
+      }
+    },
+    "gps_width": {
+      "success": {
+        "difference": 0.00032340624901178524,
+        "interval": [
+          -0.00213903743315508,
+          0.0021715757009874662
+        ]
+      },
+      "loss_db": {
+        "difference": -0.04232389544233188,
+        "interval": [
+          -0.08443661369428242,
+          0.01387383691737353
+        ]
+      }
+    },
+    "visual_vs_gps": {
+      "success": {
+        "difference": 0.00011047199628514505,
+        "interval": [
+          -7.446504772707982e-05,
+          0.00036790465659606875
+        ]
+      },
+      "loss_db": {
+        "difference": -0.00890701549988753,
+        "interval": [
+          -0.022115027837007785,
+          0.010311740869260295
+        ]
+      }
+    },
+    "visual_vs_geometry": {
+      "success": {
+        "difference": -7.011122928077945e-05,
+        "interval": [
+          -0.00013239815030096359,
+          -2.9126326704181383e-05
+        ]
+      },
+      "loss_db": {
+        "difference": -0.05347826309349035,
+        "interval": [
+          -0.07957690203330063,
+          -0.006183647909096054
+        ]
+      }
+    }
+  },
+  "scope": "Exploratory transfer validation"
+}

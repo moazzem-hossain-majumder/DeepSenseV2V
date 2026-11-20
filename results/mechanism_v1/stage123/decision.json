@@ -1,0 +1,74 @@
+{
+  "publication_ready": false,
+  "next_action": "A memorization-capable head exists on this sample. Compare objective and correction constraints in a predeclared pilot before generalization claims.",
+  "training_memorization": {
+    "current_loss": {
+      "mode": "current_loss",
+      "initial": {
+        "success5": 0.0,
+        "best_candidate_top1": 0.0,
+        "loss_db": 8.557012557983398
+      },
+      "final": {
+        "step": 1000,
+        "pre_update_loss": 2.6975371837615967,
+        "success5": 0.9375,
+        "best_candidate_top1": 0.375,
+        "loss_db": 0.8355320692062378
+      },
+      "max_success5": 0.9375,
+      "scope": "Training memorization only, biased fixed sample. 1000 full-batch FP32 AdamW steps at 1e-3; no generalization claim. Per-example control cannot predict unseen data."
+    },
+    "bounded_ce": {
+      "mode": "bounded_ce",
+      "initial": {
+        "success5": 0.0,
+        "best_candidate_top1": 0.0,
+        "loss_db": 8.557012557983398
+      },
+      "final": {
+        "step": 1000,
+        "pre_update_loss": 1.936253309249878,
+        "success5": 0.8125,
+        "best_candidate_top1": 0.25,
+        "loss_db": 1.5450342893600464
+      },
+      "max_success5": 0.8125,
+      "scope": "Training memorization only, biased fixed sample. 1000 full-batch FP32 AdamW steps at 1e-3; no generalization claim. Per-example control cannot predict unseen data."
+    },
+    "unbounded_ce": {
+      "mode": "unbounded_ce",
+      "initial": {
+        "success5": 0.0,
+        "best_candidate_top1": 0.0,
+        "loss_db": 8.557012557983398
+      },
+      "final": {
+        "step": 1000,
+        "pre_update_loss": 1.0003635883331299,
+        "success5": 1.0,
+        "best_candidate_top1": 0.75,
+        "loss_db": 0.6898845434188843
+      },
+      "max_success5": 1.0,
+      "scope": "Training memorization only, biased fixed sample. 1000 full-batch FP32 AdamW steps at 1e-3; no generalization claim. Per-example control cannot predict unseen data."
+    },
+    "per_example_control": {
+      "mode": "per_example_control",
+      "initial": {
+        "success5": 0.0,
+        "best_candidate_top1": 0.0,
+        "loss_db": 8.557012557983398
+      },
+      "final": {
+        "step": 1000,
+        "pre_update_loss": 1.3898975849151611,
+        "success5": 1.0,
+        "best_candidate_top1": 1.0,
+        "loss_db": 0.6898845434188843
+      },
+      "max_success5": 1.0,
+      "scope": "Training memorization only, biased fixed sample. 1000 full-batch FP32 AdamW steps at 1e-3; no generalization claim. Per-example control cannot predict unseen data."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "https://www.dropbox.com/transfer/AAAAACz9W22DotzhQlfZZGG3RTHmhTIqdaOLqMC6HrM1i13hCA02tCI",
+  "files": [
+    {
+      "relative_path": "scenario39_pwr.zip.001",
+      "file_size": 74815345,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA0g"
+    },
+    {
+      "relative_path": "scenario39_rgb180.zip.001",
+      "file_size": 8522825728,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA0w"
+    },
+    {
+      "relative_path": "scenario39.p",
+      "file_size": 58201698,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA0A"
+    },
+    {
+      "relative_path": "scenario39_rgb180.zip.002",
+      "file_size": 8522825728,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA1A"
+    },
+    {
+      "relative_path": "scenario39_gps.zip.001",
+      "file_size": 10308025,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA0Q"
+    },
+    {
+      "relative_path": "scenario39_rgb180.zip.003",
+      "file_size": 4181891143,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA1Q"
+    },
+    {
+      "relative_path": "scenario39.csv",
+      "file_size": 20667336,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAAzg"
+    }
+  ]
+}

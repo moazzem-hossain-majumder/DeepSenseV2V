@@ -1,0 +1,212 @@
+[
+  {
+    "id": 180,
+    "title": "Stage 180 - fixed visual robustness protocol",
+    "kind": "prepare",
+    "directory": "results/robust_v1/stage180",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  },
+  {
+    "id": 181,
+    "title": "Stage 181 - exclude S36 dropout",
+    "kind": "train",
+    "directory": "results/robust_v1/stage181",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  },
+  {
+    "id": 182,
+    "title": "Stage 182 - exclude S36 dropout plus consistency",
+    "kind": "train",
+    "directory": "results/robust_v1/stage182",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 183,
+    "title": "Stage 183 - exclude S37 dropout",
+    "kind": "train",
+    "directory": "results/robust_v1/stage183",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  },
+  {
+    "id": 184,
+    "title": "Stage 184 - exclude S37 dropout plus consistency",
+    "kind": "train",
+    "directory": "results/robust_v1/stage184",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 185,
+    "title": "Stage 185 - exclude S38 dropout",
+    "kind": "train",
+    "directory": "results/robust_v1/stage185",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  },
+  {
+    "id": 186,
+    "title": "Stage 186 - exclude S38 dropout plus consistency",
+    "kind": "train",
+    "directory": "results/robust_v1/stage186",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 187,
+    "title": "Stage 187 - exclude S39 dropout",
+    "kind": "train",
+    "directory": "results/robust_v1/stage187",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  },
+  {
+    "id": 188,
+    "title": "Stage 188 - exclude S39 dropout plus consistency",
+    "kind": "train",
+    "directory": "results/robust_v1/stage188",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 189,
+    "title": "Stage 189 - robustness comparison without held-label selection",
+    "kind": "report",
+    "directory": "results/robust_v1/stage189",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.0
+  }
+]

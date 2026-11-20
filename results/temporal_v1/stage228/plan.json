@@ -1,0 +1,254 @@
+[
+  {
+    "id": 228,
+    "title": "Stage 228 - temporal feature replication protocol",
+    "kind": "prepare",
+    "directory": "results/temporal_v1/stage228",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 229,
+    "title": "Stage 229 - endpoint feature difference, seed 7, scope pooled",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage229",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 230,
+    "title": "Stage 230 - endpoint feature difference, seed 7, scope 36",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage230",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 231,
+    "title": "Stage 231 - endpoint feature difference, seed 7, scope 37",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage231",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 232,
+    "title": "Stage 232 - endpoint feature difference, seed 7, scope 38",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage232",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 233,
+    "title": "Stage 233 - endpoint feature difference, seed 7, scope 39",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage233",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 234,
+    "title": "Stage 234 - endpoint feature difference, seed 13, scope pooled",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage234",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 235,
+    "title": "Stage 235 - endpoint feature difference, seed 13, scope 36",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage235",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 236,
+    "title": "Stage 236 - endpoint feature difference, seed 13, scope 37",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage236",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 237,
+    "title": "Stage 237 - endpoint feature difference, seed 13, scope 38",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage237",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 238,
+    "title": "Stage 238 - endpoint feature difference, seed 13, scope 39",
+    "kind": "train",
+    "directory": "results/temporal_v1/stage238",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 239,
+    "title": "Stage 239 - three-seed temporal feature report",
+    "kind": "report",
+    "directory": "results/temporal_v1/stage239",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  }
+]

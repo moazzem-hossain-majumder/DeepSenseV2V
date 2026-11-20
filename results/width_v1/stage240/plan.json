@@ -1,0 +1,212 @@
+[
+  {
+    "id": 240,
+    "title": "Stage 240 - candidate width comparison protocol",
+    "kind": "prepare",
+    "directory": "results/width_v1/stage240",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 241,
+    "title": "Stage 241 - 40 candidates, excluded S36, GPS",
+    "kind": "train",
+    "directory": "results/width_v1/stage241",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 242,
+    "title": "Stage 242 - 40 candidates, excluded S36, visual",
+    "kind": "train",
+    "directory": "results/width_v1/stage242",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 243,
+    "title": "Stage 243 - 40 candidates, excluded S37, GPS",
+    "kind": "train",
+    "directory": "results/width_v1/stage243",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 244,
+    "title": "Stage 244 - 40 candidates, excluded S37, visual",
+    "kind": "train",
+    "directory": "results/width_v1/stage244",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 245,
+    "title": "Stage 245 - 40 candidates, excluded S38, GPS",
+    "kind": "train",
+    "directory": "results/width_v1/stage245",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 246,
+    "title": "Stage 246 - 40 candidates, excluded S38, visual",
+    "kind": "train",
+    "directory": "results/width_v1/stage246",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 247,
+    "title": "Stage 247 - 40 candidates, excluded S39, GPS",
+    "kind": "train",
+    "directory": "results/width_v1/stage247",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 248,
+    "title": "Stage 248 - 40 candidates, excluded S39, visual",
+    "kind": "train",
+    "directory": "results/width_v1/stage248",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 249,
+    "title": "Stage 249 - candidate width transfer comparison",
+    "kind": "report",
+    "directory": "results/width_v1/stage249",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  }
+]

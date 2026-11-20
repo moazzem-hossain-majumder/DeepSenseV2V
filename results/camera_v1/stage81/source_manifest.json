@@ -1,0 +1,9 @@
+{
+  "src/camera_data.py": "44e490a29d2e3151e7c657c7df1365743aefc1c244876973666b0ad11b16746f",
+  "src/camera_evidence.py": "310f8ddc33b768eb78d24e6e6eb164fe7ef7d47793b6554826c767289071baf0",
+  "src/camera_plan.py": "c07ec16df4ae882831a82e1576dd4948206d9c707c4d6d06f0261bb15ecf04a0",
+  "src/camera_queue.py": "64a7f390a02aef2ab2a1f65f14c8fe8e577c9296d05190d75e1a77ff35d0b6ee",
+  "src/camera_service.py": "0f400d1c44f24bed9696d32ffeb796d83e055990b72a313c5ce7c977aa8975ae",
+  "src/camera_training.py": "cdbb9e627c746cbce4b06d4d84018de67374bc595b8cdcf96e4e1e1c76662cfb",
+  "src/camera_worker.py": "aad1ec3d698149c1988e377456f8bd91c53828f38a1e4c0bd3048d6197fe7d4e"
+}

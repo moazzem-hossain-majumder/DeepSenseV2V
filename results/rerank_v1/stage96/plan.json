@@ -1,0 +1,297 @@
+[
+  {
+    "id": 96,
+    "title": "Stage 96 - shortlist coverage and baseline protocol audit",
+    "kind": "coverage",
+    "directory": "results/rerank_v1/stage96",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  },
+  {
+    "id": 97,
+    "title": "Stage 97 - top 10 GPS control",
+    "kind": "pilot",
+    "directory": "results/rerank_v1/stage97",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 10,
+    "vision": false
+  },
+  {
+    "id": 98,
+    "title": "Stage 98 - top 10 GPS and images",
+    "kind": "pilot",
+    "directory": "results/rerank_v1/stage98",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 10,
+    "vision": true
+  },
+  {
+    "id": 99,
+    "title": "Stage 99 - top 20 GPS control",
+    "kind": "pilot",
+    "directory": "results/rerank_v1/stage99",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "vision": false
+  },
+  {
+    "id": 100,
+    "title": "Stage 100 - top 20 GPS and images",
+    "kind": "pilot",
+    "directory": "results/rerank_v1/stage100",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "vision": true
+  },
+  {
+    "id": 101,
+    "title": "Stage 101 - matched pilot selection",
+    "kind": "gate",
+    "directory": "results/rerank_v1/stage101",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  },
+  {
+    "id": 102,
+    "title": "Stage 102 - seed 42 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage102",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 103,
+    "title": "Stage 103 - seed 42 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage103",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 104,
+    "title": "Stage 104 - seed 7 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage104",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 105,
+    "title": "Stage 105 - seed 7 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage105",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 106,
+    "title": "Stage 106 - seed 13 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage106",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 107,
+    "title": "Stage 107 - seed 13 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage107",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 108,
+    "title": "Stage 108 - held S36 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage108",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "vision": false
+  },
+  {
+    "id": 109,
+    "title": "Stage 109 - held S36 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage109",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "vision": true
+  },
+  {
+    "id": 110,
+    "title": "Stage 110 - held S37 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage110",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "vision": false
+  },
+  {
+    "id": 111,
+    "title": "Stage 111 - held S37 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage111",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "vision": true
+  },
+  {
+    "id": 112,
+    "title": "Stage 112 - held S38 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage112",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "vision": false
+  },
+  {
+    "id": 113,
+    "title": "Stage 113 - held S38 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage113",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "vision": true
+  },
+  {
+    "id": 114,
+    "title": "Stage 114 - held S39 GPS control",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage114",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "vision": false
+  },
+  {
+    "id": 115,
+    "title": "Stage 115 - held S39 GPS and images",
+    "kind": "expand",
+    "directory": "results/rerank_v1/stage115",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "vision": true
+  },
+  {
+    "id": 116,
+    "title": "Stage 116 - paired reranking evidence report",
+    "kind": "report",
+    "directory": "results/rerank_v1/stage116",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  }
+]

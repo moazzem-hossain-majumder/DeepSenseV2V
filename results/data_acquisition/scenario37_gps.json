@@ -1,0 +1,12 @@
+{
+  "csv_rows": 30999,
+  "unique_referenced_files": 56960,
+  "extracted_files": 56962,
+  "extracted_bytes": 2392404,
+  "crc_verified": true,
+  "status": "verified_archives_deleted",
+  "archive_sha256": {
+    "scenario37_gps.zip.001": "4e440d7a6790bbcced7764a75313fbc6899ac9f3f28b7c6cb273e78c260685ca"
+  },
+  "source": "https://www.dropbox.com/transfer/AAAAAKPth2dQOmBxWa8Qo5fOmmcc1FQqyNScK2-d-rC_C-nqG-8PAeY"
+}

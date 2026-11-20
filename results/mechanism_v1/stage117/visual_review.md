@@ -1,0 +1,15 @@
+# Agent visual inspection — 10 November 2026
+
+Inspected all four generated contact sheets, containing sixteen training-selected windows and both last-input camera views per window. Each sheet shows aspect-preserved native-image previews alongside enlarged 96×96 model inputs. These are deliberately chosen recoverable geometry failures, not a representative visibility survey. No bounding boxes, transmitter identities or physical synchronization labels were established.
+
+Scenario 36: vehicles are visible in the rear view of sample 150, while its front view mainly shows open roadway. Sample 1963 has more distant traffic; samples 5799 and 8237 show nearer vehicles, with several possible vehicles in the latter. Vehicle detail decreases substantially in the 96-pixel views. The transmitter cannot be distinguished reliably from other vehicles using these sheets alone.
+
+Scenario 37: all four selected examples are nighttime scenes with strong lamps/headlights and traffic. Several nearby vehicles are visually apparent in samples 23237, 24369 and 34152. Glare, darkness and downsampling reduce identifying detail, especially for more distant traffic. Sample 39857 has fewer clear near-front candidates and bright illumination in the rear scene. No transmitter-specific assignment is justified.
+
+Scenario 38: sample 52221 shows a roadway with a small vehicle ahead and more distant traffic behind. Sample 70312 is a parking area with several parked vehicles; motion or transmitter identity cannot be inferred from this single time slice. Sample 57680 is a broad parking area with sparse distant vehicles; most of the image is not vehicle detail. Sample 65108 contains roadside/parking vehicles and street geometry, again with ambiguous transmitter identity. The 96-pixel representation discards considerable detail in these wide views.
+
+Scenario 39: all selected views are nighttime. Sample 85881 is a dark roadway beside a building without an unambiguous nearby transmitter candidate. Sample 87024 contains a nearby dark vehicle in the front view. Sample 88640 is an underpass scene where lighting and small/distant vehicles limit inspection. Sample 90776 shows multiple vehicles at an illuminated intersection. None supports an independent transmitter identification.
+
+Observed limitation: whole-frame 96×96 resizing reduces small-vehicle information and changes the original 1920×1080 aspect ratio. This is not evidence that higher resolution will improve beam prediction, nor proof that image preprocessing caused the failed experiments. A controlled resolution or geometry-guided crop experiment is a hypothesis for later testing. Some frames contain useful scene/vehicle information, so the sheets do not support a blanket claim that RGB is useless.
+
+Next visibility audit should use calibrated vehicle pose/camera geometry and a verified transmitter association, or independent annotations. A full temporal-clip review could provide more evidence than these last-input frames. Filename offsets and actual sensor alignment remain unresolved; no rows were shifted.

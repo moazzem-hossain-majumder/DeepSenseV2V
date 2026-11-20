@@ -1,0 +1,7 @@
+# Sensor timing provenance — reviewed 10 November 2026
+
+Primary source: [DeepSense-V2V dataset paper, Section III-B](https://arxiv.org/html/2406.17908v1). It describes timestamp-proximity synchronization at 10 Hz, using mmWave power as the reference and choosing the nearest sensor sample. It describes CSV rows as simultaneous observations in its visualization discussion. The [official challenge page](https://deepsense6g.net/beam_prediction_challenge_2023) identifies RGB5/RGB6 as two 180-degree camera views. The scenario page returned no readable text to the research tool.
+
+Local evidence: Stage 62 measured median row-minus-front-image filename differences near 0.00, -0.90, +1.50 and -1.10 seconds for Scenarios 36–39. The sources inspected do not establish the per-scenario correction applied to exported image filenames. Thus these differences remain unresolved; neither synchronization failure nor future-information leakage is established by filenames alone. Conversely, causal real-time availability is not verified by this review.
+
+Decision: preserve the distributed CSV row mapping. Do not optimize image time shifts against validation labels. Stage 72 will measure offset stability within training sequences and inspect sampled EXIF timestamp availability. Resolving physical timing requires documented conversion metadata, collection/processing code, or clarification from the dataset maintainers. No message to maintainers has been sent.

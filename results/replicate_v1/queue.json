@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "stages": {
+    "140": {
+      "title": "Stage 140 - matched seed replication protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794316557.7291384
+    },
+    "141": {
+      "title": "Stage 141 - seed 7 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794316561.3735075
+    },
+    "142": {
+      "title": "Stage 142 - seed 7 visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794316914.542074
+    },
+    "143": {
+      "title": "Stage 143 - seed 13 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794317599.9141536
+    },
+    "144": {
+      "title": "Stage 144 - seed 13 visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794317932.2010663
+    },
+    "145": {
+      "title": "Stage 145 - three-seed matched comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794318620.638438
+    }
+  },
+  "active_stage": 145
+}

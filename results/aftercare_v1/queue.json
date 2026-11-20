@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "stages": {
+    "37": {
+      "title": "Stage 37 - branch and provenance",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794255711.8930876
+    },
+    "38": {
+      "title": "Stage 38 - image-quality EDA",
+      "status": "complete",
+      "failures": 0,
+      "recovery_history": [
+        {
+          "date_utc": "2026-11-10T03:11:04.472206+00:00",
+          "previous_failures": 3,
+          "previous_error": "TypeError: Axes.boxplot() got an unexpected keyword argument 'labels'",
+          "reason": "Verified plotting API compatibility fix"
+        }
+      ],
+      "created": 1794280267.2652807
+    },
+    "39": {
+      "title": "Stage 39 - failure and baseline audit",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794280278.7648103
+    },
+    "40": {
+      "title": "Stage 40 - geometry-assisted P3 seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794280285.9838464
+    },
+    "41": {
+      "title": "Stage 41 - geometry-assisted P3 seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794281254.3066375
+    },
+    "42": {
+      "title": "Stage 42 - geometry-assisted P3 seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794282197.8122525
+    },
+    "43": {
+      "title": "Stage 43 - next-cycle evidence report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794283141.7341363
+    }
+  },
+  "active_stage": 43
+}

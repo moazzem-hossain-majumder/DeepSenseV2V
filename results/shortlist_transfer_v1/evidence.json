@@ -1,0 +1,703 @@
+{
+  "rows": [
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.15412528647822765,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03533231474407945
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.10771581359816654,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.003246753246753247
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.1585179526355997,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03972498090145149
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.11650114591291062,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.012032085561497326
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.15699006875477464,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03819709702062643
+    },
+    {
+      "scenario": 36,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.11573720397249809,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.011268143621084798
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.15431627196333078,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03552330022918258
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.10790679908326967,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.003437738731856379
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.15641711229946523,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03762414056531704
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.1140183346065699,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.009549274255156608
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.1567990832696715,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.0380061115355233
+    },
+    {
+      "scenario": 36,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.11650114591291062,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.012032085561497326
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.1537433155080214,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03495034377387318
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.10790679908326967,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.003437738731856379
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.15756302521008403,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03877005347593583
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.11611917494270435,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.011650114591291063
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.1585179526355997,
+      "excluded": 0.11879297173414821,
+      "ranking": 0.03972498090145149
+    },
+    {
+      "scenario": 36,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.1163101604278075,
+      "excluded": 0.10446906035141329,
+      "ranking": 0.011841100076394193
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.04771698889345948,
+      "excluded": 0.010283833813245578,
+      "ranking": 0.0374331550802139
+    },
+    {
+      "scenario": 37,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.0106951871657754,
+      "excluded": 0.0008227067050596463,
+      "ranking": 0.009872480460715755
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.30005941770647654,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10576351752822341
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.24569221628045157,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.062388591800356503
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.2935234699940582,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.0992275698158051
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.24272133095662507,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.059417706476530004
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.29619726678550207,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10190136660724897
+    },
+    {
+      "scenario": 38,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.24539512774806893,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.06209150326797386
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.30005941770647654,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10576351752822341
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.24777183600713013,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.06446821152703505
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.29411764705882354,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.09982174688057041
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.24272133095662507,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.059417706476530004
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.29500891265597146,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10071301247771836
+    },
+    {
+      "scenario": 38,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.24183006535947713,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.05852644087938206
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.30095068330362446,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10665478312537136
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.24925727866904338,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.0659536541889483
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.29619726678550207,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10190136660724897
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.24242424242424243,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.05912061794414736
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.29500891265597146,
+      "excluded": 0.19429590017825313,
+      "ranking": 0.10071301247771836
+    },
+    {
+      "scenario": 38,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.24420677361853832,
+      "excluded": 0.18330362448009507,
+      "ranking": 0.060903149138443254
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.3784208870714061,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09185278389430639
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.3784208870714061,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09185278389430639
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.3768480654293803,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09027996225228059
+    },
+    {
+      "scenario": 39,
+      "seed": 42,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.3784208870714061,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09185278389430639
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.3784208870714061,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09185278389430639
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.3843976093111041,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.0978295061340044
+    },
+    {
+      "scenario": 39,
+      "seed": 7,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.3004089336269267,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.01981755268952501
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.3784208870714061,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.09185278389430639
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.30103806228373703,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020446681346335326
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.4196288140924819,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.13306071091538219
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.30701478452343506,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.026423403586033345
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.3906888958792073,
+      "excluded": 0.28656810317709974,
+      "ranking": 0.10412079270210758
+    },
+    {
+      "scenario": 39,
+      "seed": 13,
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.3007234979553319,
+      "excluded": 0.2805913809374017,
+      "ranking": 0.020132117017930166
+    }
+  ],
+  "macro": [
+    {
+      "arm": "delta",
+      "threshold": 3,
+      "miss": 0.22113397783813007,
+      "excluded": 0.15248520222568665,
+      "ranking": 0.06864877561244344,
+      "excluded_share": 0.6895602553548136
+    },
+    {
+      "arm": "delta",
+      "threshold": 10,
+      "miss": 0.1678530443668852,
+      "excluded": 0.14229669311849244,
+      "ranking": 0.02555635124839277,
+      "excluded_share": 0.8477456792947234
+    },
+    {
+      "arm": "gps",
+      "threshold": 3,
+      "miss": 0.22013900171339618,
+      "excluded": 0.15248520222568665,
+      "ranking": 0.06765379948770951,
+      "excluded_share": 0.69267690431435
+    },
+    {
+      "arm": "gps",
+      "threshold": 10,
+      "miss": 0.166787540922489,
+      "excluded": 0.14229669311849244,
+      "ranking": 0.02449084780399659,
+      "excluded_share": 0.8531614072097976
+    },
+    {
+      "arm": "mean",
+      "threshold": 3,
+      "miss": 0.2229965024082671,
+      "excluded": 0.15248520222568665,
+      "ranking": 0.07051130018258046,
+      "excluded_share": 0.683800869425805
+    },
+    {
+      "arm": "mean",
+      "threshold": 10,
+      "miss": 0.16797350253232604,
+      "excluded": 0.14229669311849244,
+      "ranking": 0.025676809413833632,
+      "excluded_share": 0.8471377388294195
+    }
+  ],
+  "source_sha256": "1f3bb9dad3468892c8990d9bd81b8eb30d3c8bd4e789326d6cc035b61d454ddb"
+}

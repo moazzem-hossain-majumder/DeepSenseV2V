@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "stages": {
+    "44": {
+      "title": "Stage 44 - coordinates and geometry audit",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284405.5663972
+    },
+    "45": {
+      "title": "Stage 45 - help-versus-harm analysis",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284431.476395
+    },
+    "46": {
+      "title": "Stage 46 - compact_gps seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284437.0841763
+    },
+    "47": {
+      "title": "Stage 47 - compact_gps seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284498.4056013
+    },
+    "48": {
+      "title": "Stage 48 - compact_gps seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284556.4908092
+    },
+    "49": {
+      "title": "Stage 49 - bounded_multimodal seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794284614.29942
+    },
+    "50": {
+      "title": "Stage 50 - bounded_multimodal seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794285574.1698196
+    },
+    "51": {
+      "title": "Stage 51 - bounded_multimodal seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794286526.0197933
+    },
+    "52": {
+      "title": "Stage 52 - compact_gps unseen S36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794287489.652511
+    },
+    "53": {
+      "title": "Stage 53 - bounded_multimodal unseen S36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794287548.2820597
+    },
+    "54": {
+      "title": "Stage 54 - compact_gps unseen S37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794288359.989895
+    },
+    "55": {
+      "title": "Stage 55 - bounded_multimodal unseen S37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794288415.0582106
+    },
+    "56": {
+      "title": "Stage 56 - compact_gps unseen S38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794289102.388818
+    },
+    "57": {
+      "title": "Stage 57 - bounded_multimodal unseen S38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794289158.8335433
+    },
+    "58": {
+      "title": "Stage 58 - compact_gps unseen S39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794289773.8665636
+    },
+    "59": {
+      "title": "Stage 59 - bounded_multimodal unseen S39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794289837.072794
+    },
+    "60": {
+      "title": "Stage 60 - paired uncertainty and transfer",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794290682.833067
+    },
+    "61": {
+      "title": "Stage 61 - evidence report and figures",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794290688.4644947
+    }
+  },
+  "active_stage": 61
+}

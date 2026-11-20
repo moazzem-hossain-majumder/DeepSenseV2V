@@ -1,0 +1,23 @@
+{
+  "indices": [
+    150,
+    1963,
+    5799,
+    8237,
+    23237,
+    24369,
+    34152,
+    39857,
+    52221,
+    70312,
+    57680,
+    65108,
+    85881,
+    87024,
+    88640,
+    90776
+  ],
+  "sample_sha256": "1423afd48a013ed69ed0388e33bfdfb3d3c4d0bdbecb9eff221961eccd924dd2",
+  "head_sha256": "963b50efb551c865c539488eb169a4e07b43b6fbae3e3b7690816b3927d22189",
+  "scope": "16 deliberately selected training-only recoverable failures, one per distinct block, four per scenario. Biased diagnostic sample, not evaluation data."
+}

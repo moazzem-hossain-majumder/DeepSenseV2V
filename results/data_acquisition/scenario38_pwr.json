@@ -1,0 +1,12 @@
+{
+  "csv_rows": 35999,
+  "unique_referenced_files": 143996,
+  "extracted_files": 144000,
+  "extracted_bytes": 239616000,
+  "crc_verified": true,
+  "status": "verified_archives_deleted",
+  "archive_sha256": {
+    "scenario38_pwr.zip.001": "1f291f8ea9a597cb526227af6b46c8bdf48a2bcb60957054632a8b3035c3a450"
+  },
+  "source": "https://www.dropbox.com/transfer/AAAAAOXEUm36HgN8dt-Wqy9iTkIiEp5I90LuOsuu8uif30meVecW-sc"
+}

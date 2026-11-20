@@ -1,0 +1,13 @@
+{
+  "id": 299,
+  "kind": "report",
+  "title": "Stage 299 - Paired three-seed comparison with GPS and geometry",
+  "directory": "results/swin_comparison_v1/stage299",
+  "models": [
+    "analysis"
+  ],
+  "epochs": 1,
+  "unit": "analysis passes",
+  "job": "swin_comparison",
+  "queue_file": "D:\\DeepSenseV2V\\results\\swin_comparison_v1\\queue.json"
+}

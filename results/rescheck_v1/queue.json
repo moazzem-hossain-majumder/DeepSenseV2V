@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "stages": {
+    "155": {
+      "title": "Stage 155 - matched resolution replication protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794330188.0215323
+    },
+    "156": {
+      "title": "Stage 156 - GPS control seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794330191.7803457
+    },
+    "157": {
+      "title": "Stage 157 - GPS control seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794330403.3883016
+    },
+    "158": {
+      "title": "Stage 158 - 96px visual seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794330611.826531
+    },
+    "159": {
+      "title": "Stage 159 - 192px visual seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794330816.1680164
+    },
+    "160": {
+      "title": "Stage 160 - GPS control seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794331024.4420166
+    },
+    "161": {
+      "title": "Stage 161 - 96px visual seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794331231.6665435
+    },
+    "162": {
+      "title": "Stage 162 - 192px visual seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794331437.0936267
+    },
+    "163": {
+      "title": "Stage 163 - three-seed resolution and GPS comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794331641.2755885
+    }
+  },
+  "active_stage": 163
+}

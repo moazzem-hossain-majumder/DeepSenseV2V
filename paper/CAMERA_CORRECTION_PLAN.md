@@ -1,0 +1,20 @@
+# Stages 81–95: correction learning and camera coverage
+
+The prior best three-seed validation mean was 79.00% versus analytic geometry's 78.56%, without a demonstrated reliable advantage. RGB6 rear-camera data is already downloaded but was unused. Stages 72–80 found significant correction saturation. This cycle tests these two issues separately.
+
+- 81: Build resumable, hash-verified RGB6 caches with the same 96×96 bilinear preprocessing as RGB5. Cache creation is deterministic preprocessing, including reserved-row pixels, as in the existing front cache; no reserved labels or predictions are evaluated. Existing caches and raw files are preserved.
+- 82–86: Five fresh seed-42 pilots, each three epochs: front with original BF16 tanh; front with FP32 correction addition/tanh; front with FP32 linear correction; rear with linear correction; both views with linear correction.
+- 87: Check finite RGB gradients and image sensitivity on a fixed training-only sample. A pilot qualifies for expansion if its selected validation macro success exceeds geometry by at least 0.25 percentage points, its gradient norm is positive and finite, and its mean correction change under gray images exceeds 1e-6. These are operational screening rules, not statistical significance tests. Select the highest-scoring qualifying pilot, with original plan order resolving ties.
+- 88–90: If a pilot qualifies, train its setting afresh for eight epochs with seeds 42, 7 and 13. Otherwise mark the stages skipped.
+- 91–94: If qualified, train the selected setting for eight epochs per held scenario. Exclude that scenario from training and checkpoint-selection validation; use the precomputed geometry configuration fitted without it. Architecture choice came from pooled validation, so these are exploratory transfer checks, not independent confirmation.
+- 95: Report every pilot, three-seed results if available, macro trajectory-bootstrap intervals, transfer results, and whether the development screen was met. Never open calibration/test automatically.
+
+All models use the same pretrained architecture, batch size 8, optimizer, schedule, inputs, splits and loss weights. The linear correction is 0.25 times the raw head output, with the same 0.1 mean-square correction penalty. Its magnitude is not hard bounded; finite loss/gradient checks remain active. The FP32-tanh pilot isolates arithmetic at the correction addition and activation; the rest of the network still uses BF16 mixed precision. Three-epoch pilot scores are not interchangeable with earlier eight-epoch results.
+
+Both-camera clips concatenate the front and rear 96×96 frames horizontally into 96×192 frames at each of the five historical times. This preserves each view's pixels and model parameter count while increasing pixel count/compute. It introduces an artificial view boundary and is a simple coverage ablation, not a claim of optimal fusion. The existing CSV row mapping is preserved; timestamp-conversion uncertainty remains unresolved.
+
+Raw learned predictions are reported; this cycle does not select a geometry fallback on held-scenario labels. The longer-run development screen requires a mean gain above one percentage point, a positive paired macro interval lower bound and gains of at least 0.25 points on three of four held scenarios. Passing is a reason for review, not publication readiness.
+
+Outputs: `results/camera_v1/`; final report: `stage95/REPORT.md`. The existing progress window follows every stage and notifies on completion. The supervisor checks every 15 seconds and retries transient errors with bounded retries; rear caching checkpoints every 256 decoded frames and training resumes completed epochs. Sign-in startup recovery is installed. `pause.flag` pauses training at epoch boundaries and the queue at stage boundaries; cache preparation completes its current stage before honoring that pause.
+
+Initial estimate: 1–2 hours for cache/pilots; approximately 3–6 hours total if expansion qualifies. Revise using measured stage times. No new download is required; all required data and model weights are local.

@@ -1,0 +1,76 @@
+{
+  "config": {
+    "models": [
+      "P3"
+    ],
+    "epochs": 6,
+    "seed": 7,
+    "size": 96,
+    "lr": 0.0001,
+    "weight_decay": 0.0003,
+    "batch_gps": 64,
+    "batch_rgb": 16,
+    "precision": "bf16",
+    "workers": 2,
+    "protocol": "blocked-original-sequence-v1",
+    "lr_after_epoch3": 3e-05,
+    "stage": "matched-six-epoch-replication"
+  },
+  "csv_sha256": {
+    "36": "8a1a2cdf320fc06d11dd38e95592d69baefc9639956b3e19d97f3a7b6ccde1d8",
+    "37": "c666e1fc5768432e9469bad93ce918e2494b1a8927aeab764af0065314678182",
+    "38": "6d827899d8706b16f3891217f4fca25bcd523a244a14bb1777ad198860a86311",
+    "39": "0dee7753c8b5f4060b5a6879dcb95738538940337d1dcc638dcb07fba5a0a368"
+  },
+  "manifest_sha256": "8fe154359ed50db91a4de573a7e443c22fd45e194d688ed99133b045c5408371",
+  "counts": {
+    "calib": {
+      "36": 3179,
+      "37": 2805,
+      "38": 3179,
+      "39": 4862
+    },
+    "test": {
+      "36": 5983,
+      "37": 4300,
+      "38": 5796,
+      "39": 3552
+    },
+    "train": {
+      "36": 8789,
+      "37": 17017,
+      "38": 21318,
+      "39": 7480
+    },
+    "val": {
+      "36": 5236,
+      "37": 4862,
+      "38": 3366,
+      "39": 3179
+    }
+  },
+  "scaler_min": [
+    -101.24691772460938,
+    -148.3440399169922,
+    2.7402567863464355,
+    -1.0,
+    -1.0,
+    -2.821179151535034,
+    -3.5804765224456787,
+    0.0,
+    0.0
+  ],
+  "scaler_range": [
+    195.64505004882812,
+    617.2363891601562,
+    466.1534118652344,
+    2.0,
+    2.0,
+    7.265458106994629,
+    14.286324501037598,
+    11.591669082641602,
+    1.0
+  ],
+  "features": "Existing nine GPS features: velocity fields are displacement proxies, not m/s.",
+  "scope": "All train/val windows; calibration/test reserved. RGB5 front view. No official split claim."
+}

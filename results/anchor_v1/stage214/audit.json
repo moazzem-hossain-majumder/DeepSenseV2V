@@ -1,0 +1,32 @@
+{
+  "scores": {
+    "gps": 0.9522830111065406,
+    "protected_gps": 0.9522830111065406,
+    "visual": 0.9522830111065406,
+    "protected_visual": 0.9522830111065406,
+    "geometry": 0.9522830111065406
+  },
+  "contrasts": {
+    "geometry": {
+      "gain": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "visual": {
+      "gain": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "protected_gps": {
+      "gain": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "36": {
+    "gps": {
+      "csv_rows": 24799,
+      "unique_referenced_files": 49598
+    },
+    "pwr": {
+      "csv_rows": 24799,
+      "unique_referenced_files": 99196
+    },
+    "rgb180": {
+      "csv_rows": 24799,
+      "unique_referenced_files": 49598
+    }
+  },
+  "37": {
+    "gps": {
+      "csv_rows": 30999,
+      "unique_referenced_files": 56960
+    },
+    "pwr": {
+      "csv_rows": 30999,
+      "unique_referenced_files": 123996
+    },
+    "rgb180": {
+      "csv_rows": 30999,
+      "unique_referenced_files": 61998
+    }
+  },
+  "38": {
+    "gps": {
+      "csv_rows": 35999,
+      "unique_referenced_files": 71917
+    },
+    "pwr": {
+      "csv_rows": 35999,
+      "unique_referenced_files": 143996
+    },
+    "rgb180": {
+      "csv_rows": 35999,
+      "unique_referenced_files": 71998
+    }
+  },
+  "39": {
+    "gps": {
+      "csv_rows": 20399,
+      "unique_referenced_files": 40791
+    },
+    "pwr": {
+      "csv_rows": 20399,
+      "unique_referenced_files": 81596
+    },
+    "rgb180": {
+      "csv_rows": 20399,
+      "unique_referenced_files": 40798
+    }
+  }
+}

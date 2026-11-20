@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "stages": {
+    "72": {
+      "title": "Stage 72 - timestamp provenance and sequence offsets",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292150.2590208
+    },
+    "73": {
+      "title": "Stage 73 - RGB gradient and saturation audit 49",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292156.6677547
+    },
+    "74": {
+      "title": "Stage 74 - RGB gradient and saturation audit 50",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292175.8553307
+    },
+    "75": {
+      "title": "Stage 75 - RGB gradient and saturation audit 51",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292195.711142
+    },
+    "76": {
+      "title": "Stage 76 - RGB gradient and saturation audit 53",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292215.6498644
+    },
+    "77": {
+      "title": "Stage 77 - RGB gradient and saturation audit 55",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292234.1068344
+    },
+    "78": {
+      "title": "Stage 78 - RGB gradient and saturation audit 57",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292249.5862873
+    },
+    "79": {
+      "title": "Stage 79 - RGB gradient and saturation audit 59",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292264.6743608
+    },
+    "80": {
+      "title": "Stage 80 - learning-pathway evidence and experiment specification",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292280.0622096
+    }
+  },
+  "active_stage": 80
+}

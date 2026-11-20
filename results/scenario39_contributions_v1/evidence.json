@@ -1,0 +1,163 @@
+{
+  "windows": 3179,
+  "contrast_pp": 2.747195134738387,
+  "transfer_vs_geometry_pp": -1.3735975673691934,
+  "transfer_vs_gps_pp": -1.3735975673691934,
+  "sequence": [
+    {
+      "group": "50",
+      "windows": 187,
+      "contribution_pp": 1.0695187165775402,
+      "omit_pp": 1.7825311942958995,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "51",
+      "windows": 187,
+      "contribution_pp": 1.0590332389640347,
+      "omit_pp": 1.7936720142602491,
+      "transfer_vs_geometry_pp": -11.408199643493761,
+      "transfer_vs_gps_pp": -11.408199643493761
+    },
+    {
+      "group": "49",
+      "windows": 187,
+      "contribution_pp": 0.29359337317814826,
+      "omit_pp": 2.6069518716577535,
+      "transfer_vs_geometry_pp": 0.53475935828877,
+      "transfer_vs_gps_pp": 0.53475935828877
+    },
+    {
+      "group": "52",
+      "windows": 187,
+      "contribution_pp": 0.22019502988361117,
+      "omit_pp": 2.684937611408199,
+      "transfer_vs_geometry_pp": -10.51693404634581,
+      "transfer_vs_gps_pp": -10.51693404634581
+    },
+    {
+      "group": "46",
+      "windows": 187,
+      "contribution_pp": 0.1887385970430953,
+      "omit_pp": 2.7183600713012472,
+      "transfer_vs_geometry_pp": -0.35650623885918004,
+      "transfer_vs_gps_pp": -0.35650623885918004
+    },
+    {
+      "group": "54",
+      "windows": 187,
+      "contribution_pp": -0.11534025374855823,
+      "omit_pp": 3.0414438502673793,
+      "transfer_vs_geometry_pp": -2.13903743315508,
+      "transfer_vs_gps_pp": -2.13903743315508
+    },
+    {
+      "group": "53",
+      "windows": 187,
+      "contribution_pp": 0.06291286568103177,
+      "omit_pp": 2.85204991087344,
+      "transfer_vs_geometry_pp": -0.17825311942959002,
+      "transfer_vs_gps_pp": -0.17825311942959002
+    },
+    {
+      "group": "55",
+      "windows": 187,
+      "contribution_pp": 0.06291286568103177,
+      "omit_pp": 2.85204991087344,
+      "transfer_vs_geometry_pp": 1.6042780748663104,
+      "transfer_vs_gps_pp": 1.6042780748663104
+    },
+    {
+      "group": "59",
+      "windows": 187,
+      "contribution_pp": -0.06291286568103177,
+      "omit_pp": 2.9857397504456324,
+      "transfer_vs_geometry_pp": 1.06951871657754,
+      "transfer_vs_gps_pp": 1.06951871657754
+    },
+    {
+      "group": "56",
+      "windows": 187,
+      "contribution_pp": -0.031456432840515886,
+      "omit_pp": 2.952317290552584,
+      "transfer_vs_geometry_pp": -1.9607843137254906,
+      "transfer_vs_gps_pp": -1.9607843137254906
+    },
+    {
+      "group": "47",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "48",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "58",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "60",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "61",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "62",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    },
+    {
+      "group": "63",
+      "windows": 187,
+      "contribution_pp": 0.0,
+      "omit_pp": 2.918894830659536,
+      "transfer_vs_geometry_pp": 0.0,
+      "transfer_vs_gps_pp": 0.0
+    }
+  ],
+  "block": [
+    {
+      "group": "39:8",
+      "windows": 2057,
+      "contribution_pp": 2.8101080004194188,
+      "omit_pp": -0.1782531194295913,
+      "transfer_vs_geometry_pp": -2.2200615783503483,
+      "transfer_vs_gps_pp": -2.2200615783503483
+    },
+    {
+      "group": "39:9",
+      "windows": 1122,
+      "contribution_pp": -0.06291286568103176,
+      "omit_pp": 4.342894182466375,
+      "transfer_vs_geometry_pp": 0.17825311942959002,
+      "transfer_vs_gps_pp": 0.17825311942959002
+    }
+  ],
+  "source_sha256": "f2d9c942139ede93880db0e1b930660083cbf8d14091c81ce711999258946c70"
+}

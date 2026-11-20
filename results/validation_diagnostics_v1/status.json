@@ -1,0 +1,13 @@
+{
+  "updated_utc": "2026-11-09T01:29:22.040430+00:00",
+  "status": "complete",
+  "models": [
+    "B1",
+    "P1",
+    "P3",
+    "P3_noGPS",
+    "P3_noRGB"
+  ],
+  "epochs_each": 1,
+  "scope": "Validation diagnostics complete; test/calibration untouched."
+}

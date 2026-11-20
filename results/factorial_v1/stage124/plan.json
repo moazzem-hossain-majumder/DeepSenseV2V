@@ -1,0 +1,166 @@
+[
+  {
+    "id": 124,
+    "title": "Stage 124 - factorial protocol and five-hour window",
+    "kind": "prepare",
+    "directory": "results/factorial_v1/stage124",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20
+  },
+  {
+    "id": 125,
+    "title": "Stage 125 - bounded soft GPS",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage125",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": true,
+    "objective": "soft",
+    "vision": false
+  },
+  {
+    "id": 126,
+    "title": "Stage 126 - bounded soft visual",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage126",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": true,
+    "objective": "soft",
+    "vision": true
+  },
+  {
+    "id": 127,
+    "title": "Stage 127 - bounded hard GPS",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage127",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": true,
+    "objective": "hard",
+    "vision": false
+  },
+  {
+    "id": 128,
+    "title": "Stage 128 - bounded hard visual",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage128",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": true,
+    "objective": "hard",
+    "vision": true
+  },
+  {
+    "id": 129,
+    "title": "Stage 129 - unbounded soft GPS",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage129",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "soft",
+    "vision": false
+  },
+  {
+    "id": 130,
+    "title": "Stage 130 - unbounded soft visual",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage130",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "soft",
+    "vision": true
+  },
+  {
+    "id": 131,
+    "title": "Stage 131 - unbounded hard GPS",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage131",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "vision": false
+  },
+  {
+    "id": 132,
+    "title": "Stage 132 - unbounded hard visual",
+    "kind": "train",
+    "directory": "results/factorial_v1/stage132",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "vision": true
+  },
+  {
+    "id": 133,
+    "title": "Stage 133 - factorial comparison and next action",
+    "kind": "report",
+    "directory": "results/factorial_v1/stage133",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20
+  }
+]

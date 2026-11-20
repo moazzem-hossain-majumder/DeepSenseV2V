@@ -1,0 +1,158 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "scopes": {
+    "pooled": {
+      "records": [
+        {
+          "seed": 42,
+          "gps": 0.7861675761762268,
+          "robust": 0.7866894975458989
+        },
+        {
+          "seed": 7,
+          "gps": 0.7886884597524736,
+          "robust": 0.7945220148939872
+        },
+        {
+          "seed": 13,
+          "gps": 0.7856170886015177,
+          "robust": 0.7921916847089857
+        }
+      ],
+      "robust": 0.791134399049624,
+      "gps": 0.7868243748434061,
+      "geometry": 0.7856170886015177,
+      "interval_vs_gps": [
+        -0.00027813821607074185,
+        0.006727161759421698
+      ],
+      "interval_vs_geometry": [
+        -0.0009407803525450586,
+        0.008952024015448963
+      ]
+    },
+    "without36": {
+      "records": [
+        {
+          "seed": 42,
+          "gps": 0.8458747135217723,
+          "robust": 0.8414820473644004
+        },
+        {
+          "seed": 7,
+          "gps": 0.8456837280366692,
+          "robust": 0.8435828877005348
+        },
+        {
+          "seed": 13,
+          "gps": 0.8462566844919787,
+          "robust": 0.842436974789916
+        }
+      ],
+      "robust": 0.8425006366182837,
+      "gps": 0.8459383753501402,
+      "geometry": 0.8405271199388846,
+      "interval_vs_gps": [
+        -0.008021390374331552,
+        0.0
+      ],
+      "interval_vs_geometry": [
+        0.0,
+        0.0023767082590612004
+      ]
+    },
+    "without37": {
+      "records": [
+        {
+          "seed": 42,
+          "gps": 0.9522830111065406,
+          "robust": 0.9522830111065406
+        },
+        {
+          "seed": 7,
+          "gps": 0.9522830111065406,
+          "robust": 0.9522830111065406
+        },
+        {
+          "seed": 13,
+          "gps": 0.9522830111065406,
+          "robust": 0.9522830111065406
+        }
+      ],
+      "robust": 0.9522830111065406,
+      "gps": 0.9522830111065406,
+      "geometry": 0.9522830111065406,
+      "interval_vs_gps": [
+        0.0,
+        0.0
+      ],
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    "without38": {
+      "records": [
+        {
+          "seed": 42,
+          "gps": 0.6999405822935235,
+          "robust": 0.7064765300059418
+        },
+        {
+          "seed": 7,
+          "gps": 0.6999405822935235,
+          "robust": 0.7058823529411765
+        },
+        {
+          "seed": 13,
+          "gps": 0.6990493166963755,
+          "robust": 0.7038027332144979
+        }
+      ],
+      "robust": 0.7053872053872053,
+      "gps": 0.6996434937611408,
+      "geometry": 0.7070707070707071,
+      "interval_vs_gps": [
+        -2.96851076102983e-19,
+        0.011487423252129134
+      ],
+      "interval_vs_geometry": [
+        -0.0033670033670033677,
+        0.0
+      ]
+    },
+    "without39": {
+      "records": [
+        {
+          "seed": 42,
+          "gps": 0.6215791129285939,
+          "robust": 0.6215791129285939
+        },
+        {
+          "seed": 7,
+          "gps": 0.6215791129285939,
+          "robust": 0.6215791129285939
+        },
+        {
+          "seed": 13,
+          "gps": 0.6215791129285939,
+          "robust": 0.5803711859075181
+        }
+      ],
+      "robust": 0.6078431372549019,
+      "gps": 0.6215791129285939,
+      "geometry": 0.6215791129285939,
+      "interval_vs_gps": [
+        -0.022200615783503488,
+        0.0017825311942958999
+      ],
+      "interval_vs_geometry": [
+        -0.022200615783503488,
+        0.0017825311942958999
+      ]
+    }
+  },
+  "next_action": "Assess whether robustness preserves pooled visual gains and consistently improves transfer beyond geometry. Recovery to geometry is not evidence of added visual value. If it merely suppresses corrections, prioritize training-only inner-split analysis or a narrower supported paper claim rather than indefinite outer-validation tuning.",
+  "scope": "Exploratory selected validation; prior robustness screening and repeated use of scenarios prevent an independent-confirmation claim."
+}

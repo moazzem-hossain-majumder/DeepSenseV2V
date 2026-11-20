@@ -1,0 +1,14 @@
+{
+  "csv_rows": 20399,
+  "unique_referenced_files": 40798,
+  "extracted_files": 40800,
+  "extracted_bytes": 21220270052,
+  "crc_verified": true,
+  "status": "verified_archives_deleted",
+  "archive_sha256": {
+    "scenario39_rgb180.zip.001": "e36b241a07172800f5c119cb58f003c1ac724f726b57643e7f3e54b3d688f924",
+    "scenario39_rgb180.zip.002": "98c7b42b8a1d75f9351e228f9db8a55fef421b1b04727f9f0d6dcfed1cc1abd0",
+    "scenario39_rgb180.zip.003": "22af1299dacedf5c4a4526a35d7b11fc67f14fc691f23b0ba847a61e9d89558d"
+  },
+  "source": "https://www.dropbox.com/transfer/AAAAACz9W22DotzhQlfZZGG3RTHmhTIqdaOLqMC6HrM1i13hCA02tCI"
+}

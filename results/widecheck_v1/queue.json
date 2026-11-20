@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "stages": {
+    "250": {
+      "title": "Stage 250 - candidate width replication protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794376117.7684605
+    },
+    "251": {
+      "title": "Stage 251 - 40 candidates, seed 7, excluded S36, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794376121.4772136
+    },
+    "252": {
+      "title": "Stage 252 - 40 candidates, seed 7, excluded S36, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794376314.1028488
+    },
+    "253": {
+      "title": "Stage 253 - 40 candidates, seed 7, excluded S37, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794376609.1669476
+    },
+    "254": {
+      "title": "Stage 254 - 40 candidates, seed 7, excluded S37, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794376782.1301491
+    },
+    "255": {
+      "title": "Stage 255 - 40 candidates, seed 7, excluded S38, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794377030.8535564
+    },
+    "256": {
+      "title": "Stage 256 - 40 candidates, seed 7, excluded S38, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794377191.5689297
+    },
+    "257": {
+      "title": "Stage 257 - 40 candidates, seed 7, excluded S39, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794377425.121338
+    },
+    "258": {
+      "title": "Stage 258 - 40 candidates, seed 7, excluded S39, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794377622.492951
+    },
+    "259": {
+      "title": "Stage 259 - 40 candidates, seed 13, excluded S36, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794377917.5010192
+    },
+    "260": {
+      "title": "Stage 260 - 40 candidates, seed 13, excluded S36, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794378107.32884
+    },
+    "261": {
+      "title": "Stage 261 - 40 candidates, seed 13, excluded S37, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794378389.6421235
+    },
+    "262": {
+      "title": "Stage 262 - 40 candidates, seed 13, excluded S37, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794378555.8257315
+    },
+    "263": {
+      "title": "Stage 263 - 40 candidates, seed 13, excluded S38, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794378793.5536928
+    },
+    "264": {
+      "title": "Stage 264 - 40 candidates, seed 13, excluded S38, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794378957.8590417
+    },
+    "265": {
+      "title": "Stage 265 - 40 candidates, seed 13, excluded S39, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794379195.6915765
+    },
+    "266": {
+      "title": "Stage 266 - 40 candidates, seed 13, excluded S39, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794379402.859018
+    },
+    "267": {
+      "title": "Stage 267 - three-seed candidate width comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794379734.23816
+    }
+  },
+  "active_stage": 267
+}

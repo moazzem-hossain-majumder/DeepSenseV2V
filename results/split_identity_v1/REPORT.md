@@ -1,0 +1,3 @@
+# Train and validation identity audit
+
+Within each scenario the train and validation partitions shared zero sequence identifiers, recorded blocks, input/target raw rows, and front or rear input-image paths. On the recorded CSV clocks, the closest train and validation rows were separated by 20.10, 20.10, 20.10, 395.31 seconds for Scenarios 36–39 respectively. This audit verifies identity separation and chronology. Different sequences can still contain similar roads or scenes.

@@ -1,0 +1,8 @@
+{
+  "starts_utc": "2026-11-10T11:43:29+00:00",
+  "ends_utc": "2026-11-10T16:43:29+00:00",
+  "local_end": "2026-11-10 22:43:29 Asia/Dhaka",
+  "review_interval_minutes": 30,
+  "automation_id": "deepsense-five-hour-research-reviews",
+  "rule": "No new experiments after deadline. Already-started runs may finish or resume safely. Calibration/test remain reserved."
+}

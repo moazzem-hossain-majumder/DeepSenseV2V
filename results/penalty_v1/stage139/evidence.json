@@ -1,0 +1,114 @@
+{
+  "publication_ready": false,
+  "baseline": 0.7856170886015177,
+  "records": [
+    {
+      "stage": 135,
+      "penalty": 0.1,
+      "vision": false,
+      "score": 0.788050593197652,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7073677956030897,
+        "39": 0.6310160427807486
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.003767622751579971
+      ]
+    },
+    {
+      "stage": 136,
+      "penalty": 0.1,
+      "vision": true,
+      "score": 0.7854685443353264,
+      "best_epoch": 1,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7064765300059418,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        -0.0006684491978609625,
+        0.0
+      ]
+    },
+    {
+      "stage": 137,
+      "penalty": 0.0,
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 1,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 138,
+      "penalty": 0.0,
+      "vision": true,
+      "score": 0.7916415572124914,
+      "best_epoch": 5,
+      "by_scenario": {
+        "36": 0.8617265087853323,
+        "37": 0.9522830111065406,
+        "38": 0.7017231134878193,
+        "39": 0.6508335954702736
+      },
+      "interval_vs_geometry": [
+        -0.004341246988305812,
+        0.01292343626804149
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "penalty": 0.1,
+      "visual_stage": 136,
+      "visual_score": 0.7854685443353264,
+      "gps_score": 0.788050593197652,
+      "visual_gain": -0.0025820488623256033,
+      "interval_vs_gps": [
+        -0.004057439886316892,
+        -7.036307345904869e-05
+      ],
+      "eligible": false
+    },
+    {
+      "penalty": 0.0,
+      "visual_stage": 138,
+      "visual_score": 0.7916415572124914,
+      "gps_score": 0.7856170886015177,
+      "visual_gain": 0.006024468610973721,
+      "interval_vs_gps": [
+        -0.004341246988305812,
+        0.01292343626804149
+      ],
+      "eligible": true
+    }
+  ],
+  "chosen": {
+    "penalty": 0.0,
+    "visual_stage": 138,
+    "visual_score": 0.7916415572124914,
+    "gps_score": 0.7856170886015177,
+    "visual_gain": 0.006024468610973721,
+    "interval_vs_gps": [
+      -0.004341246988305812,
+      0.01292343626804149
+    ],
+    "eligible": true
+  },
+  "next_action": "Replicate the qualifying matched pair across seeds before drawing conclusions.",
+  "calibration_test_used": false
+}

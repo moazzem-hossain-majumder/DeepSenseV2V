@@ -1,0 +1,149 @@
+[
+  {
+    "id": 221,
+    "title": "Stage 221 - fixed temporal feature contrast protocol",
+    "kind": "prepare",
+    "directory": "results/motion_v1/stage221",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 222,
+    "title": "Stage 222 - endpoint feature difference, scope pooled",
+    "kind": "train",
+    "directory": "results/motion_v1/stage222",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 223,
+    "title": "Stage 223 - endpoint feature difference, scope 36",
+    "kind": "train",
+    "directory": "results/motion_v1/stage223",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 224,
+    "title": "Stage 224 - endpoint feature difference, scope 37",
+    "kind": "train",
+    "directory": "results/motion_v1/stage224",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 225,
+    "title": "Stage 225 - endpoint feature difference, scope 38",
+    "kind": "train",
+    "directory": "results/motion_v1/stage225",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 226,
+    "title": "Stage 226 - endpoint feature difference, scope 39",
+    "kind": "train",
+    "directory": "results/motion_v1/stage226",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 227,
+    "title": "Stage 227 - temporal feature comparison",
+    "kind": "report",
+    "directory": "results/motion_v1/stage227",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  }
+]

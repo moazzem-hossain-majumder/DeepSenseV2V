@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "stages": {
+    "4": {
+      "title": "Stage 4 - uncertainty",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794188085.536123
+    },
+    "5": {
+      "title": "Stage 5 - P3 seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794188091.8106437
+    },
+    "6": {
+      "title": "Stage 6 - P3 seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794206193.632178
+    },
+    "7": {
+      "title": "Stage 7 - comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794224195.9869082
+    }
+  },
+  "active_stage": 7
+}

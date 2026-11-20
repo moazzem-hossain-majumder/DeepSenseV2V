@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "stages": {
+    "134": {
+      "title": "Stage 134 - penalty and convergence protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312978.367188
+    },
+    "135": {
+      "title": "Stage 135 - penalty 0.1 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312981.8347487
+    },
+    "136": {
+      "title": "Stage 136 - penalty 0.1 visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794313306.3443503
+    },
+    "137": {
+      "title": "Stage 137 - penalty 0.0 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794313964.6049151
+    },
+    "138": {
+      "title": "Stage 138 - penalty 0.0 visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794314269.563996
+    },
+    "139": {
+      "title": "Stage 139 - penalty comparison and next action",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794314964.832826
+    }
+  },
+  "active_stage": 139
+}

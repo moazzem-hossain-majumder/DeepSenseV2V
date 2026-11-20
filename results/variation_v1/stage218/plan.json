@@ -1,0 +1,38 @@
+[
+  {
+    "id": 218,
+    "title": "Stage 218 - paired trajectory uncertainty protocol",
+    "kind": "prepare",
+    "directory": "results/variation_v1/stage218",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  },
+  {
+    "id": 219,
+    "title": "Stage 219 - measure paired effects on validation trajectories",
+    "kind": "audit",
+    "directory": "results/variation_v1/stage219",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  },
+  {
+    "id": 220,
+    "title": "Stage 220 - report trajectory and scenario sensitivity",
+    "kind": "report",
+    "directory": "results/variation_v1/stage220",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  }
+]

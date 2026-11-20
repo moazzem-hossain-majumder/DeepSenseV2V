@@ -1,0 +1,81 @@
+{
+  "source_stage": 49,
+  "checkpoint_sha256": "3b0addec78904a4d4cfa8ad5cc728fd7dd870e1068f428ff27dd176f86c28257",
+  "sampled_indices": [
+    0,
+    8788,
+    23187,
+    40203,
+    52171,
+    73488,
+    85830,
+    93309
+  ],
+  "training_scenarios": [
+    36,
+    37,
+    38,
+    39
+  ],
+  "summary": {
+    "fp32": {
+      "loss": 8.355731010437012,
+      "saturation_fraction": 0.5146484375,
+      "zero_tanh_derivative_fraction": 0.0048828125,
+      "rgb_gradient_norm": 0.017848238348960876,
+      "gps_gradient_norm": 0.10952934622764587,
+      "fusion_gradient_norm": 0.014153704978525639,
+      "head_gradient_norm": 0.1546291708946228,
+      "rgb_input_gradient_norm": 4.962344135606145e-08,
+      "gps_input_gradient_norm": 0.03826197236776352,
+      "gray_correction_delta": 5.304967999109067e-06,
+      "rgb_feature_std": 624.83349609375
+    },
+    "bf16": {
+      "loss": 8.355779647827148,
+      "saturation_fraction": 0.513671875,
+      "zero_tanh_derivative_fraction": 0.435546875,
+      "rgb_gradient_norm": 0.017613790929317474,
+      "gps_gradient_norm": 0.1057385727763176,
+      "fusion_gradient_norm": 0.013993104919791222,
+      "head_gradient_norm": 0.1546991765499115,
+      "rgb_input_gradient_norm": 7.111321309594132e-08,
+      "gps_input_gradient_norm": 0.03746207803487778,
+      "gray_correction_delta": 2.251565456390381e-05,
+      "rgb_feature_std": 624.4215087890625
+    }
+  },
+  "batches": [
+    {
+      "precision": "fp32",
+      "batch": 0,
+      "n": 8,
+      "loss": 8.355731010437012,
+      "saturation_fraction": 0.5146484375,
+      "zero_tanh_derivative_fraction": 0.0048828125,
+      "rgb_gradient_norm": 0.017848238348960876,
+      "gps_gradient_norm": 0.10952934622764587,
+      "fusion_gradient_norm": 0.014153704978525639,
+      "head_gradient_norm": 0.1546291708946228,
+      "rgb_input_gradient_norm": 4.962344135606145e-08,
+      "gps_input_gradient_norm": 0.03826197236776352,
+      "gray_correction_delta": 5.304967999109067e-06
+    },
+    {
+      "precision": "bf16",
+      "batch": 0,
+      "n": 8,
+      "loss": 8.355779647827148,
+      "saturation_fraction": 0.513671875,
+      "zero_tanh_derivative_fraction": 0.435546875,
+      "rgb_gradient_norm": 0.017613790929317474,
+      "gps_gradient_norm": 0.1057385727763176,
+      "fusion_gradient_norm": 0.013993104919791222,
+      "head_gradient_norm": 0.1546991765499115,
+      "rgb_input_gradient_norm": 7.111321309594132e-08,
+      "gps_input_gradient_norm": 0.03746207803487778,
+      "gray_correction_delta": 2.251565456390381e-05
+    }
+  ],
+  "scope": "Training-only sample, eval-mode gradients; dropout disabled, CuDNN disabled for eval-mode GRU backward, no optimizer steps. BF16 and FP32 use identical inputs and weights."
+}

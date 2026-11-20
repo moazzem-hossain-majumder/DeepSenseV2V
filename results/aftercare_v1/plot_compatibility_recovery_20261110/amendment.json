@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-11-10T03:11:04.472206+00:00",
+  "reason": "Matplotlib removed boxplot labels keyword. Set axis ticks separately; numerical EDA and experiment definitions unchanged.",
+  "path": "src/aftercare_analysis.py",
+  "old_sha256": "cb199222f7f41ab4d67d5d81eb0abb382fb98dd9627c8f8d07411215cf174c9d",
+  "new_sha256": "b406626fa387f4eeba1c36d60faf2c5f1b3f080765cfeb67fafcb305a4ebcf2d",
+  "prior_stage38": {
+    "title": "Stage 38 - image-quality EDA",
+    "status": "retry_pending",
+    "failures": 3,
+    "pid": 50348,
+    "created": 1794255770.6652734,
+    "error": "TypeError: Axes.boxplot() got an unexpected keyword argument 'labels'"
+  },
+  "validation": "Six aftercare tests passed, including rendering with installed Matplotlib."
+}

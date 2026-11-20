@@ -1,0 +1,26 @@
+{
+  "scenario": 36,
+  "modality": "gps",
+  "csv_rows": 24799,
+  "unique_referenced_files": 49598,
+  "files_scanned": 49600,
+  "unreferenced_files": 2,
+  "extraction_receipt_count_matches": true,
+  "bytes_read": 2083200,
+  "error_count": 0,
+  "error_examples": [],
+  "passed": true,
+  "content_manifest_sha256": "6490dfc90dbf99dce27d2f1dbf0de848274d892bf3486021568d459bf5c3d049",
+  "digest_note": "Locally measured fingerprint, not a publisher checksum",
+  "image_dimensions": {},
+  "brightness_0_255": {
+    "count": 0,
+    "nonfinite": 0
+  },
+  "thumbnail_pixel_std_0_255": {
+    "count": 0,
+    "nonfinite": 0
+  },
+  "elapsed_seconds": 31.844000000011874,
+  "audited_utc": "2026-11-08T06:07:07.792758+00:00"
+}

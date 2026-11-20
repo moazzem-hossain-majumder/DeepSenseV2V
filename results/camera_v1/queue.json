@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "stages": {
+    "81": {
+      "title": "Stage 81 - rear image cache and source freeze",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794292908.4182365
+    },
+    "82": {
+      "title": "Stage 82 - front tanh_bf16 pilot",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794293415.0003052
+    },
+    "83": {
+      "title": "Stage 83 - front tanh_fp32 pilot",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794294114.676943
+    },
+    "84": {
+      "title": "Stage 84 - front linear pilot",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794294806.3736832
+    },
+    "85": {
+      "title": "Stage 85 - rear linear pilot",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794295493.8939395
+    },
+    "86": {
+      "title": "Stage 86 - both linear pilot",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794296206.2079692
+    },
+    "87": {
+      "title": "Stage 87 - learning health and pilot selection",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794296971.833236
+    },
+    "88": {
+      "title": "Stage 88 - selected method seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297007.3645208
+    },
+    "89": {
+      "title": "Stage 89 - selected method seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297011.1220949
+    },
+    "90": {
+      "title": "Stage 90 - selected method seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297014.7056575
+    },
+    "91": {
+      "title": "Stage 91 - selected method held scenario 36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297018.351755
+    },
+    "92": {
+      "title": "Stage 92 - selected method held scenario 37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297021.8660636
+    },
+    "93": {
+      "title": "Stage 93 - selected method held scenario 38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297025.3387964
+    },
+    "94": {
+      "title": "Stage 94 - selected method held scenario 39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297029.1417825
+    },
+    "95": {
+      "title": "Stage 95 - camera comparison and evidence report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794297032.6318786
+    }
+  },
+  "active_stage": 95
+}

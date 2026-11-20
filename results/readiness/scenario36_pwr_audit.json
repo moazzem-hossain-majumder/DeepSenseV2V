@@ -1,0 +1,26 @@
+{
+  "scenario": 36,
+  "modality": "pwr",
+  "csv_rows": 24799,
+  "unique_referenced_files": 99196,
+  "files_scanned": 99200,
+  "unreferenced_files": 4,
+  "extraction_receipt_count_matches": true,
+  "bytes_read": 165068800,
+  "error_count": 0,
+  "error_examples": [],
+  "passed": true,
+  "content_manifest_sha256": "5028a3c92abb0c4d1f6606c08f0d6bf06e80dcb29875b02ad0e602c568061cd6",
+  "digest_note": "Locally measured fingerprint, not a publisher checksum",
+  "image_dimensions": {},
+  "brightness_0_255": {
+    "count": 0,
+    "nonfinite": 0
+  },
+  "thumbnail_pixel_std_0_255": {
+    "count": 0,
+    "nonfinite": 0
+  },
+  "elapsed_seconds": 73.35900000002584,
+  "audited_utc": "2026-11-08T06:08:29.059451+00:00"
+}

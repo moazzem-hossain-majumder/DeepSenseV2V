@@ -1,0 +1,18 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/DeepSense6G/Multi-Modal-V2V-Beam-Prediction-Challenge-2023-Baseline/main/competition_benchmark.py",
+    "sha256": "4c3b79eab5698077131da33a80310bb9cf61a9dfd852763bbe45541dabb497c9",
+    "retrieved_utc": "2026-11-10T09:59:53.508017+00:00"
+  },
+  "orientation_first_before": -1.5707963267948966,
+  "orientation_first_after_last_input_change": 1.5707963267948966,
+  "previous_sample_dependency_detected": true,
+  "shifted_index_unique_count": 255,
+  "expected_unique_count": 256,
+  "scope": "Literal orientation function tested on synthetic arrays; index-wrap arithmetic reproduced independently. Not a dataset score or official challenge reproduction.",
+  "remaining": [
+    "Official challenge split unavailable locally",
+    "Physical timestamp conversion unresolved",
+    "Matched published learned-baseline reproduction incomplete"
+  ]
+}

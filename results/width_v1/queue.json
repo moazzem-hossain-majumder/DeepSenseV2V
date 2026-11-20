@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "stages": {
+    "240": {
+      "title": "Stage 240 - candidate width comparison protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794372652.3507192
+    },
+    "241": {
+      "title": "Stage 241 - 40 candidates, excluded S36, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794372655.8757017
+    },
+    "242": {
+      "title": "Stage 242 - 40 candidates, excluded S36, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794372849.8624988
+    },
+    "243": {
+      "title": "Stage 243 - 40 candidates, excluded S37, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794373138.911276
+    },
+    "244": {
+      "title": "Stage 244 - 40 candidates, excluded S37, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794373311.220987
+    },
+    "245": {
+      "title": "Stage 245 - 40 candidates, excluded S38, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794373555.2204733
+    },
+    "246": {
+      "title": "Stage 246 - 40 candidates, excluded S38, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794373716.9136198
+    },
+    "247": {
+      "title": "Stage 247 - 40 candidates, excluded S39, GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794373944.5343826
+    },
+    "248": {
+      "title": "Stage 248 - 40 candidates, excluded S39, visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794374142.6462944
+    },
+    "249": {
+      "title": "Stage 249 - candidate width transfer comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794374435.32543
+    }
+  },
+  "active_stage": 249
+}

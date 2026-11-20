@@ -1,0 +1,17 @@
+{
+  "mode": "per_example_control",
+  "initial": {
+    "success5": 0.0,
+    "best_candidate_top1": 0.0,
+    "loss_db": 8.557012557983398
+  },
+  "final": {
+    "step": 1000,
+    "pre_update_loss": 1.3898975849151611,
+    "success5": 1.0,
+    "best_candidate_top1": 1.0,
+    "loss_db": 0.6898845434188843
+  },
+  "max_success5": 1.0,
+  "scope": "Training memorization only, biased fixed sample. 1000 full-batch FP32 AdamW steps at 1e-3; no generalization claim. Per-example control cannot predict unseen data."
+}

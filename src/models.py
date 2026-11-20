@@ -22,11 +22,8 @@ class ResNet18VisionEncoder(nn.Module):
     """
     def __init__(self, d_model=256, freeze_until="layer2"):
         super().__init__()
-        try:
-            weights = models.ResNet18_Weights.DEFAULT
-            base = models.resnet18(weights=weights)
-        except Exception:
-            base = models.resnet18(weights=None)
+        # A failed pretrained load must not silently change an experiment.
+        base = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
 
         self.conv1 = base.conv1
         self.bn1 = base.bn1

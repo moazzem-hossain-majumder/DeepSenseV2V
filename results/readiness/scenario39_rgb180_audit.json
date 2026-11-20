@@ -1,0 +1,42 @@
+{
+  "scenario": 39,
+  "modality": "rgb180",
+  "csv_rows": 20399,
+  "unique_referenced_files": 40798,
+  "files_scanned": 40800,
+  "unreferenced_files": 2,
+  "extraction_receipt_count_matches": true,
+  "bytes_read": 21220270052,
+  "error_count": 0,
+  "error_examples": [],
+  "passed": true,
+  "content_manifest_sha256": "e1ca639c1cf09b96afdccbf762c23f38b6500b2c378f61978a570d26a0754807",
+  "digest_note": "Locally measured fingerprint, not a publisher checksum",
+  "image_dimensions": {
+    "1920x1080": 40800
+  },
+  "brightness_0_255": {
+    "count": 40800,
+    "nonfinite": 0,
+    "min": 9.063078703703704,
+    "p01": 20.47667824074074,
+    "p05": 27.413136574074073,
+    "median": 54.32667824074074,
+    "p95": 74.21938657407408,
+    "p99": 81.47338541666667,
+    "max": 97.27199074074075
+  },
+  "thumbnail_pixel_std_0_255": {
+    "count": 40800,
+    "nonfinite": 0,
+    "min": 10.221249741445817,
+    "p01": 19.931522901953134,
+    "p05": 28.128522745111464,
+    "median": 50.157401456563704,
+    "p95": 64.36817613722418,
+    "p99": 67.6336676943393,
+    "max": 79.68255731993395
+  },
+  "elapsed_seconds": 137.23499999998603,
+  "audited_utc": "2026-11-08T06:28:44.403336+00:00"
+}

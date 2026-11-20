@@ -1,0 +1,23 @@
+{
+  "size": 96,
+  "epochs": 8,
+  "batch": 16,
+  "workers": 2,
+  "lr": 0.0001,
+  "weight_decay": 0.001,
+  "dropout": 0.25,
+  "freeze_batchnorm": true,
+  "brightness": 0.1,
+  "precision": "bf16",
+  "primary": "macro_scenario_within_3db_at_5",
+  "delta_db": 3.0,
+  "target_coverage": 0.9,
+  "variant": "power_aware",
+  "seed": 7,
+  "holdout": null,
+  "geometry_sigma_radians": 0.35,
+  "geometry_gain_initial": 1.0,
+  "geometry_offset_source_sha256": "d8a7142d6cef4a2c0ffd8e8980b4f206cedb09902d36e884d40c4db212a2b758",
+  "aftercare_source_sha256": "111adc62301ea5f73a8d7bb7ff37e525ce22a837583ee65105b01eebffeed9f5",
+  "hypothesis": "Learn visual/GPS residual corrections around a training-only analytic geometry prior."
+}

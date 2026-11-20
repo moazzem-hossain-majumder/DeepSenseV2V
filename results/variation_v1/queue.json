@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "stages": {
+    "218": {
+      "title": "Stage 218 - paired trajectory uncertainty protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794354121.246497
+    },
+    "219": {
+      "title": "Stage 219 - measure paired effects on validation trajectories",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794354125.0423584
+    },
+    "220": {
+      "title": "Stage 220 - report trajectory and scenario sensitivity",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794354131.4321637
+    }
+  },
+  "active_stage": 220
+}

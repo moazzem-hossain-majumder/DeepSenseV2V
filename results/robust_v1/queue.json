@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "stages": {
+    "180": {
+      "title": "Stage 180 - fixed visual robustness protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794334217.9659452
+    },
+    "181": {
+      "title": "Stage 181 - exclude S36 dropout",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794334222.185432
+    },
+    "182": {
+      "title": "Stage 182 - exclude S36 dropout plus consistency",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794334430.5680795
+    },
+    "183": {
+      "title": "Stage 183 - exclude S37 dropout",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794334729.6097944
+    },
+    "184": {
+      "title": "Stage 184 - exclude S37 dropout plus consistency",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794334916.3731208
+    },
+    "185": {
+      "title": "Stage 185 - exclude S38 dropout",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794335192.549669
+    },
+    "186": {
+      "title": "Stage 186 - exclude S38 dropout plus consistency",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794335376.088164
+    },
+    "187": {
+      "title": "Stage 187 - exclude S39 dropout",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794335619.2831912
+    },
+    "188": {
+      "title": "Stage 188 - exclude S39 dropout plus consistency",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794335837.319635
+    },
+    "189": {
+      "title": "Stage 189 - robustness comparison without held-label selection",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794336144.523733
+    }
+  },
+  "active_stage": 189
+}

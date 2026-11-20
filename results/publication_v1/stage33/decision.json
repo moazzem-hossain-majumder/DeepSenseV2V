@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "checks": {
+    "macro_gain_at_least_one_percentage_point": false,
+    "paired_block_interval_positive": false,
+    "transfer_wins_at_least_three": false
+  },
+  "means": {
+    "gps": 0.7300248530784863,
+    "rgb": 0.4668151277147817,
+    "fusion_ce": 0.5132712827349506,
+    "profile_original": 0.4853899144556584,
+    "power_aware": 0.49207258203797993
+  },
+  "strongest_baseline": "gps",
+  "paired_bootstrap_95": [
+    -0.2895083149886749,
+    -0.20970264337301942
+  ],
+  "transfer": {
+    "36": {
+      "fusion_ce": 0.36287242169595113,
+      "power_aware": 0.36134453781512604
+    },
+    "37": {
+      "fusion_ce": 0.22357054709995886,
+      "power_aware": 0.49218428630193334
+    },
+    "38": {
+      "fusion_ce": 0.32382650029708854,
+      "power_aware": 0.32590612002376707
+    },
+    "39": {
+      "fusion_ce": 0.4815979867882982,
+      "power_aware": 0.3708713431896823
+    }
+  },
+  "scope": "Predeclared development gate; selection-conditioned uncertainty, not test significance."
+}

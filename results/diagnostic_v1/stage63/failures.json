@@ -1,0 +1,784 @@
+{
+  "results": {
+    "49": {
+      "overall": {
+        "n": 16643,
+        "model_success": 0.8118127741392778,
+        "geometry_success": 0.8109715796430932,
+        "helped": 498,
+        "harmed": 484,
+        "model_regret_db": 4.314188480377197,
+        "geometry_regret_db": 4.368788719177246
+      },
+      "scenarios": {
+        "36": {
+          "n": 5236,
+          "model_success": 0.8517952635599695,
+          "geometry_success": 0.8615355233002292,
+          "helped": 60,
+          "harmed": 111,
+          "model_regret_db": 3.561387777328491,
+          "geometry_regret_db": 3.5711114406585693
+        },
+        "37": {
+          "n": 4862,
+          "model_success": 0.9422048539695599,
+          "geometry_success": 0.9522830111065406,
+          "helped": 47,
+          "harmed": 96,
+          "model_regret_db": 0.6077412366867065,
+          "geometry_regret_db": 0.4882843494415283
+        },
+        "38": {
+          "n": 3366,
+          "model_success": 0.6717171717171717,
+          "geometry_success": 0.7070707070707071,
+          "helped": 130,
+          "harmed": 249,
+          "model_regret_db": 6.5995965003967285,
+          "geometry_regret_db": 6.448790550231934
+        },
+        "39": {
+          "n": 3179,
+          "model_success": 0.6948726014469959,
+          "geometry_success": 0.6215791129285939,
+          "helped": 261,
+          "harmed": 28,
+          "model_regret_db": 8.802933692932129,
+          "geometry_regret_db": 9.415143013000488
+        }
+      },
+      "blocks": {
+        "36:10": {
+          "n": 748,
+          "model_success": 0.9131016042780749,
+          "geometry_success": 1.0,
+          "helped": 0,
+          "harmed": 65,
+          "model_regret_db": 0.9709214568138123,
+          "geometry_regret_db": 0.007844778709113598
+        },
+        "36:11": {
+          "n": 3366,
+          "model_success": 0.8232323232323232,
+          "geometry_success": 0.809863339275104,
+          "helped": 60,
+          "harmed": 15,
+          "model_regret_db": 5.028472900390625,
+          "geometry_regret_db": 5.314023017883301
+        },
+        "36:12": {
+          "n": 1122,
+          "model_success": 0.8966131907308378,
+          "geometry_success": 0.9242424242424242,
+          "helped": 0,
+          "harmed": 31,
+          "model_regret_db": 0.8871088027954102,
+          "geometry_regret_db": 0.7178891897201538
+        },
+        "37:10": {
+          "n": 561,
+          "model_success": 0.9768270944741533,
+          "geometry_success": 0.9393939393939394,
+          "helped": 28,
+          "harmed": 7,
+          "model_regret_db": 0.31366774439811707,
+          "geometry_regret_db": 0.5492463111877441
+        },
+        "37:11": {
+          "n": 3740,
+          "model_success": 0.9433155080213904,
+          "geometry_success": 0.9598930481283422,
+          "helped": 9,
+          "harmed": 71,
+          "model_regret_db": 0.5560300350189209,
+          "geometry_regret_db": 0.43380218744277954
+        },
+        "37:12": {
+          "n": 561,
+          "model_success": 0.9001782531194296,
+          "geometry_success": 0.9144385026737968,
+          "helped": 10,
+          "harmed": 18,
+          "model_regret_db": 1.2465565204620361,
+          "geometry_regret_db": 0.7905365824699402
+        },
+        "38:13": {
+          "n": 748,
+          "model_success": 0.766042780748663,
+          "geometry_success": 0.8155080213903744,
+          "helped": 42,
+          "harmed": 79,
+          "model_regret_db": 2.6505579948425293,
+          "geometry_regret_db": 1.9397579431533813
+        },
+        "38:14": {
+          "n": 1683,
+          "model_success": 0.6125965537730244,
+          "geometry_success": 0.6054664289958408,
+          "helped": 57,
+          "harmed": 45,
+          "model_regret_db": 9.43477725982666,
+          "geometry_regret_db": 9.903631210327148
+        },
+        "38:15": {
+          "n": 935,
+          "model_success": 0.7026737967914438,
+          "geometry_success": 0.8032085561497326,
+          "helped": 31,
+          "harmed": 125,
+          "model_regret_db": 4.655502796173096,
+          "geometry_regret_db": 3.8373024463653564
+        },
+        "39:8": {
+          "n": 2057,
+          "model_success": 0.5848322800194458,
+          "geometry_success": 0.4803111327175498,
+          "helped": 237,
+          "harmed": 22,
+          "model_regret_db": 12.32226848602295,
+          "geometry_regret_db": 13.168524742126465
+        },
+        "39:9": {
+          "n": 1122,
+          "model_success": 0.8966131907308378,
+          "geometry_success": 0.8805704099821747,
+          "helped": 24,
+          "harmed": 6,
+          "model_regret_db": 2.3508212566375732,
+          "geometry_regret_db": 2.5339431762695312
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 13197,
+          "model_success": 0.9289232401303327,
+          "geometry_success": 0.9461241191179813,
+          "helped": 203,
+          "harmed": 430,
+          "model_regret_db": 0.8081421852111816,
+          "geometry_regret_db": 0.6027497053146362
+        },
+        "1": {
+          "n": 3446,
+          "model_success": 0.363319791062101,
+          "geometry_success": 0.2933836331979106,
+          "helped": 295,
+          "harmed": 54,
+          "model_regret_db": 17.74114418029785,
+          "geometry_regret_db": 18.791427612304688
+        }
+      }
+    },
+    "50": {
+      "overall": {
+        "n": 16643,
+        "model_success": 0.8111518356065613,
+        "geometry_success": 0.8109715796430932,
+        "helped": 449,
+        "harmed": 446,
+        "model_regret_db": 4.385572910308838,
+        "geometry_regret_db": 4.368788719177246
+      },
+      "scenarios": {
+        "36": {
+          "n": 5236,
+          "model_success": 0.8500763941940412,
+          "geometry_success": 0.8615355233002292,
+          "helped": 59,
+          "harmed": 119,
+          "model_regret_db": 3.62406325340271,
+          "geometry_regret_db": 3.5711114406585693
+        },
+        "37": {
+          "n": 4862,
+          "model_success": 0.9403537638831756,
+          "geometry_success": 0.9522830111065406,
+          "helped": 43,
+          "harmed": 101,
+          "model_regret_db": 0.6201949119567871,
+          "geometry_regret_db": 0.4882843494415283
+        },
+        "38": {
+          "n": 3366,
+          "model_success": 0.6734997029114677,
+          "geometry_success": 0.7070707070707071,
+          "helped": 101,
+          "harmed": 214,
+          "model_regret_db": 6.65210485458374,
+          "geometry_regret_db": 6.448790550231934
+        },
+        "39": {
+          "n": 3179,
+          "model_success": 0.6951871657754011,
+          "geometry_success": 0.6215791129285939,
+          "helped": 246,
+          "harmed": 12,
+          "model_regret_db": 8.99878215789795,
+          "geometry_regret_db": 9.415143013000488
+        }
+      },
+      "blocks": {
+        "36:10": {
+          "n": 748,
+          "model_success": 0.8676470588235294,
+          "geometry_success": 1.0,
+          "helped": 0,
+          "harmed": 99,
+          "model_regret_db": 1.5923094749450684,
+          "geometry_regret_db": 0.007844778709113598
+        },
+        "36:11": {
+          "n": 3366,
+          "model_success": 0.8235294117647058,
+          "geometry_success": 0.809863339275104,
+          "helped": 59,
+          "harmed": 13,
+          "model_regret_db": 5.025068759918213,
+          "geometry_regret_db": 5.314023017883301
+        },
+        "36:12": {
+          "n": 1122,
+          "model_success": 0.9180035650623886,
+          "geometry_success": 0.9242424242424242,
+          "helped": 0,
+          "harmed": 7,
+          "model_regret_db": 0.7755507826805115,
+          "geometry_regret_db": 0.7178891897201538
+        },
+        "37:10": {
+          "n": 561,
+          "model_success": 0.9768270944741533,
+          "geometry_success": 0.9393939393939394,
+          "helped": 28,
+          "harmed": 7,
+          "model_regret_db": 0.3121115565299988,
+          "geometry_regret_db": 0.5492463111877441
+        },
+        "37:11": {
+          "n": 3740,
+          "model_success": 0.9422459893048128,
+          "geometry_success": 0.9598930481283422,
+          "helped": 5,
+          "harmed": 71,
+          "model_regret_db": 0.5576820969581604,
+          "geometry_regret_db": 0.43380218744277954
+        },
+        "37:12": {
+          "n": 561,
+          "model_success": 0.8912655971479501,
+          "geometry_success": 0.9144385026737968,
+          "helped": 10,
+          "harmed": 23,
+          "model_regret_db": 1.3450301885604858,
+          "geometry_regret_db": 0.7905365824699402
+        },
+        "38:13": {
+          "n": 748,
+          "model_success": 0.733957219251337,
+          "geometry_success": 0.8155080213903744,
+          "helped": 26,
+          "harmed": 87,
+          "model_regret_db": 3.12781023979187,
+          "geometry_regret_db": 1.9397579431533813
+        },
+        "38:14": {
+          "n": 1683,
+          "model_success": 0.6155674390968509,
+          "geometry_success": 0.6054664289958408,
+          "helped": 57,
+          "harmed": 40,
+          "model_regret_db": 9.419492721557617,
+          "geometry_regret_db": 9.903631210327148
+        },
+        "38:15": {
+          "n": 935,
+          "model_success": 0.7294117647058823,
+          "geometry_success": 0.8032085561497326,
+          "helped": 18,
+          "harmed": 87,
+          "model_regret_db": 4.490240097045898,
+          "geometry_regret_db": 3.8373024463653564
+        },
+        "39:8": {
+          "n": 2057,
+          "model_success": 0.5853184248906174,
+          "geometry_success": 0.4803111327175498,
+          "helped": 222,
+          "harmed": 6,
+          "model_regret_db": 12.60789966583252,
+          "geometry_regret_db": 13.168524742126465
+        },
+        "39:9": {
+          "n": 1122,
+          "model_success": 0.8966131907308378,
+          "geometry_success": 0.8805704099821747,
+          "helped": 24,
+          "harmed": 6,
+          "model_regret_db": 2.3820688724517822,
+          "geometry_regret_db": 2.5339431762695312
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 13197,
+          "model_success": 0.9254375994544215,
+          "geometry_success": 0.9461241191179813,
+          "helped": 168,
+          "harmed": 441,
+          "model_regret_db": 0.8596855998039246,
+          "geometry_regret_db": 0.6027497053146362
+        },
+        "1": {
+          "n": 3446,
+          "model_success": 0.373476494486361,
+          "geometry_success": 0.2933836331979106,
+          "helped": 281,
+          "harmed": 5,
+          "model_regret_db": 17.888517379760742,
+          "geometry_regret_db": 18.791427612304688
+        }
+      }
+    },
+    "51": {
+      "overall": {
+        "n": 16643,
+        "model_success": 0.8127140539566184,
+        "geometry_success": 0.8109715796430932,
+        "helped": 460,
+        "harmed": 431,
+        "model_regret_db": 4.337836265563965,
+        "geometry_regret_db": 4.368788719177246
+      },
+      "scenarios": {
+        "36": {
+          "n": 5236,
+          "model_success": 0.8596256684491979,
+          "geometry_success": 0.8615355233002292,
+          "helped": 59,
+          "harmed": 69,
+          "model_regret_db": 3.508592128753662,
+          "geometry_regret_db": 3.5711114406585693
+        },
+        "37": {
+          "n": 4862,
+          "model_success": 0.9422048539695599,
+          "geometry_success": 0.9522830111065406,
+          "helped": 43,
+          "harmed": 92,
+          "model_regret_db": 0.6096181273460388,
+          "geometry_regret_db": 0.4882843494415283
+        },
+        "38": {
+          "n": 3366,
+          "model_success": 0.6651812240047534,
+          "geometry_success": 0.7070707070707071,
+          "helped": 101,
+          "harmed": 242,
+          "model_regret_db": 6.6779961585998535,
+          "geometry_regret_db": 6.448790550231934
+        },
+        "39": {
+          "n": 3179,
+          "model_success": 0.6936143441333753,
+          "geometry_success": 0.6215791129285939,
+          "helped": 257,
+          "harmed": 28,
+          "model_regret_db": 8.927814483642578,
+          "geometry_regret_db": 9.415143013000488
+        }
+      },
+      "blocks": {
+        "36:10": {
+          "n": 748,
+          "model_success": 0.9385026737967914,
+          "geometry_success": 1.0,
+          "helped": 0,
+          "harmed": 46,
+          "model_regret_db": 0.7298736572265625,
+          "geometry_regret_db": 0.007844778709113598
+        },
+        "36:11": {
+          "n": 3366,
+          "model_success": 0.8229352346999406,
+          "geometry_success": 0.809863339275104,
+          "helped": 59,
+          "harmed": 15,
+          "model_regret_db": 5.032031536102295,
+          "geometry_regret_db": 5.314023017883301
+        },
+        "36:12": {
+          "n": 1122,
+          "model_success": 0.9171122994652406,
+          "geometry_success": 0.9242424242424242,
+          "helped": 0,
+          "harmed": 8,
+          "model_regret_db": 0.7907539010047913,
+          "geometry_regret_db": 0.7178891897201538
+        },
+        "37:10": {
+          "n": 561,
+          "model_success": 0.9768270944741533,
+          "geometry_success": 0.9393939393939394,
+          "helped": 28,
+          "harmed": 7,
+          "model_regret_db": 0.3121115565299988,
+          "geometry_regret_db": 0.5492463111877441
+        },
+        "37:11": {
+          "n": 3740,
+          "model_success": 0.9433155080213904,
+          "geometry_success": 0.9598930481283422,
+          "helped": 5,
+          "harmed": 67,
+          "model_regret_db": 0.5570448637008667,
+          "geometry_regret_db": 0.43380218744277954
+        },
+        "37:12": {
+          "n": 561,
+          "model_success": 0.9001782531194296,
+          "geometry_success": 0.9144385026737968,
+          "helped": 10,
+          "harmed": 18,
+          "model_regret_db": 1.2576128244400024,
+          "geometry_regret_db": 0.7905365824699402
+        },
+        "38:13": {
+          "n": 748,
+          "model_success": 0.7352941176470589,
+          "geometry_success": 0.8155080213903744,
+          "helped": 25,
+          "harmed": 85,
+          "model_regret_db": 3.248777389526367,
+          "geometry_regret_db": 1.9397579431533813
+        },
+        "38:14": {
+          "n": 1683,
+          "model_success": 0.6137849079025549,
+          "geometry_success": 0.6054664289958408,
+          "helped": 59,
+          "harmed": 45,
+          "model_regret_db": 9.371564865112305,
+          "geometry_regret_db": 9.903631210327148
+        },
+        "38:15": {
+          "n": 935,
+          "model_success": 0.7016042780748664,
+          "geometry_success": 0.8032085561497326,
+          "helped": 17,
+          "harmed": 112,
+          "model_regret_db": 4.572949409484863,
+          "geometry_regret_db": 3.8373024463653564
+        },
+        "39:8": {
+          "n": 2057,
+          "model_success": 0.5824015556635878,
+          "geometry_success": 0.4803111327175498,
+          "helped": 233,
+          "harmed": 23,
+          "model_regret_db": 12.504386901855469,
+          "geometry_regret_db": 13.168524742126465
+        },
+        "39:9": {
+          "n": 1122,
+          "model_success": 0.8975044563279857,
+          "geometry_success": 0.8805704099821747,
+          "helped": 24,
+          "harmed": 5,
+          "model_regret_db": 2.370765447616577,
+          "geometry_regret_db": 2.5339431762695312
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 13197,
+          "model_success": 0.9291505645222399,
+          "geometry_success": 0.9461241191179813,
+          "helped": 178,
+          "harmed": 402,
+          "model_regret_db": 0.8234314322471619,
+          "geometry_regret_db": 0.6027497053146362
+        },
+        "1": {
+          "n": 3446,
+          "model_success": 0.3668020893789901,
+          "geometry_success": 0.2933836331979106,
+          "helped": 282,
+          "harmed": 29,
+          "model_regret_db": 17.796804428100586,
+          "geometry_regret_db": 18.791427612304688
+        }
+      }
+    },
+    "53": {
+      "overall": {
+        "n": 5236,
+        "model_success": 0.8600076394194042,
+        "geometry_success": 0.8405271199388846,
+        "helped": 195,
+        "harmed": 93,
+        "model_regret_db": 3.6133854389190674,
+        "geometry_regret_db": 3.7160820960998535
+      },
+      "scenarios": {
+        "36": {
+          "n": 5236,
+          "model_success": 0.8600076394194042,
+          "geometry_success": 0.8405271199388846,
+          "helped": 195,
+          "harmed": 93,
+          "model_regret_db": 3.6133854389190674,
+          "geometry_regret_db": 3.7160820960998535
+        }
+      },
+      "blocks": {
+        "36:10": {
+          "n": 748,
+          "model_success": 0.9331550802139037,
+          "geometry_success": 1.0,
+          "helped": 0,
+          "harmed": 50,
+          "model_regret_db": 0.7581985592842102,
+          "geometry_regret_db": 0.06091558560729027
+        },
+        "36:11": {
+          "n": 3366,
+          "model_success": 0.833630421865716,
+          "geometry_success": 0.786096256684492,
+          "helped": 178,
+          "harmed": 18,
+          "model_regret_db": 5.084104537963867,
+          "geometry_regret_db": 5.467887878417969
+        },
+        "36:12": {
+          "n": 1122,
+          "model_success": 0.8903743315508021,
+          "geometry_success": 0.8975044563279857,
+          "helped": 17,
+          "harmed": 25,
+          "model_regret_db": 1.1046854257583618,
+          "geometry_regret_db": 0.8974428176879883
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 4086,
+          "model_success": 0.9640234948604993,
+          "geometry_success": 0.9681840430739109,
+          "helped": 75,
+          "harmed": 92,
+          "model_regret_db": 0.4839508831501007,
+          "geometry_regret_db": 0.32822126150131226
+        },
+        "1": {
+          "n": 1150,
+          "model_success": 0.49043478260869566,
+          "geometry_success": 0.3869565217391304,
+          "helped": 120,
+          "harmed": 1,
+          "model_regret_db": 14.732401847839355,
+          "geometry_regret_db": 15.753297805786133
+        }
+      }
+    },
+    "55": {
+      "overall": {
+        "n": 4862,
+        "model_success": 0.9426162073220897,
+        "geometry_success": 0.9522830111065406,
+        "helped": 42,
+        "harmed": 89,
+        "model_regret_db": 0.5967057943344116,
+        "geometry_regret_db": 0.4882843494415283
+      },
+      "scenarios": {
+        "37": {
+          "n": 4862,
+          "model_success": 0.9426162073220897,
+          "geometry_success": 0.9522830111065406,
+          "helped": 42,
+          "harmed": 89,
+          "model_regret_db": 0.5967057943344116,
+          "geometry_regret_db": 0.4882843494415283
+        }
+      },
+      "blocks": {
+        "37:10": {
+          "n": 561,
+          "model_success": 0.9732620320855615,
+          "geometry_success": 0.9393939393939394,
+          "helped": 24,
+          "harmed": 5,
+          "model_regret_db": 0.33231863379478455,
+          "geometry_regret_db": 0.5492463111877441
+        },
+        "37:11": {
+          "n": 3740,
+          "model_success": 0.9441176470588235,
+          "geometry_success": 0.9598930481283422,
+          "helped": 4,
+          "harmed": 63,
+          "model_regret_db": 0.5552639961242676,
+          "geometry_regret_db": 0.43380218744277954
+        },
+        "37:12": {
+          "n": 561,
+          "model_success": 0.9019607843137255,
+          "geometry_success": 0.9144385026737968,
+          "helped": 14,
+          "harmed": 21,
+          "model_regret_db": 1.1373720169067383,
+          "geometry_regret_db": 0.7905365824699402
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 4862,
+          "model_success": 0.9426162073220897,
+          "geometry_success": 0.9522830111065406,
+          "helped": 42,
+          "harmed": 89,
+          "model_regret_db": 0.5967057943344116,
+          "geometry_regret_db": 0.4882843494415283
+        },
+        "1": {
+          "n": 0
+        }
+      }
+    },
+    "57": {
+      "overall": {
+        "n": 3366,
+        "model_success": 0.6616161616161617,
+        "geometry_success": 0.7070707070707071,
+        "helped": 79,
+        "harmed": 232,
+        "model_regret_db": 6.936572551727295,
+        "geometry_regret_db": 6.448790550231934
+      },
+      "scenarios": {
+        "38": {
+          "n": 3366,
+          "model_success": 0.6616161616161617,
+          "geometry_success": 0.7070707070707071,
+          "helped": 79,
+          "harmed": 232,
+          "model_regret_db": 6.936572551727295,
+          "geometry_regret_db": 6.448790550231934
+        }
+      },
+      "blocks": {
+        "38:13": {
+          "n": 748,
+          "model_success": 0.7580213903743316,
+          "geometry_success": 0.8155080213903744,
+          "helped": 22,
+          "harmed": 65,
+          "model_regret_db": 2.683979034423828,
+          "geometry_regret_db": 1.9397579431533813
+        },
+        "38:14": {
+          "n": 1683,
+          "model_success": 0.6007130124777184,
+          "geometry_success": 0.6054664289958408,
+          "helped": 43,
+          "harmed": 51,
+          "model_regret_db": 9.808670043945312,
+          "geometry_regret_db": 9.903631210327148
+        },
+        "38:15": {
+          "n": 935,
+          "model_success": 0.6941176470588235,
+          "geometry_success": 0.8032085561497326,
+          "helped": 14,
+          "harmed": 116,
+          "model_regret_db": 5.1688737869262695,
+          "geometry_regret_db": 3.8373024463653564
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 2457,
+          "model_success": 0.8013838013838014,
+          "geometry_success": 0.8803418803418803,
+          "helped": 38,
+          "harmed": 232,
+          "model_regret_db": 2.4585273265838623,
+          "geometry_regret_db": 1.4705461263656616
+        },
+        "1": {
+          "n": 909,
+          "model_success": 0.2838283828382838,
+          "geometry_success": 0.23872387238723872,
+          "helped": 41,
+          "harmed": 0,
+          "model_regret_db": 19.040597915649414,
+          "geometry_regret_db": 19.904836654663086
+        }
+      }
+    },
+    "59": {
+      "overall": {
+        "n": 3179,
+        "model_success": 0.6215791129285939,
+        "geometry_success": 0.6215791129285939,
+        "helped": 0,
+        "harmed": 0,
+        "model_regret_db": 9.415143013000488,
+        "geometry_regret_db": 9.415143013000488
+      },
+      "scenarios": {
+        "39": {
+          "n": 3179,
+          "model_success": 0.6215791129285939,
+          "geometry_success": 0.6215791129285939,
+          "helped": 0,
+          "harmed": 0,
+          "model_regret_db": 9.415143013000488,
+          "geometry_regret_db": 9.415143013000488
+        }
+      },
+      "blocks": {
+        "39:8": {
+          "n": 2057,
+          "model_success": 0.4803111327175498,
+          "geometry_success": 0.4803111327175498,
+          "helped": 0,
+          "harmed": 0,
+          "model_regret_db": 13.168524742126465,
+          "geometry_regret_db": 13.168524742126465
+        },
+        "39:9": {
+          "n": 1122,
+          "model_success": 0.8805704099821747,
+          "geometry_success": 0.8805704099821747,
+          "helped": 0,
+          "harmed": 0,
+          "model_regret_db": 2.5339431762695312,
+          "geometry_regret_db": 2.5339431762695312
+        }
+      },
+      "slow_heading": {
+        "0": {
+          "n": 1792,
+          "model_success": 0.9380580357142857,
+          "geometry_success": 0.9380580357142857,
+          "helped": 0,
+          "harmed": 0,
+          "model_regret_db": 0.6371335983276367,
+          "geometry_regret_db": 0.6371335983276367
+        },
+        "1": {
+          "n": 1387,
+          "model_success": 0.21268925739005046,
+          "geometry_success": 0.21268925739005046,
+          "helped": 0,
+          "harmed": 0,
+          "model_regret_db": 20.75630760192871,
+          "geometry_regret_db": 20.75630760192871
+        }
+      }
+    }
+  },
+  "scope": "Exploratory validation analysis. Held-scenario predictions include the previously selected fallback policy. No model selection on these breakdowns is an independent confirmation."
+}

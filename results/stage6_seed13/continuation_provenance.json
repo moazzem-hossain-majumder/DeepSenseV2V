@@ -1,0 +1,4 @@
+{
+  "source_manifest_sha256": "8fe154359ed50db91a4de573a7e443c22fd45e194d688ed99133b045c5408371",
+  "note": "Split guard only: fresh model initialization, no inherited weights."
+}

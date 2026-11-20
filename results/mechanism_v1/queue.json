@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "stages": {
+    "117": {
+      "title": "Stage 117 - training failure sample and visual sheets",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304907.648418
+    },
+    "118": {
+      "title": "Stage 118 - current_loss memorization test",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304932.9259856
+    },
+    "119": {
+      "title": "Stage 119 - bounded_ce memorization test",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304941.8171444
+    },
+    "120": {
+      "title": "Stage 120 - unbounded_ce memorization test",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304949.3287067
+    },
+    "121": {
+      "title": "Stage 121 - per_example_control memorization test",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304956.506654
+    },
+    "122": {
+      "title": "Stage 122 - official baseline implementation checks",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304963.2162485
+    },
+    "123": {
+      "title": "Stage 123 - mechanism audit decision",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304966.5697124
+    }
+  },
+  "active_stage": 123
+}

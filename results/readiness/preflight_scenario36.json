@@ -1,0 +1,36 @@
+{
+  "device": "NVIDIA GeForce RTX 4060",
+  "torch": "2.5.1+cu121",
+  "cases": [
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 4,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        127.8860855102539,
+        126.96415710449219,
+        126.45112609863281
+      ],
+      "unclipped_gradient_norms": [
+        11.21290397644043,
+        8.111422538757324,
+        7.3142313957214355
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.3400444984436035,
+      "elapsed_seconds": 2.4219999999913853
+    }
+  ],
+  "complete": true
+}

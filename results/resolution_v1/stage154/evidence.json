@@ -1,0 +1,32 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "records": [
+    {
+      "resolution": 96,
+      "score": 0.7923480066646156,
+      "best_epoch": 5,
+      "interval_vs_geometry": [
+        -0.0038091402061990296,
+        0.013689676162151783
+      ]
+    },
+    {
+      "resolution": 192,
+      "score": 0.7954335168868041,
+      "best_epoch": 5,
+      "interval_vs_geometry": [
+        -0.000808988776023676,
+        0.018758647769342957
+      ]
+    }
+  ],
+  "contrast": {
+    "gain": 0.003085510222188423,
+    "interval": [
+      -0.002889861178631232,
+      0.007762661616166083
+    ]
+  },
+  "next_action": "Review paired resolution effect before seed replication or transfer. Both arms omit brightness augmentation and use cached frozen features, so compare them directly, not as an isolated resolution change from older training."
+}

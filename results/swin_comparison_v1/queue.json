@@ -1,0 +1,198 @@
+{
+  "status": "complete",
+  "stages": {
+    "268": {
+      "title": "Stage 268 - Freeze protocol and extract EfficientNet-B3 features",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794387727.4818308
+    },
+    "269": {
+      "title": "Stage 269 - Shifted-window GPS, pooled, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794388844.5387254
+    },
+    "270": {
+      "title": "Stage 270 - Shifted-window GPS + RGB, pooled, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794389100.8450215
+    },
+    "271": {
+      "title": "Stage 271 - Shifted-window GPS, excluded S36, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794389375.1831348
+    },
+    "272": {
+      "title": "Stage 272 - Shifted-window GPS + RGB, excluded S36, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794389587.000152
+    },
+    "273": {
+      "title": "Stage 273 - Shifted-window GPS, excluded S37, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794389808.5363133
+    },
+    "274": {
+      "title": "Stage 274 - Shifted-window GPS + RGB, excluded S37, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794389991.966123
+    },
+    "275": {
+      "title": "Stage 275 - Shifted-window GPS, excluded S38, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794390186.5330067
+    },
+    "276": {
+      "title": "Stage 276 - Shifted-window GPS + RGB, excluded S38, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794390353.2032197
+    },
+    "277": {
+      "title": "Stage 277 - Shifted-window GPS, excluded S39, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794390541.8437696
+    },
+    "278": {
+      "title": "Stage 278 - Shifted-window GPS + RGB, excluded S39, seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794390740.0093925
+    },
+    "279": {
+      "title": "Stage 279 - Shifted-window GPS, pooled, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794390976.5338469
+    },
+    "280": {
+      "title": "Stage 280 - Shifted-window GPS + RGB, pooled, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794391227.7720768
+    },
+    "281": {
+      "title": "Stage 281 - Shifted-window GPS, excluded S36, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794391491.7072177
+    },
+    "282": {
+      "title": "Stage 282 - Shifted-window GPS + RGB, excluded S36, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794391703.0065472
+    },
+    "283": {
+      "title": "Stage 283 - Shifted-window GPS, excluded S37, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794391929.24276
+    },
+    "284": {
+      "title": "Stage 284 - Shifted-window GPS + RGB, excluded S37, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794392114.319094
+    },
+    "285": {
+      "title": "Stage 285 - Shifted-window GPS, excluded S38, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794392300.890968
+    },
+    "286": {
+      "title": "Stage 286 - Shifted-window GPS + RGB, excluded S38, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794392463.5584996
+    },
+    "287": {
+      "title": "Stage 287 - Shifted-window GPS, excluded S39, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794392636.2344196
+    },
+    "288": {
+      "title": "Stage 288 - Shifted-window GPS + RGB, excluded S39, seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794392841.101467
+    },
+    "289": {
+      "title": "Stage 289 - Shifted-window GPS, pooled, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794393062.7796013
+    },
+    "290": {
+      "title": "Stage 290 - Shifted-window GPS + RGB, pooled, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794393299.0778017
+    },
+    "291": {
+      "title": "Stage 291 - Shifted-window GPS, excluded S36, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794393554.6441913
+    },
+    "292": {
+      "title": "Stage 292 - Shifted-window GPS + RGB, excluded S36, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794393750.3159258
+    },
+    "293": {
+      "title": "Stage 293 - Shifted-window GPS, excluded S37, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794393969.722266
+    },
+    "294": {
+      "title": "Stage 294 - Shifted-window GPS + RGB, excluded S37, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794394141.648648
+    },
+    "295": {
+      "title": "Stage 295 - Shifted-window GPS, excluded S38, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794394320.261701
+    },
+    "296": {
+      "title": "Stage 296 - Shifted-window GPS + RGB, excluded S38, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794394464.7477007
+    },
+    "297": {
+      "title": "Stage 297 - Shifted-window GPS, excluded S39, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794394630.0385365
+    },
+    "298": {
+      "title": "Stage 298 - Shifted-window GPS + RGB, excluded S39, seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794394821.8618577
+    },
+    "299": {
+      "title": "Stage 299 - Paired three-seed comparison with GPS and geometry",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794395029.8612187
+    }
+  },
+  "active_stage": 299
+}

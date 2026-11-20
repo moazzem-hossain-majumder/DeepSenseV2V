@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "stages": {
+    "221": {
+      "title": "Stage 221 - fixed temporal feature contrast protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794361718.9549224
+    },
+    "222": {
+      "title": "Stage 222 - endpoint feature difference, scope pooled",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794361722.527356
+    },
+    "223": {
+      "title": "Stage 223 - endpoint feature difference, scope 36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794362046.6379986
+    },
+    "224": {
+      "title": "Stage 224 - endpoint feature difference, scope 37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794362349.9316497
+    },
+    "225": {
+      "title": "Stage 225 - endpoint feature difference, scope 38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794362610.1585193
+    },
+    "226": {
+      "title": "Stage 226 - endpoint feature difference, scope 39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794362848.4079273
+    },
+    "227": {
+      "title": "Stage 227 - temporal feature comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794363158.4896393
+    }
+  },
+  "active_stage": 227
+}

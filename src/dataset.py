@@ -160,9 +160,9 @@ def load_or_build_rgb_cache(p_dict, raw_df, data_root=".", img_size=(96, 96)):
                 t = resize_op(t)
                 all_tensors[i] = t
                 return
-            except Exception:
-                pass
-        all_tensors[i] = torch.zeros((3, img_size[0], img_size[1]), dtype=torch.uint8)
+            except Exception as error:
+                raise RuntimeError(f'Could not decode RGB frame {chosen}; refusing a black-image substitute') from error
+        raise FileNotFoundError(f'RGB frame missing: {rel_p}; searched {candidates}')
 
     with ThreadPoolExecutor(max_workers=16) as pool:
         list(tqdm(pool.map(load_frame, range(N)), total=N, desc="Preloading RGB frames to RAM"))

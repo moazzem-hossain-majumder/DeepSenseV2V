@@ -1,0 +1,7 @@
+{
+  "branch": "improve_validation",
+  "development_passed": false,
+  "test_exposed": false,
+  "decided_utc": "2026-11-09T20:21:51.223206+00:00",
+  "rule": "Test exposure always disables automatic retraining, regardless of test scores."
+}

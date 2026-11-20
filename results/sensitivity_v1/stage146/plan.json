@@ -1,0 +1,66 @@
+[
+  {
+    "id": 146,
+    "title": "Stage 146 - fixed-checkpoint visual dependence protocol",
+    "kind": "prepare",
+    "directory": "results/sensitivity_v1/stage146",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 147,
+    "title": "Stage 147 - seed 42 image interventions",
+    "kind": "audit",
+    "directory": "results/sensitivity_v1/stage147",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "source": 138,
+    "source_directory": "results/penalty_v1/stage138"
+  },
+  {
+    "id": 148,
+    "title": "Stage 148 - seed 7 image interventions",
+    "kind": "audit",
+    "directory": "results/sensitivity_v1/stage148",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 7,
+    "source": 142,
+    "source_directory": "results/replicate_v1/stage142"
+  },
+  {
+    "id": 149,
+    "title": "Stage 149 - seed 13 image interventions",
+    "kind": "audit",
+    "directory": "results/sensitivity_v1/stage149",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 13,
+    "source": 144,
+    "source_directory": "results/replicate_v1/stage144"
+  },
+  {
+    "id": 150,
+    "title": "Stage 150 - visual dependence report",
+    "kind": "report",
+    "directory": "results/sensitivity_v1/stage150",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]

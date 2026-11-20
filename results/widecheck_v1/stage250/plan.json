@@ -1,0 +1,380 @@
+[
+  {
+    "id": 250,
+    "title": "Stage 250 - candidate width replication protocol",
+    "kind": "prepare",
+    "directory": "results/widecheck_v1/stage250",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 251,
+    "title": "Stage 251 - 40 candidates, seed 7, excluded S36, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage251",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 252,
+    "title": "Stage 252 - 40 candidates, seed 7, excluded S36, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage252",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 253,
+    "title": "Stage 253 - 40 candidates, seed 7, excluded S37, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage253",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 254,
+    "title": "Stage 254 - 40 candidates, seed 7, excluded S37, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage254",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 255,
+    "title": "Stage 255 - 40 candidates, seed 7, excluded S38, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage255",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 256,
+    "title": "Stage 256 - 40 candidates, seed 7, excluded S38, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage256",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 257,
+    "title": "Stage 257 - 40 candidates, seed 7, excluded S39, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage257",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 258,
+    "title": "Stage 258 - 40 candidates, seed 7, excluded S39, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage258",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 259,
+    "title": "Stage 259 - 40 candidates, seed 13, excluded S36, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage259",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 260,
+    "title": "Stage 260 - 40 candidates, seed 13, excluded S36, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage260",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 261,
+    "title": "Stage 261 - 40 candidates, seed 13, excluded S37, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage261",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 262,
+    "title": "Stage 262 - 40 candidates, seed 13, excluded S37, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage262",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 263,
+    "title": "Stage 263 - 40 candidates, seed 13, excluded S38, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage263",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 264,
+    "title": "Stage 264 - 40 candidates, seed 13, excluded S38, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage264",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 265,
+    "title": "Stage 265 - 40 candidates, seed 13, excluded S39, GPS",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage265",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 266,
+    "title": "Stage 266 - 40 candidates, seed 13, excluded S39, visual",
+    "kind": "train",
+    "directory": "results/widecheck_v1/stage266",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 267,
+    "title": "Stage 267 - three-seed candidate width comparison",
+    "kind": "report",
+    "directory": "results/widecheck_v1/stage267",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 40,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  }
+]

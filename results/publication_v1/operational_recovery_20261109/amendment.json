@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-11-09T17:11:52.187400+00:00",
+  "reason": "Windows status-file replacement blocked by concurrent reader; operational IO-only fix, experiment math/config unchanged.",
+  "previous_stage19": {
+    "title": "Stage 19 - profile_original seed 42",
+    "status": "retry_pending",
+    "failures": 3,
+    "pid": 43548,
+    "created": 1794235135.1202724,
+    "error": "Worker ended without complete output"
+  },
+  "changed_dependencies": {
+    "src/acquire_scenarios.py": "a479c427d57b70e503eb9ab743b8290bf127aea877bf4ed4390d173f8dbbe071",
+    "Training Progress.ps1": "f6125ee27c4269cc25e21a9136b7c75d72277c3b0de5334d8b60bc14a4255d4a"
+  },
+  "validation": "30 automated tests including real Windows reader-lock recovery; existing epoch-3 checkpoint verified readable."
+}

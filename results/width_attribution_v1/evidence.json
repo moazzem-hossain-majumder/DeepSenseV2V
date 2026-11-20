@@ -1,0 +1,94 @@
+{
+  "seed": 42,
+  "rows": [
+    {
+      "scenario": 36,
+      "arm": "gps",
+      "n": 5236,
+      "used": 79,
+      "access_db": 0.016749182577985584,
+      "reorder_db": -0.11433483067134394,
+      "total_db": -0.09758564809335836,
+      "helped": 46,
+      "harmed": 17
+    },
+    {
+      "scenario": 36,
+      "arm": "visual",
+      "n": 5236,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": -0.010497683191044445,
+      "total_db": -0.010497683191044445,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 37,
+      "arm": "gps",
+      "n": 4862,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": 0.0,
+      "total_db": 0.0,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 37,
+      "arm": "visual",
+      "n": 4862,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": -0.0020472298233364895,
+      "total_db": -0.0020472298233364895,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 38,
+      "arm": "gps",
+      "n": 3366,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": 0.08304790276823763,
+      "total_db": 0.08304790276823763,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 38,
+      "arm": "visual",
+      "n": 3366,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": 0.024384049011424262,
+      "total_db": 0.024384049011424262,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 39,
+      "arm": "gps",
+      "n": 3179,
+      "used": 0,
+      "access_db": 0.0,
+      "reorder_db": 0.01063422850746522,
+      "total_db": 0.01063422850746522,
+      "helped": 0,
+      "harmed": 0
+    },
+    {
+      "scenario": 39,
+      "arm": "visual",
+      "n": 3179,
+      "used": 826,
+      "access_db": 0.32721831124321626,
+      "reorder_db": 0.2476914086481354,
+      "total_db": 0.5749097198913516,
+      "helped": 519,
+      "harmed": 285
+    }
+  ],
+  "source_sha256": "0328689a7020bd3b337b01c202030b71b134b226daf9b5084b4093d383e68f06"
+}

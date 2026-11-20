@@ -1,0 +1,207 @@
+{
+  "publication_ready": false,
+  "baseline": 0.7856170886015177,
+  "records": [
+    {
+      "stage": 125,
+      "bounded": true,
+      "objective": "soft",
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 126,
+      "bounded": true,
+      "objective": "soft",
+      "vision": true,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 127,
+      "bounded": true,
+      "objective": "hard",
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 128,
+      "bounded": true,
+      "objective": "hard",
+      "vision": true,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 129,
+      "bounded": false,
+      "objective": "soft",
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 130,
+      "bounded": false,
+      "objective": "soft",
+      "vision": true,
+      "score": 0.7854685443353264,
+      "best_epoch": 1,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7064765300059418,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        -0.0006684491978609625,
+        0.0
+      ]
+    },
+    {
+      "stage": 131,
+      "bounded": false,
+      "objective": "hard",
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 3,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stage": 132,
+      "bounded": false,
+      "objective": "hard",
+      "vision": true,
+      "score": 0.7854685443353264,
+      "best_epoch": 1,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7064765300059418,
+        "39": 0.6215791129285939
+      },
+      "interval_vs_geometry": [
+        -0.0006684491978609625,
+        0.0
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "bounded": true,
+      "objective": "soft",
+      "visual_stage": 126,
+      "visual_score": 0.7856170886015177,
+      "gps_score": 0.7856170886015177,
+      "visual_gain": 0.0,
+      "interval_vs_gps": [
+        0.0,
+        0.0
+      ],
+      "eligible": false
+    },
+    {
+      "bounded": true,
+      "objective": "hard",
+      "visual_stage": 128,
+      "visual_score": 0.7856170886015177,
+      "gps_score": 0.7856170886015177,
+      "visual_gain": 0.0,
+      "interval_vs_gps": [
+        0.0,
+        0.0
+      ],
+      "eligible": false
+    },
+    {
+      "bounded": false,
+      "objective": "soft",
+      "visual_stage": 130,
+      "visual_score": 0.7854685443353264,
+      "gps_score": 0.7856170886015177,
+      "visual_gain": -0.00014854426619126393,
+      "interval_vs_gps": [
+        -0.0006684491978609625,
+        0.0
+      ],
+      "eligible": false
+    },
+    {
+      "bounded": false,
+      "objective": "hard",
+      "visual_stage": 132,
+      "visual_score": 0.7854685443353264,
+      "gps_score": 0.7856170886015177,
+      "visual_gain": -0.00014854426619126393,
+      "interval_vs_gps": [
+        -0.0006684491978609625,
+        0.0
+      ],
+      "eligible": false
+    }
+  ],
+  "chosen": null,
+  "next_action": "No pair meets the preliminary gain screen. Review training curves and per-scenario effects; consider a separately controlled resolution/feature test, not automatic test-set evaluation.",
+  "calibration_test_used": false
+}

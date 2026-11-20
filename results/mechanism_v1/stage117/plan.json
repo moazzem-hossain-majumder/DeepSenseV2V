@@ -1,0 +1,86 @@
+[
+  {
+    "id": 117,
+    "title": "Stage 117 - training failure sample and visual sheets",
+    "kind": "sample",
+    "mode": null,
+    "directory": "results/mechanism_v1/stage117",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 118,
+    "title": "Stage 118 - current_loss memorization test",
+    "kind": "memorize",
+    "mode": "current_loss",
+    "directory": "results/mechanism_v1/stage118",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 119,
+    "title": "Stage 119 - bounded_ce memorization test",
+    "kind": "memorize",
+    "mode": "bounded_ce",
+    "directory": "results/mechanism_v1/stage119",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 120,
+    "title": "Stage 120 - unbounded_ce memorization test",
+    "kind": "memorize",
+    "mode": "unbounded_ce",
+    "directory": "results/mechanism_v1/stage120",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 121,
+    "title": "Stage 121 - per_example_control memorization test",
+    "kind": "memorize",
+    "mode": "per_example_control",
+    "directory": "results/mechanism_v1/stage121",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 122,
+    "title": "Stage 122 - official baseline implementation checks",
+    "kind": "benchmark",
+    "mode": null,
+    "directory": "results/mechanism_v1/stage122",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 123,
+    "title": "Stage 123 - mechanism audit decision",
+    "kind": "report",
+    "mode": null,
+    "directory": "results/mechanism_v1/stage123",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "stages": {
+    "228": {
+      "title": "Stage 228 - temporal feature replication protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794365141.6933153
+    },
+    "229": {
+      "title": "Stage 229 - endpoint feature difference, seed 7, scope pooled",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794365145.275835
+    },
+    "230": {
+      "title": "Stage 230 - endpoint feature difference, seed 7, scope 36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794365535.8451977
+    },
+    "231": {
+      "title": "Stage 231 - endpoint feature difference, seed 7, scope 37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794365875.0863328
+    },
+    "232": {
+      "title": "Stage 232 - endpoint feature difference, seed 7, scope 38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794366171.5168316
+    },
+    "233": {
+      "title": "Stage 233 - endpoint feature difference, seed 7, scope 39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794366443.6047227
+    },
+    "234": {
+      "title": "Stage 234 - endpoint feature difference, seed 13, scope pooled",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794366800.5939343
+    },
+    "235": {
+      "title": "Stage 235 - endpoint feature difference, seed 13, scope 36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794367186.5793133
+    },
+    "236": {
+      "title": "Stage 236 - endpoint feature difference, seed 13, scope 37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794367533.9986792
+    },
+    "237": {
+      "title": "Stage 237 - endpoint feature difference, seed 13, scope 38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794367826.0614936
+    },
+    "238": {
+      "title": "Stage 238 - endpoint feature difference, seed 13, scope 39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794368100.313022
+    },
+    "239": {
+      "title": "Stage 239 - three-seed temporal feature report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794368452.0383492
+    }
+  },
+  "active_stage": 239
+}

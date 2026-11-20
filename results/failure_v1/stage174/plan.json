@@ -1,0 +1,74 @@
+[
+  {
+    "id": 174,
+    "title": "Stage 174 - transfer failure audit protocol",
+    "kind": "prepare",
+    "directory": "results/failure_v1/stage174",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  },
+  {
+    "id": 175,
+    "title": "Stage 175 - S36 shift and correction audit",
+    "kind": "audit",
+    "directory": "results/failure_v1/stage175",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 36
+  },
+  {
+    "id": 176,
+    "title": "Stage 176 - S37 shift and correction audit",
+    "kind": "audit",
+    "directory": "results/failure_v1/stage176",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 37
+  },
+  {
+    "id": 177,
+    "title": "Stage 177 - S38 shift and correction audit",
+    "kind": "audit",
+    "directory": "results/failure_v1/stage177",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 38
+  },
+  {
+    "id": 178,
+    "title": "Stage 178 - S39 shift and correction audit",
+    "kind": "audit",
+    "directory": "results/failure_v1/stage178",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 39
+  },
+  {
+    "id": 179,
+    "title": "Stage 179 - failure synthesis and next experiment",
+    "kind": "report",
+    "directory": "results/failure_v1/stage179",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  }
+]

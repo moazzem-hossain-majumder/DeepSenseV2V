@@ -1,0 +1,118 @@
+{
+  "route": {
+    "branch": "improve_validation",
+    "development_passed": false,
+    "test_exposed": false,
+    "decided_utc": "2026-11-09T20:21:51.223206+00:00",
+    "rule": "Test exposure always disables automatic retraining, regardless of test scores."
+  },
+  "stages": [
+    {
+      "id": 37,
+      "title": "Stage 37 - branch and provenance",
+      "kind": "route",
+      "seed": null,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage37",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes"
+    },
+    {
+      "id": 38,
+      "title": "Stage 38 - image-quality EDA",
+      "kind": "images",
+      "seed": null,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage38",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes"
+    },
+    {
+      "id": 39,
+      "title": "Stage 39 - failure and baseline audit",
+      "kind": "diagnostics",
+      "seed": null,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage39",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes"
+    },
+    {
+      "id": 40,
+      "title": "Stage 40 - geometry-assisted P3 seed 42",
+      "kind": "train",
+      "seed": 42,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage40",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs"
+    },
+    {
+      "id": 41,
+      "title": "Stage 41 - geometry-assisted P3 seed 7",
+      "kind": "train",
+      "seed": 7,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage41",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs"
+    },
+    {
+      "id": 42,
+      "title": "Stage 42 - geometry-assisted P3 seed 13",
+      "kind": "train",
+      "seed": 13,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage42",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs"
+    },
+    {
+      "id": 43,
+      "title": "Stage 43 - next-cycle evidence report",
+      "kind": "improvement_report",
+      "seed": null,
+      "branch": "improve_validation",
+      "directory": "results/aftercare_v1/stage43",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes"
+    }
+  ],
+  "parent_queue_sha256": "d452b41bb29ed165685fac6f82dae931c388d306c8254459326fa6e7962a2d54",
+  "parent_decision_sha256": "6ef6f96d60d9a3103d1c78d7b444aa8abe448438b127271ea776a45cd549566c",
+  "parent_source": {
+    "src/gps_features.py": "12bd2a488289bc9e56c6d739d6d9b2a661781327228267f1cbc45a5056d0813e",
+    "src/models.py": "747089cf4595841b6e269c913c51fe4663b7ec9fe7a1da1c68fcdea289e77e91",
+    "src/multiscenario_windows.py": "b8f0bf39609961f17e08c15177e37cda2b93572813e54627d9abe08c00bca03a",
+    "src/publication_data.py": "ec99f7cab48c4ee171d5232775b65359c2adb4ab0269e2dcf7ddb8ba043332f8",
+    "src/publication_evidence.py": "f7ca03cd954dd2ac1078b95879b4729a180f467d49ef50f37836ae6eec4fe320",
+    "src/publication_metrics.py": "5e71669e25893f14989033a41c3c104f2694584f343323f5ca329ec4e0083788",
+    "src/publication_plan.py": "c2ff1f0a1b921a8a0382ab444536dc42342af57838f46c490278a0c7ee553aa0",
+    "src/publication_queue.py": "2bb9dff2641b3ed654e9bb20be525551ac3e16deef3fcb184e36b851b81ba6a2",
+    "src/publication_training.py": "160d076682fb981a71c87c72e8b453ab5bd81b22bcc78fe924b38aa8a8dc973a",
+    "src/publication_worker.py": "ff553d9d28e8ea952be57344e5171fd281aacc530aef2be0b4c1d8949ac50707",
+    "src/supervise_work.py": "7a20f9d4c3b745b1a2e4bbdce84ccb6705d354f35de1b71b3a9499b3e443b943",
+    "src/unattended_queue.py": "96e0ffb3f575d9ab3a6257ff9396d2b9e9d53b67040553cf7aac519fdf57ed84"
+  }
+}

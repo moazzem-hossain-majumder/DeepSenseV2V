@@ -1,0 +1,35 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "selection": {
+    "chosen": null,
+    "records": [
+      {
+        "stage": 97,
+        "k": 10,
+        "vision": false,
+        "score": 0.7856170886015177
+      },
+      {
+        "stage": 98,
+        "k": 10,
+        "vision": true,
+        "score": 0.7861369935331874
+      },
+      {
+        "stage": 99,
+        "k": 20,
+        "vision": false,
+        "score": 0.7856170886015177
+      },
+      {
+        "stage": 100,
+        "k": 20,
+        "vision": true,
+        "score": 0.7856170886015177
+      }
+    ],
+    "baseline": 0.7856170886015177,
+    "scope": "Expand only if visual reranker exceeds both analytic geometry and matched GPS-only pilot by 0.25 percentage points. Validation-selected exploratory screen."
+  }
+}

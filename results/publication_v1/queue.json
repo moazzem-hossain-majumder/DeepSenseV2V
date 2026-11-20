@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "stages": {
+    "8": {
+      "title": "Stage 8 - protocol and cache",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794225288.7519505
+    },
+    "9": {
+      "title": "Stage 9 - audit and GPS baseline",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794226045.5826905
+    },
+    "10": {
+      "title": "Stage 10 - gps seed 42",
+      "status": "complete",
+      "failures": 1,
+      "created": 1794226210.4859085,
+      "error": "PermissionError: [WinError 5] Access is denied: 'D:\\\\DeepSenseV2V\\\\results\\\\publication_v1\\\\stage10\\\\status.tmp' -> 'D:\\\\DeepSenseV2V\\\\results\\\\publication_v1\\\\stage10\\\\status.json'"
+    },
+    "11": {
+      "title": "Stage 11 - gps seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794226255.5189955
+    },
+    "12": {
+      "title": "Stage 12 - gps seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794226385.2304692
+    },
+    "13": {
+      "title": "Stage 13 - rgb seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794226531.7131581
+    },
+    "14": {
+      "title": "Stage 14 - rgb seed 7",
+      "status": "complete",
+      "failures": 1,
+      "created": 1794228491.3646255,
+      "error": "Worker ended without complete output"
+    },
+    "15": {
+      "title": "Stage 15 - rgb seed 13",
+      "status": "complete",
+      "failures": 1,
+      "created": 1794228955.3186512,
+      "error": "Worker ended without complete output"
+    },
+    "16": {
+      "title": "Stage 16 - fusion_ce seed 42",
+      "status": "complete",
+      "failures": 1,
+      "created": 1794231431.4476013,
+      "error": "Worker ended without complete output"
+    },
+    "17": {
+      "title": "Stage 17 - fusion_ce seed 7",
+      "status": "complete",
+      "failures": 2,
+      "created": 1794233080.6052372,
+      "error": "Worker ended without complete output"
+    },
+    "18": {
+      "title": "Stage 18 - fusion_ce seed 13",
+      "status": "complete",
+      "failures": 1,
+      "created": 1794234265.245542,
+      "error": "PermissionError: [WinError 5] Access is denied: 'D:\\\\DeepSenseV2V\\\\results\\\\publication_v1\\\\stage18\\\\status.tmp' -> 'D:\\\\DeepSenseV2V\\\\results\\\\publication_v1\\\\stage18\\\\status.json'"
+    },
+    "19": {
+      "title": "Stage 19 - profile_original seed 42",
+      "status": "complete",
+      "failures": 0,
+      "recovery_history": [
+        {
+          "date_utc": "2026-11-09T17:11:52.187400+00:00",
+          "previous_failures": 3,
+          "previous_error": "Worker ended without complete output",
+          "reason": "Windows status-file replacement blocked by concurrent reader; operational IO-only fix, experiment math/config unchanged."
+        }
+      ],
+      "created": 1794244313.216148
+    },
+    "20": {
+      "title": "Stage 20 - profile_original seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794244927.2948031
+    },
+    "21": {
+      "title": "Stage 21 - profile_original seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794245878.5218265
+    },
+    "22": {
+      "title": "Stage 22 - power_aware seed 42",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794246828.4612556
+    },
+    "23": {
+      "title": "Stage 23 - power_aware seed 7",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794247777.4057276
+    },
+    "24": {
+      "title": "Stage 24 - power_aware seed 13",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794248716.8850381
+    },
+    "25": {
+      "title": "Stage 25 - fusion_ce unseen S36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794249663.3704524
+    },
+    "26": {
+      "title": "Stage 26 - power_aware unseen S36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794250463.829371
+    },
+    "27": {
+      "title": "Stage 27 - fusion_ce unseen S37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794251296.460128
+    },
+    "28": {
+      "title": "Stage 28 - power_aware unseen S37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794252009.4492188
+    },
+    "29": {
+      "title": "Stage 29 - fusion_ce unseen S38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794252723.2083204
+    },
+    "30": {
+      "title": "Stage 30 - power_aware unseen S38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794253341.110924
+    },
+    "31": {
+      "title": "Stage 31 - fusion_ce unseen S39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794253995.3596148
+    },
+    "32": {
+      "title": "Stage 32 - power_aware unseen S39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794254816.8157275
+    },
+    "33": {
+      "title": "Stage 33 - evidence and freeze gate",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794255659.04441
+    },
+    "34": {
+      "title": "Stage 34 - calibration (gated)",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794255679.7570345
+    },
+    "35": {
+      "title": "Stage 35 - locked test (gated)",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794255685.6941888
+    },
+    "36": {
+      "title": "Stage 36 - research evidence package",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794255690.9060135
+    }
+  },
+  "active_stage": 36
+}

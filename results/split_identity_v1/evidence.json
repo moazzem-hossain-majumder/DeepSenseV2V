@@ -1,0 +1,78 @@
+{
+  "scenarios": {
+    "36": {
+      "windows": {
+        "train": 8789,
+        "val": 5236
+      },
+      "sequence_overlap": [],
+      "block_overlap": [],
+      "shared_raw_rows": 0,
+      "shared_image_paths": {
+        "unit1_rgb5": 0,
+        "unit1_rgb6": 0
+      },
+      "chronology_strict": true,
+      "first_validation_after_last_train_seconds": 20.100180000001274,
+      "minimum_nearest_seconds": 20.100180000001274,
+      "median_nearest_seconds": 320.0499029999992,
+      "min_abs_index_distance": 201
+    },
+    "37": {
+      "windows": {
+        "train": 17017,
+        "val": 4862
+      },
+      "sequence_overlap": [],
+      "block_overlap": [],
+      "shared_raw_rows": 0,
+      "shared_image_paths": {
+        "unit1_rgb5": 0,
+        "unit1_rgb6": 0
+      },
+      "chronology_strict": true,
+      "first_validation_after_last_train_seconds": 20.100533999997424,
+      "minimum_nearest_seconds": 20.100533999997424,
+      "median_nearest_seconds": 300.0503255000003,
+      "min_abs_index_distance": 201
+    },
+    "38": {
+      "windows": {
+        "train": 21318,
+        "val": 3366
+      },
+      "sequence_overlap": [],
+      "block_overlap": [],
+      "shared_raw_rows": 0,
+      "shared_image_paths": {
+        "unit1_rgb5": 0,
+        "unit1_rgb6": 0
+      },
+      "chronology_strict": true,
+      "first_validation_after_last_train_seconds": 20.10412900000665,
+      "minimum_nearest_seconds": 20.10412900000665,
+      "median_nearest_seconds": 220.05001450000418,
+      "min_abs_index_distance": 201
+    },
+    "39": {
+      "windows": {
+        "train": 7480,
+        "val": 3179
+      },
+      "sequence_overlap": [],
+      "block_overlap": [],
+      "shared_raw_rows": 0,
+      "shared_image_paths": {
+        "unit1_rgb5": 0,
+        "unit1_rgb6": 0
+      },
+      "chronology_strict": true,
+      "first_validation_after_last_train_seconds": 395.3087959999975,
+      "minimum_nearest_seconds": 395.3087959999975,
+      "median_nearest_seconds": 565.2562785000046,
+      "min_abs_index_distance": 698
+    }
+  },
+  "sha256": "c57f657e810b4ec21bdddda4ca280abda967c0c8095a60d8684df774e195d879",
+  "manifest_sha256": "c5c5e014473c503b0fadedf2514a476674c752b5f117dd3b3a1a8abc733486d5"
+}

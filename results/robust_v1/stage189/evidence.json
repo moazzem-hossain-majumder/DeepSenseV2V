@@ -1,0 +1,99 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "records": [
+    {
+      "scenario": 36,
+      "scores": {
+        "geometry": 0.8405271199388846,
+        "gps": 0.8458747135217723,
+        "original": 0.8393812070282658,
+        "dropout": 0.8386172650878533,
+        "consistency": 0.8414820473644004
+      }
+    },
+    {
+      "scenario": 37,
+      "scores": {
+        "geometry": 0.9522830111065406,
+        "gps": 0.9522830111065406,
+        "original": 0.9522830111065406,
+        "dropout": 0.9522830111065406,
+        "consistency": 0.9522830111065406
+      }
+    },
+    {
+      "scenario": 38,
+      "scores": {
+        "geometry": 0.7070707070707071,
+        "gps": 0.6999405822935235,
+        "original": 0.684194890077243,
+        "dropout": 0.7067736185383244,
+        "consistency": 0.7064765300059418
+      }
+    },
+    {
+      "scenario": 39,
+      "scores": {
+        "geometry": 0.6215791129285939,
+        "gps": 0.6215791129285939,
+        "original": 0.5734507706826046,
+        "dropout": 0.6215791129285939,
+        "consistency": 0.6215791129285939
+      }
+    }
+  ],
+  "means": {
+    "geometry": 0.7803649877611816,
+    "gps": 0.7799193549626076,
+    "original": 0.7623274697236635,
+    "dropout": 0.779813251915328,
+    "consistency": 0.7804551753513691
+  },
+  "contrasts": {
+    "dropout_minus_original": {
+      "gain": 0.017485782191664544,
+      "interval": [
+        0.0023655395172423035,
+        0.027755195417982458
+      ]
+    },
+    "dropout_minus_gps": {
+      "gain": -0.00010610304727951773,
+      "interval": [
+        -0.002197526737967914,
+        0.0013517528223410578
+      ]
+    },
+    "dropout_minus_geometry": {
+      "gain": -0.000551735845853493,
+      "interval": [
+        -0.002005347593582888,
+        2.7423556835321557e-05
+      ]
+    },
+    "consistency_minus_original": {
+      "gain": 0.018127705627705628,
+      "interval": [
+        0.00301137201292,
+        0.02847184144496584
+      ]
+    },
+    "consistency_minus_gps": {
+      "gain": 0.0005358203887615653,
+      "interval": [
+        -0.001742742551566081,
+        0.0020212630506748156
+      ]
+    },
+    "consistency_minus_geometry": {
+      "gain": 9.018759018759019e-05,
+      "interval": [
+        -0.00034875610323180655,
+        0.0005729564553093964
+      ]
+    }
+  },
+  "next_action": "Report both prespecified variants. Assess whether transfer harm decreased without selecting per-scenario variants or fallback from held labels. Further hyperparameter search requires inner splits restricted to training scenarios.",
+  "scope": "Fixed settings, seed-42 exploratory transfer development; excluded scenarios previously examined. No independent confirmation claim."
+}

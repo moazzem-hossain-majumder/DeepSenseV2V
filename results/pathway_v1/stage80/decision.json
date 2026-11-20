@@ -1,0 +1,14 @@
+{
+  "publication_ready": false,
+  "saturated_checkpoints": [
+    49,
+    50,
+    51,
+    53,
+    55,
+    57,
+    59
+  ],
+  "next_experiment": "Run a controlled training-only pilot comparing the current tanh correction against a smooth non-saturating residual penalty, holding inputs and splits fixed. Verify finite nonzero RGB gradients before any full multi-seed queue.",
+  "physical_timing_unresolved": true
+}

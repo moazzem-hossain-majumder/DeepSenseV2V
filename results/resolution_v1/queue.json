@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "stages": {
+    "151": {
+      "title": "Stage 151 - native 96/192 frozen feature extraction",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794322043.1147268
+    },
+    "152": {
+      "title": "Stage 152 - 96-pixel feature control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794324002.3818634
+    },
+    "153": {
+      "title": "Stage 153 - 192-pixel feature comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794324216.633446
+    },
+    "154": {
+      "title": "Stage 154 - resolution comparison report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794324425.9607537
+    }
+  },
+  "active_stage": 154
+}

@@ -1,0 +1,150 @@
+{
+  "records": {
+    "transfer_macro": {
+      "values": {
+        "geometry": {
+          "mean_db": 5.017074969616502,
+          "success": 0.7803649877611815,
+          "q90_db": 19.991945123672487,
+          "above_10db": 0.16726146786700424,
+          "conditional_miss_db": 18.809241217319435,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "gps": {
+          "mean_db": 5.01482761746523,
+          "success": 0.7798609982866038,
+          "q90_db": 19.49915768305461,
+          "above_10db": 0.166787540922489,
+          "conditional_miss_db": 18.753668582705924,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "mean": {
+          "mean_db": 5.022766400046655,
+          "success": 0.7770034975917329,
+          "q90_db": 19.991456270217896,
+          "above_10db": 0.1679735025323261,
+          "conditional_miss_db": 18.634727465487853,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "delta": {
+          "mean_db": 4.964747581808614,
+          "success": 0.7788660221618698,
+          "q90_db": 19.980073086420695,
+          "above_10db": 0.1678530443668852,
+          "conditional_miss_db": 18.598475033296427,
+          "cells_with_misses": 12,
+          "cells": 12
+        }
+      },
+      "paired": {
+        "mean_minus_gps": {
+          "mean_db": 0.007938782581424775,
+          "interval_db": [
+            -0.03309829731106159,
+            0.04601479322247593
+          ]
+        },
+        "mean_minus_geometry": {
+          "mean_db": 0.00569143043015341,
+          "interval_db": [
+            -0.009401147282231305,
+            0.02207855734795635
+          ]
+        },
+        "delta_minus_gps": {
+          "mean_db": -0.05008003565661667,
+          "interval_db": [
+            -0.1026146468175877,
+            0.021660739854689873
+          ]
+        },
+        "delta_minus_geometry": {
+          "mean_db": -0.05232738780788804,
+          "interval_db": [
+            -0.09318444683182124,
+            0.009084441958618388
+          ]
+        }
+      }
+    },
+    "pooled_val": {
+      "values": {
+        "geometry": {
+          "mean_db": 4.980832411612481,
+          "success": 0.7856170886015176,
+          "q90_db": 20.0888710975647,
+          "above_10db": 0.16697498963934954,
+          "conditional_miss_db": 19.49398995017111,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "gps": {
+          "mean_db": 4.964932371553767,
+          "success": 0.786824374843406,
+          "q90_db": 20.01146648724874,
+          "above_10db": 0.16829430821645355,
+          "conditional_miss_db": 19.520998291656507,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "mean": {
+          "mean_db": 4.882654179815424,
+          "success": 0.791134399049624,
+          "q90_db": 20.00459716717402,
+          "above_10db": 0.16647961003497336,
+          "conditional_miss_db": 19.602842866533013,
+          "cells_with_misses": 12,
+          "cells": 12
+        },
+        "delta": {
+          "mean_db": 4.924299452043325,
+          "success": 0.7894447040208287,
+          "q90_db": 20.030436697602273,
+          "above_10db": 0.1679029752126638,
+          "conditional_miss_db": 19.556273518556342,
+          "cells_with_misses": 12,
+          "cells": 12
+        }
+      },
+      "paired": {
+        "mean_minus_gps": {
+          "mean_db": -0.08227819173834305,
+          "interval_db": [
+            -0.12649454663626297,
+            -0.0019708764124801445
+          ]
+        },
+        "mean_minus_geometry": {
+          "mean_db": -0.09817823179705698,
+          "interval_db": [
+            -0.15595559564797154,
+            0.003789390612788737
+          ]
+        },
+        "delta_minus_gps": {
+          "mean_db": -0.040632919510442456,
+          "interval_db": [
+            -0.070063807811507,
+            0.008621899617895267
+          ]
+        },
+        "delta_minus_geometry": {
+          "mean_db": -0.05653295956915638,
+          "interval_db": [
+            -0.09475057634466108,
+            0.005602345989260096
+          ]
+        }
+      }
+    }
+  },
+  "source_hash": "ef2dc00c393a341bef59e937bcc0187b028d699ecb956de5053904acccaf357f",
+  "seeds": [
+    42,
+    7,
+    13
+  ]
+}

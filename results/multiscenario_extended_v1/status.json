@@ -1,0 +1,11 @@
+{
+  "updated_utc": "2026-11-08T20:22:25.469917+00:00",
+  "status": "complete",
+  "models": [
+    "B1",
+    "P1",
+    "P3"
+  ],
+  "epochs_each": 12,
+  "scope": "Training stage complete; no calibration or test evaluation performed."
+}

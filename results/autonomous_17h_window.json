@@ -1,0 +1,7 @@
+{
+  "starts_utc": "2026-11-10T18:42:50+00:00",
+  "ends_utc": "2026-11-11T11:42:50+00:00",
+  "local_end": "2026-11-11 17:42:50 Asia/Dhaka",
+  "review_interval_minutes": 60,
+  "automation_id": "deepsense-seventeen-hour-research-reviews"
+}

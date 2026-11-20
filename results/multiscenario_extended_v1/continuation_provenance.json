@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "B1_best.pt": "caca009c1f90cc6f0ee59b2224082fd26f7f4c85df1adc5e36deaa8757fc571a",
+    "B1_latest.pt": "e2f2871da8e273a1def682b7efa5c639dc37decb46f426842a10c81cf399b30e",
+    "P1_best.pt": "19eda658946dab810aee72ceb9d0f14a641889e21bc7677e674a1883fc0e1f26",
+    "P1_latest.pt": "a773d64feb7d8578241db0f6aa99f929e918b0a2ee46f336ad17a95198dad0f1",
+    "P3_best.pt": "ed5f18bc0a0334e8dc53942a73616e6735ae52a2b00392d5ff8e3d838992b9ab",
+    "P3_latest.pt": "8b55f1d883d0b2caed26c08512d48326b7929f29f5752da1ace9f631fe7eaf93"
+  },
+  "source_manifest_sha256": "8fe154359ed50db91a4de573a7e443c22fd45e194d688ed99133b045c5408371",
+  "note": "Epochs 1-3 inherited from pilot. Continue latest optimizer/model at lower LR. Best checkpoint retained."
+}

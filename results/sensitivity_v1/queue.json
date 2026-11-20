@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "stages": {
+    "146": {
+      "title": "Stage 146 - fixed-checkpoint visual dependence protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794320197.0279634
+    },
+    "147": {
+      "title": "Stage 147 - seed 42 image interventions",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794320200.7186458
+    },
+    "148": {
+      "title": "Stage 148 - seed 7 image interventions",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794320287.5529037
+    },
+    "149": {
+      "title": "Stage 149 - seed 13 image interventions",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794320374.4069316
+    },
+    "150": {
+      "title": "Stage 150 - visual dependence report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794320461.924394
+    }
+  },
+  "active_stage": 150
+}

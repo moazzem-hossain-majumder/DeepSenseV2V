@@ -1,0 +1,244 @@
+{
+  "scope": "GPS and RGB180 inputs; PWR supervision",
+  "audited_utc": "2026-11-08T03:59:36.317319+00:00",
+  "scenarios": {
+    "36": {
+      "csv_rows": 24799,
+      "sequence_count": 124,
+      "sequence_length_min": 199,
+      "sequence_length_max": 200,
+      "first_timestamp": "11-46-31.214536",
+      "last_timestamp": "13-50-08.304947",
+      "duplicate_absolute_indices": 0,
+      "csv_pickle_indices_match": true,
+      "csv_pickle_labels_match": true,
+      "power_shape": [
+        24799,
+        256
+      ],
+      "power_argmax_match_rate": 1.0,
+      "modalities": {
+        "gps": {
+          "csv_rows": 24799,
+          "unique_referenced_files": 49598,
+          "extracted_files": 49600,
+          "extracted_bytes": 2083200,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario36_gps.zip.001": "80a3725701b8ce38d256f70a04632fddb42db7225b2ff083b3121ca38b30d985"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACewLi5uThal3r-JVWxFsAXpWl2ROAQLOdwrsRr1KCr6dtFe6Ps"
+        },
+        "pwr": {
+          "csv_rows": 24799,
+          "unique_referenced_files": 99196,
+          "extracted_files": 99200,
+          "extracted_bytes": 165068800,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario36_pwr.zip.001": "269e3f3593b3855e48e29cf47d10fa43fc9c774d17b57ee99fd53605ee9320bc"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACewLi5uThal3r-JVWxFsAXpWl2ROAQLOdwrsRr1KCr6dtFe6Ps"
+        },
+        "rgb180": {
+          "csv_rows": 24799,
+          "unique_referenced_files": 49598,
+          "extracted_files": 49600,
+          "extracted_bytes": 34106278195,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario36_rgb180.zip.001": "6feb4d4e833f10e8ade67f3527bdbec9e3df1af763031fbaed4ebdf3801ed9e9",
+            "scenario36_rgb180.zip.002": "0ecd1bdfd1d5f89db6e75ec879e16643607fa3111a9255ebba27cfc15a852f09",
+            "scenario36_rgb180.zip.003": "de713ae9d818fa5247905cf401c844628e92c3ad5dd81cb8d719f25c75a19dad",
+            "scenario36_rgb180.zip.004": "9dc7140369b52b44986af4dfe15fb74823c3ebee656f9b8b6af46d2e37367fd6",
+            "scenario36_rgb180.zip.005": "6f28918fcd6a2c71e5aeb42bad840fb5334f96804d28c5d3bcdf35dba90c0860"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACewLi5uThal3r-JVWxFsAXpWl2ROAQLOdwrsRr1KCr6dtFe6Ps"
+        }
+      },
+      "complete": true,
+      "day_night": "not yet established"
+    },
+    "37": {
+      "csv_rows": 30999,
+      "sequence_count": 155,
+      "sequence_length_min": 199,
+      "sequence_length_max": 200,
+      "first_timestamp": "22-13-34.762609",
+      "last_timestamp": "23-14-32.162557",
+      "duplicate_absolute_indices": 0,
+      "csv_pickle_indices_match": true,
+      "csv_pickle_labels_match": true,
+      "power_shape": [
+        30999,
+        256
+      ],
+      "power_argmax_match_rate": 1.0,
+      "modalities": {
+        "gps": {
+          "csv_rows": 30999,
+          "unique_referenced_files": 56960,
+          "extracted_files": 56962,
+          "extracted_bytes": 2392404,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario37_gps.zip.001": "4e440d7a6790bbcced7764a75313fbc6899ac9f3f28b7c6cb273e78c260685ca"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAKPth2dQOmBxWa8Qo5fOmmcc1FQqyNScK2-d-rC_C-nqG-8PAeY"
+        },
+        "pwr": {
+          "csv_rows": 30999,
+          "unique_referenced_files": 123996,
+          "extracted_files": 124000,
+          "extracted_bytes": 206336000,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario37_pwr.zip.001": "8c7050d27130083dbc859dc3298c93bb1a78ed5b9a97101f0aa09023a7b57c41"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAKPth2dQOmBxWa8Qo5fOmmcc1FQqyNScK2-d-rC_C-nqG-8PAeY"
+        },
+        "rgb180": {
+          "csv_rows": 30999,
+          "unique_referenced_files": 61998,
+          "extracted_files": 62000,
+          "extracted_bytes": 30620034833,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario37_rgb180.zip.001": "a08059b408995a8ed63624999a8cb3c1bf88f4d7acd77d9d8c7a10fa9eae5fba",
+            "scenario37_rgb180.zip.002": "3eaba63847c534be588a050b818e4bacb6e26e9a27fde6ee8d2ca94e89329d8a",
+            "scenario37_rgb180.zip.003": "b996b6939293cacdd1d1b424172d1a99157c0237233751cee053f87d8689597e",
+            "scenario37_rgb180.zip.004": "1e89de7a361c42fbb6235512abf6a6972968ca709de75d37b6246f4a6924b253"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAKPth2dQOmBxWa8Qo5fOmmcc1FQqyNScK2-d-rC_C-nqG-8PAeY"
+        }
+      },
+      "complete": true,
+      "day_night": "not yet established"
+    },
+    "38": {
+      "csv_rows": 35999,
+      "sequence_count": 180,
+      "sequence_length_min": 199,
+      "sequence_length_max": 200,
+      "first_timestamp": "12-26-05.249580",
+      "last_timestamp": "13-42-08.847851",
+      "duplicate_absolute_indices": 0,
+      "csv_pickle_indices_match": true,
+      "csv_pickle_labels_match": true,
+      "power_shape": [
+        35999,
+        256
+      ],
+      "power_argmax_match_rate": 1.0,
+      "modalities": {
+        "gps": {
+          "csv_rows": 35999,
+          "unique_referenced_files": 71917,
+          "extracted_files": 71919,
+          "extracted_bytes": 3020598,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario38_gps.zip.001": "f7965a8077f9bb283ed7984a250dd46232b49978b5b7f1f7d435bc132759cd6d"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAOXEUm36HgN8dt-Wqy9iTkIiEp5I90LuOsuu8uif30meVecW-sc"
+        },
+        "pwr": {
+          "csv_rows": 35999,
+          "unique_referenced_files": 143996,
+          "extracted_files": 144000,
+          "extracted_bytes": 239616000,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario38_pwr.zip.001": "1f291f8ea9a597cb526227af6b46c8bdf48a2bcb60957054632a8b3035c3a450"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAOXEUm36HgN8dt-Wqy9iTkIiEp5I90LuOsuu8uif30meVecW-sc"
+        },
+        "rgb180": {
+          "csv_rows": 35999,
+          "unique_referenced_files": 71998,
+          "extracted_files": 72000,
+          "extracted_bytes": 48965535873,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario38_rgb180.zip.001": "5b6ead45a834c51698e870747e0833c0a6da87375d6098cb8d1650395cc6b70b",
+            "scenario38_rgb180.zip.002": "12f859a600a89a9a32336c3671991b1ee8a45ed2611ce59affa15ed311cf6841",
+            "scenario38_rgb180.zip.003": "d2442c908cf98af41ea702a61fd7699ea59119b2a15c57283617a9d90b9c33bf",
+            "scenario38_rgb180.zip.004": "21e3ea1a19fd1ab819e45cf3ccd91336603110b274b65ad6d0e79e4755fb1256",
+            "scenario38_rgb180.zip.005": "e51e7beb7dd07d2f02daf2bf61f74f7e4568beee039a7c452f52dfa76d3bbc65",
+            "scenario38_rgb180.zip.006": "b3374f3bcde02c8304e4db1ee482a186a99e89627a232012e27f85a9b8e30365"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAAOXEUm36HgN8dt-Wqy9iTkIiEp5I90LuOsuu8uif30meVecW-sc"
+        }
+      },
+      "complete": true,
+      "day_night": "not yet established"
+    },
+    "39": {
+      "csv_rows": 20399,
+      "sequence_count": 102,
+      "sequence_length_min": 199,
+      "sequence_length_max": 200,
+      "first_timestamp": "20-12-47.105193",
+      "last_timestamp": "22-03-12.636590",
+      "duplicate_absolute_indices": 0,
+      "csv_pickle_indices_match": true,
+      "csv_pickle_labels_match": true,
+      "power_shape": [
+        20399,
+        256
+      ],
+      "power_argmax_match_rate": 1.0,
+      "modalities": {
+        "gps": {
+          "csv_rows": 20399,
+          "unique_referenced_files": 40791,
+          "extracted_files": 40793,
+          "extracted_bytes": 1713306,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario39_gps.zip.001": "53fe449d40172c2897dda5d9d92e1d00bf016c5c5fc883ab65d0f1ef5f433039"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACz9W22DotzhQlfZZGG3RTHmhTIqdaOLqMC6HrM1i13hCA02tCI"
+        },
+        "pwr": {
+          "csv_rows": 20399,
+          "unique_referenced_files": 81596,
+          "extracted_files": 81600,
+          "extracted_bytes": 135782400,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario39_pwr.zip.001": "25b3c824a30b8033999a5631c3f5154f4befee75b55ef1d61411230eb3e1557d"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACz9W22DotzhQlfZZGG3RTHmhTIqdaOLqMC6HrM1i13hCA02tCI"
+        },
+        "rgb180": {
+          "csv_rows": 20399,
+          "unique_referenced_files": 40798,
+          "extracted_files": 40800,
+          "extracted_bytes": 21220270052,
+          "crc_verified": true,
+          "status": "verified_archives_deleted",
+          "archive_sha256": {
+            "scenario39_rgb180.zip.001": "e36b241a07172800f5c119cb58f003c1ac724f726b57643e7f3e54b3d688f924",
+            "scenario39_rgb180.zip.002": "98c7b42b8a1d75f9351e228f9db8a55fef421b1b04727f9f0d6dcfed1cc1abd0",
+            "scenario39_rgb180.zip.003": "22af1299dacedf5c4a4526a35d7b11fc67f14fc691f23b0ba847a61e9d89558d"
+          },
+          "source": "https://www.dropbox.com/transfer/AAAAACz9W22DotzhQlfZZGG3RTHmhTIqdaOLqMC6HrM1i13hCA02tCI"
+        }
+      },
+      "complete": true,
+      "day_night": "not yet established"
+    }
+  }
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "id": 164,
+    "title": "Stage 164 - prespecified four-scenario transfer protocol",
+    "kind": "prepare",
+    "directory": "results/transfer_v1/stage164",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 165,
+    "title": "Stage 165 - exclude S36 GPS",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage165",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192
+  },
+  {
+    "id": 166,
+    "title": "Stage 166 - exclude S36 192px visual",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage166",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 167,
+    "title": "Stage 167 - exclude S37 GPS",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage167",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192
+  },
+  {
+    "id": 168,
+    "title": "Stage 168 - exclude S37 192px visual",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage168",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 169,
+    "title": "Stage 169 - exclude S38 GPS",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage169",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192
+  },
+  {
+    "id": 170,
+    "title": "Stage 170 - exclude S38 192px visual",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage170",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 171,
+    "title": "Stage 171 - exclude S39 GPS",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage171",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192
+  },
+  {
+    "id": 172,
+    "title": "Stage 172 - exclude S39 192px visual",
+    "kind": "train",
+    "directory": "results/transfer_v1/stage172",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 173,
+    "title": "Stage 173 - paired transfer comparison",
+    "kind": "report",
+    "directory": "results/transfer_v1/stage173",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  }
+]

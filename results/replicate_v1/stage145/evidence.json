@@ -1,0 +1,145 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "seeds": [
+    42,
+    7,
+    13
+  ],
+  "baseline": 0.7856170886015177,
+  "records": [
+    {
+      "stage": 137,
+      "seed": 42,
+      "vision": false,
+      "score": 0.7856170886015177,
+      "best_epoch": 1,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7070707070707071,
+        "39": 0.6215791129285939
+      }
+    },
+    {
+      "stage": 138,
+      "seed": 42,
+      "vision": true,
+      "score": 0.7916415572124914,
+      "best_epoch": 5,
+      "by_scenario": {
+        "36": 0.8617265087853323,
+        "37": 0.9522830111065406,
+        "38": 0.7017231134878193,
+        "39": 0.6508335954702736
+      }
+    },
+    {
+      "stage": 141,
+      "seed": 7,
+      "vision": false,
+      "score": 0.787430202438853,
+      "best_epoch": 2,
+      "by_scenario": {
+        "36": 0.8615355233002292,
+        "37": 0.9522830111065406,
+        "38": 0.7014260249554367,
+        "39": 0.6344762503932054
+      }
+    },
+    {
+      "stage": 142,
+      "seed": 7,
+      "vision": true,
+      "score": 0.7918419047311781,
+      "best_epoch": 6,
+      "by_scenario": {
+        "36": 0.8621084797555386,
+        "37": 0.9522830111065406,
+        "38": 0.7052881758764111,
+        "39": 0.6476879521862221
+      }
+    },
+    {
+      "stage": 143,
+      "seed": 13,
+      "vision": false,
+      "score": 0.7856298833807484,
+      "best_epoch": 2,
+      "by_scenario": {
+        "36": 0.8590527119938884,
+        "37": 0.9522830111065406,
+        "38": 0.7014260249554367,
+        "39": 0.629757785467128
+      }
+    },
+    {
+      "stage": 144,
+      "seed": 13,
+      "vision": true,
+      "score": 0.7860415247958501,
+      "best_epoch": 5,
+      "by_scenario": {
+        "36": 0.8613445378151261,
+        "37": 0.9531057178116001,
+        "38": 0.7049910873440285,
+        "39": 0.6247247562126454
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 42,
+      "gps": 0.7856170886015177,
+      "visual": 0.7916415572124914,
+      "gain": 0.006024468610973801
+    },
+    {
+      "seed": 7,
+      "gps": 0.787430202438853,
+      "visual": 0.7918419047311781,
+      "gain": 0.004411702292325129
+    },
+    {
+      "seed": 13,
+      "gps": 0.7856298833807484,
+      "visual": 0.7860415247958501,
+      "gain": 0.0004116414151016229
+    }
+  ],
+  "visual_mean": 0.7898416622465066,
+  "gps_mean": 0.7862257248070397,
+  "interval_vs_gps": [
+    -0.003529803529803529,
+    0.008456729911589928
+  ],
+  "interval_vs_geometry": [
+    -0.003542602478360993,
+    0.009936965995278354
+  ],
+  "replication_supported": false,
+  "next_action": "Replication is not sufficient for a robust visual-gain claim. Inspect per-seed/scenario patterns before a separately controlled image representation experiment.",
+  "uncertainty_scope": "Paired scenario-stratified block bootstrap of seed-averaged success; does not account fully for seed uncertainty, repeated validation selection, or selection of seed 42 during pilot screening.",
+  "by_scenario": {
+    "36": {
+      "visual": 0.8617265087853323,
+      "gps": 0.8607079195314489,
+      "geometry": 0.8615355233002292
+    },
+    "37": {
+      "visual": 0.9525572466748938,
+      "gps": 0.9522830111065406,
+      "geometry": 0.9522830111065406
+    },
+    "38": {
+      "visual": 0.7040007922360865,
+      "gps": 0.7033075856605268,
+      "geometry": 0.7070707070707071
+    },
+    "39": {
+      "visual": 0.6410821012897138,
+      "gps": 0.6286043829296424,
+      "geometry": 0.6215791129285939
+    }
+  }
+}

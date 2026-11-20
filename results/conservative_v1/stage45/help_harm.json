@@ -1,0 +1,171 @@
+{
+  "records": {
+    "40": {
+      "overall": {
+        "n": 16643,
+        "help_fraction": 0.07612810190470468,
+        "harm_fraction": 0.13008472030283003,
+        "model_panel_accuracy": 0.903202547617617,
+        "geometry_panel_accuracy": 0.8689539145586733
+      },
+      "by_scenario": {
+        "36": {
+          "n": 5236,
+          "help_fraction": 0.034759358288770054,
+          "harm_fraction": 0.09702062643239114,
+          "model_panel_accuracy": 0.9134835752482812,
+          "geometry_panel_accuracy": 0.8775783040488923
+        },
+        "37": {
+          "n": 4862,
+          "help_fraction": 0.01830522418757713,
+          "harm_fraction": 0.15939942410530647,
+          "model_panel_accuracy": 0.9932126696832579,
+          "geometry_panel_accuracy": 0.9919786096256684
+        },
+        "38": {
+          "n": 3366,
+          "help_fraction": 0.15062388591800357,
+          "harm_fraction": 0.21241830065359477,
+          "model_panel_accuracy": 0.8680926916221033,
+          "geometry_panel_accuracy": 0.8134284016636958
+        },
+        "39": {
+          "n": 3179,
+          "help_fraction": 0.15382195659012268,
+          "harm_fraction": 0.05253224284366153,
+          "model_panel_accuracy": 0.7857816923560869,
+          "geometry_panel_accuracy": 0.7253853413022964
+        }
+      },
+      "by_slow_heading": {
+        "False": {
+          "n": 13197,
+          "help_fraction": 0.019625672501326057,
+          "harm_fraction": 0.1562476320375843,
+          "model_panel_accuracy": 0.9815867242555126,
+          "geometry_panel_accuracy": 0.9907554747291051
+        },
+        "True": {
+          "n": 3446,
+          "help_fraction": 0.2925130586186883,
+          "harm_fraction": 0.029889727219965176,
+          "model_panel_accuracy": 0.6030179918746372,
+          "geometry_panel_accuracy": 0.4024956471271039
+        }
+      }
+    },
+    "41": {
+      "overall": {
+        "n": 16643,
+        "help_fraction": 0.09583608724388631,
+        "harm_fraction": 0.12563840653728295,
+        "model_panel_accuracy": 0.8953914558673316,
+        "geometry_panel_accuracy": 0.8689539145586733
+      },
+      "by_scenario": {
+        "36": {
+          "n": 5236,
+          "help_fraction": 0.03361344537815126,
+          "harm_fraction": 0.10026737967914438,
+          "model_panel_accuracy": 0.8607715813598167,
+          "geometry_panel_accuracy": 0.8775783040488923
+        },
+        "37": {
+          "n": 4862,
+          "help_fraction": 0.02406417112299465,
+          "harm_fraction": 0.14849856026326613,
+          "model_panel_accuracy": 0.9913615795968738,
+          "geometry_panel_accuracy": 0.9919786096256684
+        },
+        "38": {
+          "n": 3366,
+          "help_fraction": 0.11259655377302435,
+          "harm_fraction": 0.18449197860962566,
+          "model_panel_accuracy": 0.8190730837789661,
+          "geometry_panel_accuracy": 0.8134284016636958
+        },
+        "39": {
+          "n": 3179,
+          "help_fraction": 0.29034287511796164,
+          "harm_fraction": 0.07014784523435043,
+          "model_panel_accuracy": 0.8864422774457377,
+          "geometry_panel_accuracy": 0.7253853413022964
+        }
+      },
+      "by_slow_heading": {
+        "False": {
+          "n": 13197,
+          "help_fraction": 0.023035538379934835,
+          "harm_fraction": 0.14776085473971357,
+          "model_panel_accuracy": 0.9773433356065773,
+          "geometry_panel_accuracy": 0.9907554747291051
+        },
+        "True": {
+          "n": 3446,
+          "help_fraction": 0.3746372605919907,
+          "harm_fraction": 0.040917005223447475,
+          "model_panel_accuracy": 0.5815438189204876,
+          "geometry_panel_accuracy": 0.4024956471271039
+        }
+      }
+    },
+    "42": {
+      "overall": {
+        "n": 16643,
+        "help_fraction": 0.054257045003905546,
+        "harm_fraction": 0.12533797993150272,
+        "model_panel_accuracy": 0.8896833503575077,
+        "geometry_panel_accuracy": 0.8689539145586733
+      },
+      "by_scenario": {
+        "36": {
+          "n": 5236,
+          "help_fraction": 0.04373567608861727,
+          "harm_fraction": 0.11325439266615737,
+          "model_panel_accuracy": 0.9192131398013751,
+          "geometry_panel_accuracy": 0.8775783040488923
+        },
+        "37": {
+          "n": 4862,
+          "help_fraction": 0.019127930892636775,
+          "harm_fraction": 0.13986013986013987,
+          "model_panel_accuracy": 0.9928013163307281,
+          "geometry_panel_accuracy": 0.9919786096256684
+        },
+        "38": {
+          "n": 3366,
+          "help_fraction": 0.06446821152703505,
+          "harm_fraction": 0.19815805109922757,
+          "model_panel_accuracy": 0.7813428401663696,
+          "geometry_panel_accuracy": 0.8134284016636958
+        },
+        "39": {
+          "n": 3179,
+          "help_fraction": 0.11450141553947782,
+          "harm_fraction": 0.04592639194715319,
+          "model_panel_accuracy": 0.7980497011638881,
+          "geometry_panel_accuracy": 0.7253853413022964
+        }
+      },
+      "by_slow_heading": {
+        "False": {
+          "n": 13197,
+          "help_fraction": 0.019777222095930892,
+          "harm_fraction": 0.1501098734560885,
+          "model_panel_accuracy": 0.9756005152686217,
+          "geometry_panel_accuracy": 0.9907554747291051
+        },
+        "True": {
+          "n": 3446,
+          "help_fraction": 0.18630295995356935,
+          "harm_fraction": 0.030470110272780036,
+          "model_panel_accuracy": 0.5606500290191526,
+          "geometry_panel_accuracy": 0.4024956471271039
+        }
+      }
+    }
+  },
+  "scope": "Historical validation comparison; panel label is floor(beam/64). Does not establish physical antenna mounting or image field-of-view calibration.",
+  "camera_limit": "Front RGB5 only. Semantic receiver visibility and front/rear coverage remain unverified; no rear-camera performance claim."
+}

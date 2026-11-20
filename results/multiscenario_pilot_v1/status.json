@@ -1,0 +1,11 @@
+{
+  "updated_utc": "2026-11-08T11:43:23.979698+00:00",
+  "status": "complete",
+  "models": [
+    "B1",
+    "P1",
+    "P3"
+  ],
+  "epochs_each": 3,
+  "scope": "Pilot complete; no calibration or test evaluation performed."
+}

@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "stages": {
+    "96": {
+      "title": "Stage 96 - shortlist coverage and baseline protocol audit",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794303476.156433
+    },
+    "97": {
+      "title": "Stage 97 - top 10 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794303488.8026078
+    },
+    "98": {
+      "title": "Stage 98 - top 10 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794303640.2539957
+    },
+    "99": {
+      "title": "Stage 99 - top 20 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794303842.595076
+    },
+    "100": {
+      "title": "Stage 100 - top 20 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794303963.5745578
+    },
+    "101": {
+      "title": "Stage 101 - matched pilot selection",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304165.8082955
+    },
+    "102": {
+      "title": "Stage 102 - seed 42 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304169.6401625
+    },
+    "103": {
+      "title": "Stage 103 - seed 42 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304173.0475338
+    },
+    "104": {
+      "title": "Stage 104 - seed 7 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304176.3539436
+    },
+    "105": {
+      "title": "Stage 105 - seed 7 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304179.6341105
+    },
+    "106": {
+      "title": "Stage 106 - seed 13 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304182.9815917
+    },
+    "107": {
+      "title": "Stage 107 - seed 13 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304186.2503583
+    },
+    "108": {
+      "title": "Stage 108 - held S36 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304189.490202
+    },
+    "109": {
+      "title": "Stage 109 - held S36 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304192.6657043
+    },
+    "110": {
+      "title": "Stage 110 - held S37 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304195.871482
+    },
+    "111": {
+      "title": "Stage 111 - held S37 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304199.0719757
+    },
+    "112": {
+      "title": "Stage 112 - held S38 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304202.2663722
+    },
+    "113": {
+      "title": "Stage 113 - held S38 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304205.6242046
+    },
+    "114": {
+      "title": "Stage 114 - held S39 GPS control",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304208.7838624
+    },
+    "115": {
+      "title": "Stage 115 - held S39 GPS and images",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304212.025457
+    },
+    "116": {
+      "title": "Stage 116 - paired reranking evidence report",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794304215.3309736
+    }
+  },
+  "active_stage": 116
+}

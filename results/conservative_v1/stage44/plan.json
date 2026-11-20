@@ -1,0 +1,254 @@
+[
+  {
+    "id": 44,
+    "title": "Stage 44 - coordinates and geometry audit",
+    "kind": "geometry",
+    "method": null,
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage44",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 45,
+    "title": "Stage 45 - help-versus-harm analysis",
+    "kind": "diagnostics",
+    "method": null,
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage45",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 46,
+    "title": "Stage 46 - compact_gps seed 42",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage46",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 47,
+    "title": "Stage 47 - compact_gps seed 7",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 7,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage47",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 48,
+    "title": "Stage 48 - compact_gps seed 13",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 13,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage48",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 49,
+    "title": "Stage 49 - bounded_multimodal seed 42",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage49",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 50,
+    "title": "Stage 50 - bounded_multimodal seed 7",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 7,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage50",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 51,
+    "title": "Stage 51 - bounded_multimodal seed 13",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 13,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage51",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 52,
+    "title": "Stage 52 - compact_gps unseen S36",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 42,
+    "holdout": 36,
+    "directory": "results/conservative_v1/stage52",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 53,
+    "title": "Stage 53 - bounded_multimodal unseen S36",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 42,
+    "holdout": 36,
+    "directory": "results/conservative_v1/stage53",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 54,
+    "title": "Stage 54 - compact_gps unseen S37",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 42,
+    "holdout": 37,
+    "directory": "results/conservative_v1/stage54",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 55,
+    "title": "Stage 55 - bounded_multimodal unseen S37",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 42,
+    "holdout": 37,
+    "directory": "results/conservative_v1/stage55",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 56,
+    "title": "Stage 56 - compact_gps unseen S38",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 42,
+    "holdout": 38,
+    "directory": "results/conservative_v1/stage56",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 57,
+    "title": "Stage 57 - bounded_multimodal unseen S38",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 42,
+    "holdout": 38,
+    "directory": "results/conservative_v1/stage57",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 58,
+    "title": "Stage 58 - compact_gps unseen S39",
+    "kind": "train",
+    "method": "compact_gps",
+    "seed": 42,
+    "holdout": 39,
+    "directory": "results/conservative_v1/stage58",
+    "models": [
+      "gps"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 59,
+    "title": "Stage 59 - bounded_multimodal unseen S39",
+    "kind": "train",
+    "method": "bounded_multimodal",
+    "seed": 42,
+    "holdout": 39,
+    "directory": "results/conservative_v1/stage59",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs"
+  },
+  {
+    "id": 60,
+    "title": "Stage 60 - paired uncertainty and transfer",
+    "kind": "compare",
+    "method": null,
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage60",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 61,
+    "title": "Stage 61 - evidence report and figures",
+    "kind": "report",
+    "method": null,
+    "seed": 42,
+    "holdout": null,
+    "directory": "results/conservative_v1/stage61",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]

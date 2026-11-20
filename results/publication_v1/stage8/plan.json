@@ -1,0 +1,436 @@
+{
+  "stages": [
+    {
+      "id": 8,
+      "title": "Stage 8 - protocol and cache",
+      "kind": "prepare",
+      "directory": "results/publication_v1/stage8",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    },
+    {
+      "id": 9,
+      "title": "Stage 9 - audit and GPS baseline",
+      "kind": "audit",
+      "directory": "results/publication_v1/stage9",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    },
+    {
+      "id": 10,
+      "title": "Stage 10 - gps seed 42",
+      "kind": "train",
+      "directory": "results/publication_v1/stage10",
+      "models": [
+        "gps"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "gps",
+      "seed": 42,
+      "holdout": null
+    },
+    {
+      "id": 11,
+      "title": "Stage 11 - gps seed 7",
+      "kind": "train",
+      "directory": "results/publication_v1/stage11",
+      "models": [
+        "gps"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "gps",
+      "seed": 7,
+      "holdout": null
+    },
+    {
+      "id": 12,
+      "title": "Stage 12 - gps seed 13",
+      "kind": "train",
+      "directory": "results/publication_v1/stage12",
+      "models": [
+        "gps"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "gps",
+      "seed": 13,
+      "holdout": null
+    },
+    {
+      "id": 13,
+      "title": "Stage 13 - rgb seed 42",
+      "kind": "train",
+      "directory": "results/publication_v1/stage13",
+      "models": [
+        "rgb"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "rgb",
+      "seed": 42,
+      "holdout": null
+    },
+    {
+      "id": 14,
+      "title": "Stage 14 - rgb seed 7",
+      "kind": "train",
+      "directory": "results/publication_v1/stage14",
+      "models": [
+        "rgb"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "rgb",
+      "seed": 7,
+      "holdout": null
+    },
+    {
+      "id": 15,
+      "title": "Stage 15 - rgb seed 13",
+      "kind": "train",
+      "directory": "results/publication_v1/stage15",
+      "models": [
+        "rgb"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "rgb",
+      "seed": 13,
+      "holdout": null
+    },
+    {
+      "id": 16,
+      "title": "Stage 16 - fusion_ce seed 42",
+      "kind": "train",
+      "directory": "results/publication_v1/stage16",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 42,
+      "holdout": null
+    },
+    {
+      "id": 17,
+      "title": "Stage 17 - fusion_ce seed 7",
+      "kind": "train",
+      "directory": "results/publication_v1/stage17",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 7,
+      "holdout": null
+    },
+    {
+      "id": 18,
+      "title": "Stage 18 - fusion_ce seed 13",
+      "kind": "train",
+      "directory": "results/publication_v1/stage18",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 13,
+      "holdout": null
+    },
+    {
+      "id": 19,
+      "title": "Stage 19 - profile_original seed 42",
+      "kind": "train",
+      "directory": "results/publication_v1/stage19",
+      "models": [
+        "profile_original"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "profile_original",
+      "seed": 42,
+      "holdout": null
+    },
+    {
+      "id": 20,
+      "title": "Stage 20 - profile_original seed 7",
+      "kind": "train",
+      "directory": "results/publication_v1/stage20",
+      "models": [
+        "profile_original"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "profile_original",
+      "seed": 7,
+      "holdout": null
+    },
+    {
+      "id": 21,
+      "title": "Stage 21 - profile_original seed 13",
+      "kind": "train",
+      "directory": "results/publication_v1/stage21",
+      "models": [
+        "profile_original"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "profile_original",
+      "seed": 13,
+      "holdout": null
+    },
+    {
+      "id": 22,
+      "title": "Stage 22 - power_aware seed 42",
+      "kind": "train",
+      "directory": "results/publication_v1/stage22",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 42,
+      "holdout": null
+    },
+    {
+      "id": 23,
+      "title": "Stage 23 - power_aware seed 7",
+      "kind": "train",
+      "directory": "results/publication_v1/stage23",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 7,
+      "holdout": null
+    },
+    {
+      "id": 24,
+      "title": "Stage 24 - power_aware seed 13",
+      "kind": "train",
+      "directory": "results/publication_v1/stage24",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 13,
+      "holdout": null
+    },
+    {
+      "id": 25,
+      "title": "Stage 25 - fusion_ce unseen S36",
+      "kind": "train",
+      "directory": "results/publication_v1/stage25",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 42,
+      "holdout": 36
+    },
+    {
+      "id": 26,
+      "title": "Stage 26 - power_aware unseen S36",
+      "kind": "train",
+      "directory": "results/publication_v1/stage26",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 42,
+      "holdout": 36
+    },
+    {
+      "id": 27,
+      "title": "Stage 27 - fusion_ce unseen S37",
+      "kind": "train",
+      "directory": "results/publication_v1/stage27",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 42,
+      "holdout": 37
+    },
+    {
+      "id": 28,
+      "title": "Stage 28 - power_aware unseen S37",
+      "kind": "train",
+      "directory": "results/publication_v1/stage28",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 42,
+      "holdout": 37
+    },
+    {
+      "id": 29,
+      "title": "Stage 29 - fusion_ce unseen S38",
+      "kind": "train",
+      "directory": "results/publication_v1/stage29",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 42,
+      "holdout": 38
+    },
+    {
+      "id": 30,
+      "title": "Stage 30 - power_aware unseen S38",
+      "kind": "train",
+      "directory": "results/publication_v1/stage30",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 42,
+      "holdout": 38
+    },
+    {
+      "id": 31,
+      "title": "Stage 31 - fusion_ce unseen S39",
+      "kind": "train",
+      "directory": "results/publication_v1/stage31",
+      "models": [
+        "fusion_ce"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "fusion_ce",
+      "seed": 42,
+      "holdout": 39
+    },
+    {
+      "id": 32,
+      "title": "Stage 32 - power_aware unseen S39",
+      "kind": "train",
+      "directory": "results/publication_v1/stage32",
+      "models": [
+        "power_aware"
+      ],
+      "epochs": 8,
+      "unit": "epochs",
+      "job": "publication",
+      "variant": "power_aware",
+      "seed": 42,
+      "holdout": 39
+    },
+    {
+      "id": 33,
+      "title": "Stage 33 - evidence and freeze gate",
+      "kind": "gate",
+      "directory": "results/publication_v1/stage33",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    },
+    {
+      "id": 34,
+      "title": "Stage 34 - calibration (gated)",
+      "kind": "calibrate",
+      "directory": "results/publication_v1/stage34",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    },
+    {
+      "id": 35,
+      "title": "Stage 35 - locked test (gated)",
+      "kind": "test",
+      "directory": "results/publication_v1/stage35",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    },
+    {
+      "id": 36,
+      "title": "Stage 36 - research evidence package",
+      "kind": "report",
+      "directory": "results/publication_v1/stage36",
+      "models": [
+        "analysis"
+      ],
+      "epochs": 1,
+      "unit": "analysis passes",
+      "job": "publication"
+    }
+  ],
+  "common": {
+    "size": 96,
+    "epochs": 8,
+    "batch": 16,
+    "workers": 2,
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "dropout": 0.25,
+    "freeze_batchnorm": true,
+    "brightness": 0.1,
+    "precision": "bf16",
+    "primary": "macro_scenario_within_3db_at_5",
+    "delta_db": 3.0,
+    "target_coverage": 0.9
+  }
+}

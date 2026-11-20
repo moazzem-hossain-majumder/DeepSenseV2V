@@ -17,68 +17,32 @@ Thumbs.db
 
 # Logs and flags
 *.log
+*.lock
 pause.flag
+results/**/train_log_*.txt
 
-# Raw dataset files — never commit (large archives, licensed)
-data/raw/scenario36/
-data/raw/*.p
-data/raw/*.csv
-data/raw/*.mat
-data/raw/*.zip
-data/raw/*.tar.gz
-
-# Large binary model files — too big for GitHub
-results/checkpoints/*.pt
-results/checkpoints/*.pth
-results/checkpoints/*.bin
-
-# Large processed data binaries
-data/processed/*.pt
-data/processed/*.npy
-
-# Generic binary formats
-*.mat
-*.onnx
-*.ckpt
-
-# Keep these result files (tables, plots, JSONs, checklist)
-!results/ablation_table.csv
-!results/telecom_utility_table.csv
-!results/topk_candidate_sets.csv
-!results/significance_tests.csv
-!results/reliability_curves.png
-!results/near_optimal_set_sizes.png
-!results/blueprint_step_checklist.json
-!results/results_B1.json
-!results/results_B3.json
-!results/results_P1.json
-!results/results_P3.json
-!results/results_all_models.csv
-!results/results_summary.csv
-!results/eda/
-!results/eda/*.json
-!results/eda/*.png
-
-# Keep processed split CSVs (small, needed to reproduce splits)
-!data/processed/split_manifest.csv
-!data/processed/train.csv
-!data/processed/val.csv
-!data/processed/calib.csv
-!data/processed/test.csv
-!data/processed/annotated_scenario36_with_predictions.csv
-!data/processed/eda_figures/
-!data/processed/eda_figures/*.png
-
-# Keep .gitkeep files
+# Raw and processed datasets — never commit large archives/caches
+data/raw/**
 !data/raw/.gitkeep
+data/processed/**
 !data/processed/.gitkeep
 
-# Training logs (large, regenerable)
-results/train_log_*.txt
+# Binary model checkpoints and weights — too big for GitHub
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+
+# Binary data arrays and cache
+*.npy
+*.npz
+*.mat
+*.p
+
+# Temporary files and large line-delimited stream manifests
+*.tmp
+*.jsonl
 
 # Large derived CSVs (regenerable from raw data)
 data/processed/annotated_scenario36_with_predictions.csv
-
-# Stale training run summaries (regenerable)
-results/results_summary.csv
-results/train_log_*.txt

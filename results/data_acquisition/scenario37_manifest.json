@@ -1,0 +1,45 @@
+{
+  "source": "https://www.dropbox.com/transfer/AAAAAKPth2dQOmBxWa8Qo5fOmmcc1FQqyNScK2-d-rC_C-nqG-8PAeY",
+  "files": [
+    {
+      "relative_path": "scenario37_gps.zip.001",
+      "file_size": 14395809,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA8Q"
+    },
+    {
+      "relative_path": "scenario37.p",
+      "file_size": 88845254,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA8A"
+    },
+    {
+      "relative_path": "scenario37.csv",
+      "file_size": 31425977,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA7g"
+    },
+    {
+      "relative_path": "scenario37_rgb180.zip.004",
+      "file_size": 5064729720,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA9g"
+    },
+    {
+      "relative_path": "scenario37_rgb180.zip.001",
+      "file_size": 8522825728,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA8w"
+    },
+    {
+      "relative_path": "scenario37_pwr.zip.001",
+      "file_size": 111920222,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA8g"
+    },
+    {
+      "relative_path": "scenario37_rgb180.zip.002",
+      "file_size": 8522825728,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA9A"
+    },
+    {
+      "relative_path": "scenario37_rgb180.zip.003",
+      "file_size": 8522825728,
+      "transfer_file_id": "id:R86HTDMkMHQAAAAAAAAA9Q"
+    }
+  ]
+}

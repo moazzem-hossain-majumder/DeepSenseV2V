@@ -1,0 +1,10 @@
+{
+  "src/swin_comparison_data.py": "395eea4e00ed7e6fa19e1da532cc711006d129482b8129c2abdf3dbd25794025",
+  "src/swin_comparison_evidence.py": "1bc3e9112d0c027048b5bb2de3922a3d2c27b709b2f96499b37f264ac9425da3",
+  "src/swin_comparison_plan.py": "2f5c3e0472286e58ae3cee60269ca1f78ece51d559160dad586512423f699468",
+  "src/swin_comparison_queue.py": "1a1bf6e07f0c43d1457df6814d9bcd29f427416f349c1ac2bc73a25dcfb45f42",
+  "src/swin_comparison_service.py": "15ba4a9e6cbdb192389dbb040f60939410eb618a85f96043b58bfd47ab8c7e77",
+  "src/swin_comparison_training.py": "a532324b86028da06f51f8f7d5cc8407471b2b4f07c57c9195708f284eb5a298",
+  "src/swin_comparison_worker.py": "d8fde75eeff79c521b1e983757a4d1d5b1bd42a3e0cd0a466a4451ce5a58107d",
+  "paper/SWIN_COMPARISON_PROTOCOL.md": "7f598516d4c124156e875d9b5cc9fc272ae48a2e58ea37f706d0f1e805349332"
+}

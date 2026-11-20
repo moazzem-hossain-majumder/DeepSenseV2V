@@ -1,0 +1,17 @@
+{
+  "csv_rows": 35999,
+  "unique_referenced_files": 71998,
+  "extracted_files": 72000,
+  "extracted_bytes": 48965535873,
+  "crc_verified": true,
+  "status": "verified_archives_deleted",
+  "archive_sha256": {
+    "scenario38_rgb180.zip.001": "5b6ead45a834c51698e870747e0833c0a6da87375d6098cb8d1650395cc6b70b",
+    "scenario38_rgb180.zip.002": "12f859a600a89a9a32336c3671991b1ee8a45ed2611ce59affa15ed311cf6841",
+    "scenario38_rgb180.zip.003": "d2442c908cf98af41ea702a61fd7699ea59119b2a15c57283617a9d90b9c33bf",
+    "scenario38_rgb180.zip.004": "21e3ea1a19fd1ab819e45cf3ccd91336603110b274b65ad6d0e79e4755fb1256",
+    "scenario38_rgb180.zip.005": "e51e7beb7dd07d2f02daf2bf61f74f7e4568beee039a7c452f52dfa76d3bbc65",
+    "scenario38_rgb180.zip.006": "b3374f3bcde02c8304e4db1ee482a186a99e89627a232012e27f85a9b8e30365"
+  },
+  "source": "https://www.dropbox.com/transfer/AAAAAOXEUm36HgN8dt-Wqy9iTkIiEp5I90LuOsuu8uif30meVecW-sc"
+}

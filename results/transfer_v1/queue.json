@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "stages": {
+    "164": {
+      "title": "Stage 164 - prespecified four-scenario transfer protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332054.6452923
+    },
+    "165": {
+      "title": "Stage 165 - exclude S36 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332058.5016673
+    },
+    "166": {
+      "title": "Stage 166 - exclude S36 192px visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332280.4825847
+    },
+    "167": {
+      "title": "Stage 167 - exclude S37 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332482.2153482
+    },
+    "168": {
+      "title": "Stage 168 - exclude S37 192px visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332653.5736732
+    },
+    "169": {
+      "title": "Stage 169 - exclude S38 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332828.5177171
+    },
+    "170": {
+      "title": "Stage 170 - exclude S38 192px visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794332996.6243448
+    },
+    "171": {
+      "title": "Stage 171 - exclude S39 GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794333160.05298
+    },
+    "172": {
+      "title": "Stage 172 - exclude S39 192px visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794333361.1954944
+    },
+    "173": {
+      "title": "Stage 173 - paired transfer comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794333558.8696127
+    }
+  },
+  "active_stage": 173
+}

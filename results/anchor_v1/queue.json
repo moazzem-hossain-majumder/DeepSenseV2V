@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "stages": {
+    "211": {
+      "title": "Stage 211 - protected beam choices protocol",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350637.1226325
+    },
+    "212": {
+      "title": "Stage 212 - protected top three, scope pooled",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350641.5815563
+    },
+    "213": {
+      "title": "Stage 213 - protected top three, scope 36",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350648.1506832
+    },
+    "214": {
+      "title": "Stage 214 - protected top three, scope 37",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350652.749886
+    },
+    "215": {
+      "title": "Stage 215 - protected top three, scope 38",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350657.3159604
+    },
+    "216": {
+      "title": "Stage 216 - protected top three, scope 39",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350661.7106533
+    },
+    "217": {
+      "title": "Stage 217 - protected beam comparison",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794350666.0407772
+    }
+  },
+  "active_stage": 217
+}

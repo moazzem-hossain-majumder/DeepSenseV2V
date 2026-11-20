@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "stages": {
+    "124": {
+      "title": "Stage 124 - factorial protocol and five-hour window",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794311542.1652577
+    },
+    "125": {
+      "title": "Stage 125 - bounded soft GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794311545.7243943
+    },
+    "126": {
+      "title": "Stage 126 - bounded soft visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794311691.8472674
+    },
+    "127": {
+      "title": "Stage 127 - bounded hard GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794311890.0359125
+    },
+    "128": {
+      "title": "Stage 128 - bounded hard visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312008.1440897
+    },
+    "129": {
+      "title": "Stage 129 - unbounded soft GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312210.1243794
+    },
+    "130": {
+      "title": "Stage 130 - unbounded soft visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312330.2213252
+    },
+    "131": {
+      "title": "Stage 131 - unbounded hard GPS",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312524.929371
+    },
+    "132": {
+      "title": "Stage 132 - unbounded hard visual",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312638.2111168
+    },
+    "133": {
+      "title": "Stage 133 - factorial comparison and next action",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794312835.832149
+    }
+  },
+  "active_stage": 133
+}

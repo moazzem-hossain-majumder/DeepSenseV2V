@@ -1,0 +1,76 @@
+[
+  {
+    "id": 151,
+    "title": "Stage 151 - native 96/192 frozen feature extraction",
+    "kind": "prepare",
+    "directory": "results/resolution_v1/stage151",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true
+  },
+  {
+    "id": 152,
+    "title": "Stage 152 - 96-pixel feature control",
+    "kind": "train",
+    "directory": "results/resolution_v1/stage152",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 96
+  },
+  {
+    "id": 153,
+    "title": "Stage 153 - 192-pixel feature comparison",
+    "kind": "train",
+    "directory": "results/resolution_v1/stage153",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 154,
+    "title": "Stage 154 - resolution comparison report",
+    "kind": "report",
+    "directory": "results/resolution_v1/stage154",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true
+  }
+]

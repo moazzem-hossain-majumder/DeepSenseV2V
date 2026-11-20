@@ -1,0 +1,86 @@
+[
+  {
+    "id": 211,
+    "title": "Stage 211 - protected beam choices protocol",
+    "kind": "prepare",
+    "directory": "results/anchor_v1/stage211",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  },
+  {
+    "id": 212,
+    "title": "Stage 212 - protected top three, scope pooled",
+    "kind": "audit",
+    "directory": "results/anchor_v1/stage212",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  },
+  {
+    "id": 213,
+    "title": "Stage 213 - protected top three, scope 36",
+    "kind": "audit",
+    "directory": "results/anchor_v1/stage213",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 36
+  },
+  {
+    "id": 214,
+    "title": "Stage 214 - protected top three, scope 37",
+    "kind": "audit",
+    "directory": "results/anchor_v1/stage214",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 37
+  },
+  {
+    "id": 215,
+    "title": "Stage 215 - protected top three, scope 38",
+    "kind": "audit",
+    "directory": "results/anchor_v1/stage215",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 38
+  },
+  {
+    "id": 216,
+    "title": "Stage 216 - protected top three, scope 39",
+    "kind": "audit",
+    "directory": "results/anchor_v1/stage216",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": 39
+  },
+  {
+    "id": 217,
+    "title": "Stage 217 - protected beam comparison",
+    "kind": "report",
+    "directory": "results/anchor_v1/stage217",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "scenario": null
+  }
+]

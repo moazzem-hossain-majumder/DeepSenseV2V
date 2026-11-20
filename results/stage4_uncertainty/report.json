@@ -1,0 +1,45 @@
+{
+  "scope": "Validation-only, scenario-stratified trajectory-block bootstrap; conditional on selected checkpoints. Not independent test inference.",
+  "replicates": 2000,
+  "blocks_by_scenario": [
+    3,
+    3,
+    3,
+    2
+  ],
+  "models": {
+    "B1": {
+      "top1": 0.10322658174607943,
+      "percentile_95": [
+        0.07305975104952026,
+        0.13875598086124402
+      ]
+    },
+    "P1": {
+      "top1": 0.11362134230607462,
+      "percentile_95": [
+        0.061460645252164416,
+        0.16417759185785727
+      ]
+    },
+    "P3": {
+      "top1": 0.1563420056480202,
+      "percentile_95": [
+        0.08227654698242934,
+        0.22089675030851502
+      ]
+    }
+  },
+  "paired_top1_differences": {
+    "P3_minus_B1": [
+      -0.01161191749427043,
+      0.05311542390194077,
+      0.10904173581658369
+    ],
+    "P3_minus_P1": [
+      0.018559295375904374,
+      0.04258976317799848,
+      0.06110206928621251
+    ]
+  }
+}

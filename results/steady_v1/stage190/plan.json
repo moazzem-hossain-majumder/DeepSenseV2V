@@ -1,0 +1,443 @@
+[
+  {
+    "id": 190,
+    "title": "Stage 190 - robustness replication and tradeoff protocol",
+    "kind": "prepare",
+    "directory": "results/steady_v1/stage190",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 191,
+    "title": "Stage 191 - pooled consistency seed 42",
+    "kind": "train",
+    "directory": "results/steady_v1/stage191",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 192,
+    "title": "Stage 192 - pooled consistency seed 7",
+    "kind": "train",
+    "directory": "results/steady_v1/stage192",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 193,
+    "title": "Stage 193 - pooled consistency seed 13",
+    "kind": "train",
+    "directory": "results/steady_v1/stage193",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 194,
+    "title": "Stage 194 - exclude S36 seed 7 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage194",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 195,
+    "title": "Stage 195 - exclude S36 seed 7 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage195",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 196,
+    "title": "Stage 196 - exclude S37 seed 7 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage196",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 197,
+    "title": "Stage 197 - exclude S37 seed 7 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage197",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 198,
+    "title": "Stage 198 - exclude S38 seed 7 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage198",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 199,
+    "title": "Stage 199 - exclude S38 seed 7 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage199",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 200,
+    "title": "Stage 200 - exclude S39 seed 7 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage200",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 201,
+    "title": "Stage 201 - exclude S39 seed 7 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage201",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 202,
+    "title": "Stage 202 - exclude S36 seed 13 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage202",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 203,
+    "title": "Stage 203 - exclude S36 seed 13 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage203",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 204,
+    "title": "Stage 204 - exclude S37 seed 13 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage204",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 205,
+    "title": "Stage 205 - exclude S37 seed 13 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage205",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 206,
+    "title": "Stage 206 - exclude S38 seed 13 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage206",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 207,
+    "title": "Stage 207 - exclude S38 seed 13 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage207",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 208,
+    "title": "Stage 208 - exclude S39 seed 13 GPS",
+    "kind": "train",
+    "directory": "results/steady_v1/stage208",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 192,
+    "image_dropout": 0.0,
+    "consistency": 0.0
+  },
+  {
+    "id": 209,
+    "title": "Stage 209 - exclude S39 seed 13 consistency",
+    "kind": "train",
+    "directory": "results/steady_v1/stage209",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  },
+  {
+    "id": 210,
+    "title": "Stage 210 - pooled and transfer replication report",
+    "kind": "report",
+    "directory": "results/steady_v1/stage210",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192,
+    "image_dropout": 0.5,
+    "consistency": 0.1
+  }
+]

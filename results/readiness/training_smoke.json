@@ -1,0 +1,762 @@
+{
+  "device": "NVIDIA GeForce RTX 4060",
+  "torch": "2.5.1+cu121",
+  "cases": [
+    {
+      "configuration": {
+        "model": "B1",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        5.5546875,
+        5.546875,
+        5.546875
+      ],
+      "unclipped_gradient_norms": [
+        0.4232858419418335,
+        0.422077476978302,
+        0.4237774908542633
+      ],
+      "total_parameters": 3169792,
+      "trainable_parameters": 3169792,
+      "peak_allocated_gib": 0.12306690216064453,
+      "elapsed_seconds": 0.6870000000053551
+    },
+    {
+      "configuration": {
+        "model": "B2",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        5.5234375,
+        4.98046875,
+        4.61328125
+      ],
+      "unclipped_gradient_norms": [
+        5.225063800811768,
+        4.863809108734131,
+        4.9124345779418945
+      ],
+      "total_parameters": 11570752,
+      "trainable_parameters": 11413248,
+      "peak_allocated_gib": 0.23712444305419922,
+      "elapsed_seconds": 0.5309999999881256
+    },
+    {
+      "configuration": {
+        "model": "B3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        5.5625,
+        5.44140625,
+        5.37109375
+      ],
+      "unclipped_gradient_norms": [
+        1.0215486288070679,
+        1.0028879642486572,
+        1.0438052415847778
+      ],
+      "total_parameters": 14740288,
+      "trainable_parameters": 14582784,
+      "peak_allocated_gib": 0.3014850616455078,
+      "elapsed_seconds": 0.21799999999348074
+    },
+    {
+      "configuration": {
+        "model": "B4",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        5.66796875,
+        5.0078125,
+        4.66796875
+      ],
+      "unclipped_gradient_norms": [
+        7.019796371459961,
+        5.394366264343262,
+        5.060602188110352
+      ],
+      "total_parameters": 17640256,
+      "trainable_parameters": 17482752,
+      "peak_allocated_gib": 0.3537721633911133,
+      "elapsed_seconds": 0.29699999999138527
+    },
+    {
+      "configuration": {
+        "model": "P1",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        5.69921875,
+        5.03515625,
+        4.67578125
+      ],
+      "unclipped_gradient_norms": [
+        6.953034400939941,
+        5.296717643737793,
+        4.810855388641357
+      ],
+      "total_parameters": 16850496,
+      "trainable_parameters": 16692992,
+      "peak_allocated_gib": 0.33887290954589844,
+      "elapsed_seconds": 0.25
+    },
+    {
+      "configuration": {
+        "model": "P2",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        3.1965081691741943,
+        3.1948933601379395,
+        3.190800905227661
+      ],
+      "unclipped_gradient_norms": [
+        0.1089797094464302,
+        0.09530126303434372,
+        0.09161608666181564
+      ],
+      "total_parameters": 16850496,
+      "trainable_parameters": 16692992,
+      "peak_allocated_gib": 0.33887290954589844,
+      "elapsed_seconds": 0.29699999999138527
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.60348510742188,
+        109.76722717285156,
+        109.2969970703125
+      ],
+      "unclipped_gradient_norms": [
+        8.273632049560547,
+        6.281154632568359,
+        5.703696250915527
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34348201751708984,
+      "elapsed_seconds": 0.25,
+      "checkpoint_output_max_abs_difference": 0.0
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.59886169433594,
+        109.76782989501953,
+        109.2992935180664
+      ],
+      "unclipped_gradient_norms": [
+        8.266472816467285,
+        6.277252197265625,
+        5.698216438293457
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.3454303741455078,
+      "elapsed_seconds": 0.4379999999946449
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 16,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        103.0137710571289,
+        102.27320861816406,
+        101.82685852050781
+      ],
+      "unclipped_gradient_norms": [
+        6.114250659942627,
+        5.010257720947266,
+        4.652804374694824
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.4019656181335449,
+      "elapsed_seconds": 0.35899999999674037
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 16,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        103.01350402832031,
+        102.27330780029297,
+        101.82491302490234
+      ],
+      "unclipped_gradient_norms": [
+        6.110733509063721,
+        5.005853652954102,
+        4.648190021514893
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.36812829971313477,
+      "elapsed_seconds": 0.2659999999741558
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 160,
+        "batch": 8,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.5154800415039,
+        109.70721435546875,
+        109.2411880493164
+      ],
+      "unclipped_gradient_norms": [
+        8.016961097717285,
+        6.126904487609863,
+        5.732290267944336
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.44191694259643555,
+      "elapsed_seconds": 0.375
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 160,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.50984191894531,
+        109.70453643798828,
+        109.24263000488281
+      ],
+      "unclipped_gradient_norms": [
+        8.008721351623535,
+        6.131321430206299,
+        5.72840690612793
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.39212894439697266,
+      "elapsed_seconds": 0.28099999998812564
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 160,
+        "batch": 16,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        102.99835205078125,
+        102.25304412841797,
+        101.80839538574219
+      ],
+      "unclipped_gradient_norms": [
+        6.053363800048828,
+        5.099268436431885,
+        4.802757263183594
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.590092658996582,
+      "elapsed_seconds": 0.5629999999946449
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 160,
+        "batch": 16,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        102.99944305419922,
+        102.25325012207031,
+        101.81035614013672
+      ],
+      "unclipped_gradient_norms": [
+        6.047812461853027,
+        5.1046462059021,
+        4.8003249168396
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.47002506256103516,
+      "elapsed_seconds": 0.29699999999138527
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 224,
+        "batch": 8,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.5455093383789,
+        109.72368621826172,
+        109.25459289550781
+      ],
+      "unclipped_gradient_norms": [
+        8.16998291015625,
+        6.372501850128174,
+        5.910123348236084
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.5812444686889648,
+      "elapsed_seconds": 0.5309999999881256
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 224,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.546875,
+        109.72200012207031,
+        109.25526428222656
+      ],
+      "unclipped_gradient_norms": [
+        8.169402122497559,
+        6.371784687042236,
+        5.9123921394348145
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.46321678161621094,
+      "elapsed_seconds": 0.29699999999138527
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 224,
+        "batch": 16,
+        "precision": "fp32",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        103.00174713134766,
+        102.29447174072266,
+        101.8358383178711
+      ],
+      "unclipped_gradient_norms": [
+        6.1703057289123535,
+        5.222899436950684,
+        4.9815168380737305
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.8728437423706055,
+      "elapsed_seconds": 0.9690000000118744
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 224,
+        "batch": 16,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        103.00084686279297,
+        102.2921142578125,
+        101.83402252197266
+      ],
+      "unclipped_gradient_norms": [
+        6.167977333068848,
+        5.225736618041992,
+        4.982426166534424
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.6206612586975098,
+      "elapsed_seconds": 0.34400000001187436
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 3e-05,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.60348510742188,
+        110.23886108398438,
+        109.96746826171875
+      ],
+      "unclipped_gradient_norms": [
+        8.273632049560547,
+        7.613598346710205,
+        7.042185306549072
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34397029876708984,
+      "elapsed_seconds": 0.21799999999348074
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0003,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.60348510742188,
+        109.40036010742188,
+        108.55610656738281
+      ],
+      "unclipped_gradient_norms": [
+        8.273632049560547,
+        6.183273792266846,
+        5.692776679992676
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34194469451904297,
+      "elapsed_seconds": 0.21900000001187436
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.03,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        37.20646667480469,
+        36.507869720458984,
+        36.11532211303711
+      ],
+      "unclipped_gradient_norms": [
+        7.112046241760254,
+        5.338723182678223,
+        4.8956298828125
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34488582611083984,
+      "elapsed_seconds": 0.23399999999674037
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.3,
+        "dropout": 0.12,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        320.30926513671875,
+        318.947509765625,
+        318.0928955078125
+      ],
+      "unclipped_gradient_norms": [
+        14.778318405151367,
+        12.018628120422363,
+        11.573700904846191
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.3417787551879883,
+      "elapsed_seconds": 0.235000000015134
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.0,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.6114501953125,
+        109.6773452758789,
+        109.16207122802734
+      ],
+      "unclipped_gradient_norms": [
+        8.091201782226562,
+        6.142847537994385,
+        5.5480804443359375
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34488582611083984,
+      "elapsed_seconds": 0.23399999999674037
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.25,
+        "seed": 42,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.60120391845703,
+        109.85354614257812,
+        109.50293731689453
+      ],
+      "unclipped_gradient_norms": [
+        8.389640808105469,
+        6.41718053817749,
+        5.884749889373779
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34430599212646484,
+      "elapsed_seconds": 0.21899999998277053
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 7,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.34092712402344,
+        109.56438446044922,
+        109.11750030517578
+      ],
+      "unclipped_gradient_norms": [
+        7.5374603271484375,
+        5.853275775909424,
+        5.560367584228516
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.3437814712524414,
+      "elapsed_seconds": 0.25
+    },
+    {
+      "configuration": {
+        "model": "P3",
+        "size": 96,
+        "batch": 8,
+        "precision": "bf16",
+        "lr": 0.0001,
+        "profile_weight": 0.1,
+        "dropout": 0.12,
+        "seed": 13,
+        "steps": 3
+      },
+      "purpose": "training execution test only; no generalization claim",
+      "status": "passed",
+      "losses": [
+        110.49655151367188,
+        109.65078735351562,
+        109.2187271118164
+      ],
+      "unclipped_gradient_norms": [
+        7.579322814941406,
+        6.044770240783691,
+        5.66667366027832
+      ],
+      "total_parameters": 17113408,
+      "trainable_parameters": 16955904,
+      "peak_allocated_gib": 0.34348201751708984,
+      "elapsed_seconds": 0.21900000001187436
+    }
+  ],
+  "complete": true
+}

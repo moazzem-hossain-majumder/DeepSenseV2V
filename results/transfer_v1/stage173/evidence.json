@@ -1,0 +1,93 @@
+{
+  "publication_ready": false,
+  "calibration_test_used": false,
+  "records": [
+    {
+      "scenario": 36,
+      "gps": 0.8458747135217723,
+      "visual": 0.8393812070282658,
+      "geometry": 0.8405271199388846,
+      "selected_epochs": {
+        "False": 10,
+        "True": 5
+      },
+      "interval_vs_gps": [
+        -0.00980392156862745,
+        -0.0053475935828877
+      ],
+      "interval_vs_geometry": [
+        -0.0053475935828877,
+        0.0
+      ]
+    },
+    {
+      "scenario": 37,
+      "gps": 0.9522830111065406,
+      "visual": 0.9522830111065406,
+      "geometry": 0.9522830111065406,
+      "selected_epochs": {
+        "False": 2,
+        "True": 1
+      },
+      "interval_vs_gps": [
+        0.0,
+        0.0
+      ],
+      "interval_vs_geometry": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": 38,
+      "gps": 0.6999405822935235,
+      "visual": 0.684194890077243,
+      "geometry": 0.7070707070707071,
+      "selected_epochs": {
+        "False": 3,
+        "True": 5
+      },
+      "interval_vs_gps": [
+        -0.06016042780748663,
+        0.0
+      ],
+      "interval_vs_geometry": [
+        -0.06016042780748663,
+        0.0
+      ]
+    },
+    {
+      "scenario": 39,
+      "gps": 0.6215791129285939,
+      "visual": 0.5734507706826046,
+      "geometry": 0.6215791129285939,
+      "selected_epochs": {
+        "False": 1,
+        "True": 8
+      },
+      "interval_vs_gps": [
+        -0.07340787554691298,
+        -0.0017825311942959
+      ],
+      "interval_vs_geometry": [
+        -0.07340787554691298,
+        -0.0017825311942959
+      ]
+    }
+  ],
+  "means": {
+    "visual": 0.7623274697236635,
+    "gps": 0.7799193549626076,
+    "geometry": 0.7803649877611816
+  },
+  "interval_vs_gps": [
+    -0.02923079594202589,
+    -0.002762681159420297
+  ],
+  "interval_vs_geometry": [
+    -0.02823265913074029,
+    -0.002983729376918231
+  ],
+  "scope": "Seed-42 leave-one-scenario-out development evaluation. Held-scenario validation labels excluded from fitting and checkpoint selection. These scenarios were previously explored in pooled and earlier transfer studies; this is not an untouched external test.",
+  "next_action": "Review transfer consistency and failures before additional seeds or final protocol decisions. Do not tune on these held-scenario results and present them as independent confirmation."
+}

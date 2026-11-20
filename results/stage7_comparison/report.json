@@ -1,0 +1,44 @@
+{
+  "scope": "Matched six-epoch development runs; validation-selected per seed. No test claim.",
+  "runs": [
+    {
+      "seed": 42,
+      "epoch": 6,
+      "val": {
+        "n": 16643,
+        "loss": 9.578936118056179,
+        "top1": 0.15640209096917623,
+        "top3": 0.35618578381301447,
+        "top5": 0.4303310701195698,
+        "power_loss_db": 11.290382160304839
+      }
+    },
+    {
+      "seed": 7,
+      "epoch": 5,
+      "val": {
+        "n": 16643,
+        "loss": 10.056551152952286,
+        "top1": 0.13362975425103646,
+        "top3": 0.29327645256263896,
+        "top5": 0.3722285645616776,
+        "power_loss_db": 12.739765588247181
+      }
+    },
+    {
+      "seed": 13,
+      "epoch": 5,
+      "val": {
+        "n": 16643,
+        "loss": 10.114530765715896,
+        "top1": 0.1413206753590098,
+        "top3": 0.30769692964008893,
+        "top5": 0.3869494682449078,
+        "power_loss_db": 12.54867443172847
+      }
+    }
+  ],
+  "mean_top1": 0.1437841735264075,
+  "sample_sd_top1": 0.011584319026885573,
+  "next_gate": "Review generalization and verified literature/protocol before broader ablations, calibration and locked test."
+}

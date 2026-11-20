@@ -1,0 +1,173 @@
+[
+  {
+    "id": 155,
+    "title": "Stage 155 - matched resolution replication protocol",
+    "kind": "prepare",
+    "directory": "results/rescheck_v1/stage155",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 96
+  },
+  {
+    "id": 156,
+    "title": "Stage 156 - GPS control seed 42",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage156",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 96
+  },
+  {
+    "id": 157,
+    "title": "Stage 157 - GPS control seed 7",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage157",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 96
+  },
+  {
+    "id": 158,
+    "title": "Stage 158 - 96px visual seed 7",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage158",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 96
+  },
+  {
+    "id": 159,
+    "title": "Stage 159 - 192px visual seed 7",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage159",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 160,
+    "title": "Stage 160 - GPS control seed 13",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage160",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false,
+    "resolution": 96
+  },
+  {
+    "id": 161,
+    "title": "Stage 161 - 96px visual seed 13",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage161",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 96
+  },
+  {
+    "id": 162,
+    "title": "Stage 162 - 192px visual seed 13",
+    "kind": "train",
+    "directory": "results/rescheck_v1/stage162",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 192
+  },
+  {
+    "id": 163,
+    "title": "Stage 163 - three-seed resolution and GPS comparison",
+    "kind": "report",
+    "directory": "results/rescheck_v1/stage163",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true,
+    "resolution": 96
+  }
+]

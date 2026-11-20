@@ -1,0 +1,122 @@
+[
+  {
+    "id": 62,
+    "title": "Stage 62 - historical input and timestamp audit",
+    "kind": "alignment",
+    "source": null,
+    "directory": "results/diagnostic_v1/stage62",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 63,
+    "title": "Stage 63 - scenario and trajectory failure audit",
+    "kind": "failures",
+    "source": null,
+    "directory": "results/diagnostic_v1/stage63",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 64,
+    "title": "Stage 64 - image intervention for checkpoint 49",
+    "kind": "intervention",
+    "source": 49,
+    "directory": "results/diagnostic_v1/stage64",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 65,
+    "title": "Stage 65 - image intervention for checkpoint 50",
+    "kind": "intervention",
+    "source": 50,
+    "directory": "results/diagnostic_v1/stage65",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 66,
+    "title": "Stage 66 - image intervention for checkpoint 51",
+    "kind": "intervention",
+    "source": 51,
+    "directory": "results/diagnostic_v1/stage66",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 67,
+    "title": "Stage 67 - image intervention for checkpoint 53",
+    "kind": "intervention",
+    "source": 53,
+    "directory": "results/diagnostic_v1/stage67",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 68,
+    "title": "Stage 68 - image intervention for checkpoint 55",
+    "kind": "intervention",
+    "source": 55,
+    "directory": "results/diagnostic_v1/stage68",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 69,
+    "title": "Stage 69 - image intervention for checkpoint 57",
+    "kind": "intervention",
+    "source": 57,
+    "directory": "results/diagnostic_v1/stage69",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 70,
+    "title": "Stage 70 - image intervention for checkpoint 59",
+    "kind": "intervention",
+    "source": 59,
+    "directory": "results/diagnostic_v1/stage70",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 71,
+    "title": "Stage 71 - diagnostic decision and next experiment specification",
+    "kind": "report",
+    "source": null,
+    "directory": "results/diagnostic_v1/stage71",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]

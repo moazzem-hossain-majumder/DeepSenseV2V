@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "stages": {
+    "62": {
+      "title": "Stage 62 - historical input and timestamp audit",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291052.333356
+    },
+    "63": {
+      "title": "Stage 63 - scenario and trajectory failure audit",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291059.3394413
+    },
+    "64": {
+      "title": "Stage 64 - image intervention for checkpoint 49",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291074.2059903
+    },
+    "65": {
+      "title": "Stage 65 - image intervention for checkpoint 50",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291154.918909
+    },
+    "66": {
+      "title": "Stage 66 - image intervention for checkpoint 51",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291235.552673
+    },
+    "67": {
+      "title": "Stage 67 - image intervention for checkpoint 53",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291315.1150863
+    },
+    "68": {
+      "title": "Stage 68 - image intervention for checkpoint 55",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291371.1940174
+    },
+    "69": {
+      "title": "Stage 69 - image intervention for checkpoint 57",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291427.1125505
+    },
+    "70": {
+      "title": "Stage 70 - image intervention for checkpoint 59",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291481.3423932
+    },
+    "71": {
+      "title": "Stage 71 - diagnostic decision and next experiment specification",
+      "status": "complete",
+      "failures": 0,
+      "created": 1794291533.7853336
+    }
+  },
+  "active_stage": 71
+}

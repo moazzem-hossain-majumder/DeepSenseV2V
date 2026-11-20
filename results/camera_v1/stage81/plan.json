@@ -1,0 +1,207 @@
+[
+  {
+    "id": 81,
+    "title": "Stage 81 - rear image cache and source freeze",
+    "kind": "cache",
+    "directory": "results/camera_v1/stage81",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  },
+  {
+    "id": 82,
+    "title": "Stage 82 - front tanh_bf16 pilot",
+    "kind": "pilot",
+    "directory": "results/camera_v1/stage82",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "camera": "front",
+    "correction": "tanh_bf16"
+  },
+  {
+    "id": 83,
+    "title": "Stage 83 - front tanh_fp32 pilot",
+    "kind": "pilot",
+    "directory": "results/camera_v1/stage83",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "camera": "front",
+    "correction": "tanh_fp32"
+  },
+  {
+    "id": 84,
+    "title": "Stage 84 - front linear pilot",
+    "kind": "pilot",
+    "directory": "results/camera_v1/stage84",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "camera": "front",
+    "correction": "linear"
+  },
+  {
+    "id": 85,
+    "title": "Stage 85 - rear linear pilot",
+    "kind": "pilot",
+    "directory": "results/camera_v1/stage85",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "camera": "rear",
+    "correction": "linear"
+  },
+  {
+    "id": 86,
+    "title": "Stage 86 - both linear pilot",
+    "kind": "pilot",
+    "directory": "results/camera_v1/stage86",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 3,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "camera": "both",
+    "correction": "linear"
+  },
+  {
+    "id": 87,
+    "title": "Stage 87 - learning health and pilot selection",
+    "kind": "gate",
+    "directory": "results/camera_v1/stage87",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  },
+  {
+    "id": 88,
+    "title": "Stage 88 - selected method seed 42",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage88",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null
+  },
+  {
+    "id": 89,
+    "title": "Stage 89 - selected method seed 7",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage89",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null
+  },
+  {
+    "id": 90,
+    "title": "Stage 90 - selected method seed 13",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage90",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null
+  },
+  {
+    "id": 91,
+    "title": "Stage 91 - selected method held scenario 36",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage91",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36
+  },
+  {
+    "id": 92,
+    "title": "Stage 92 - selected method held scenario 37",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage92",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37
+  },
+  {
+    "id": 93,
+    "title": "Stage 93 - selected method held scenario 38",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage93",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38
+  },
+  {
+    "id": 94,
+    "title": "Stage 94 - selected method held scenario 39",
+    "kind": "expand",
+    "directory": "results/camera_v1/stage94",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 8,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39
+  },
+  {
+    "id": 95,
+    "title": "Stage 95 - camera comparison and evidence report",
+    "kind": "report",
+    "directory": "results/camera_v1/stage95",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null
+  }
+]

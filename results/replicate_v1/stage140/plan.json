@@ -1,0 +1,108 @@
+[
+  {
+    "id": 140,
+    "title": "Stage 140 - matched seed replication protocol",
+    "kind": "prepare",
+    "directory": "results/replicate_v1/stage140",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0
+  },
+  {
+    "id": 141,
+    "title": "Stage 141 - seed 7 GPS",
+    "kind": "train",
+    "directory": "results/replicate_v1/stage141",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false
+  },
+  {
+    "id": 142,
+    "title": "Stage 142 - seed 7 visual",
+    "kind": "train",
+    "directory": "results/replicate_v1/stage142",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true
+  },
+  {
+    "id": 143,
+    "title": "Stage 143 - seed 13 GPS",
+    "kind": "train",
+    "directory": "results/replicate_v1/stage143",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": false
+  },
+  {
+    "id": 144,
+    "title": "Stage 144 - seed 13 visual",
+    "kind": "train",
+    "directory": "results/replicate_v1/stage144",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0,
+    "vision": true
+  },
+  {
+    "id": 145,
+    "title": "Stage 145 - three-seed matched comparison",
+    "kind": "report",
+    "directory": "results/replicate_v1/stage145",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes",
+    "seed": 42,
+    "holdout": null,
+    "k": 20,
+    "bounded": false,
+    "objective": "hard",
+    "penalty": 0.0
+  }
+]

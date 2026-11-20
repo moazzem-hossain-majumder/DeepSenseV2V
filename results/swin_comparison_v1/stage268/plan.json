@@ -1,0 +1,444 @@
+[
+  {
+    "id": 268,
+    "kind": "prepare",
+    "title": "Stage 268 - Freeze protocol and extract EfficientNet-B3 features",
+    "directory": "results/swin_comparison_v1/stage268",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 269,
+    "kind": "train",
+    "title": "Stage 269 - Shifted-window GPS, pooled, seed 42",
+    "directory": "results/swin_comparison_v1/stage269",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 270,
+    "kind": "train",
+    "title": "Stage 270 - Shifted-window GPS + RGB, pooled, seed 42",
+    "directory": "results/swin_comparison_v1/stage270",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 271,
+    "kind": "train",
+    "title": "Stage 271 - Shifted-window GPS, excluded S36, seed 42",
+    "directory": "results/swin_comparison_v1/stage271",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "vision": false
+  },
+  {
+    "id": 272,
+    "kind": "train",
+    "title": "Stage 272 - Shifted-window GPS + RGB, excluded S36, seed 42",
+    "directory": "results/swin_comparison_v1/stage272",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 36,
+    "vision": true
+  },
+  {
+    "id": 273,
+    "kind": "train",
+    "title": "Stage 273 - Shifted-window GPS, excluded S37, seed 42",
+    "directory": "results/swin_comparison_v1/stage273",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "vision": false
+  },
+  {
+    "id": 274,
+    "kind": "train",
+    "title": "Stage 274 - Shifted-window GPS + RGB, excluded S37, seed 42",
+    "directory": "results/swin_comparison_v1/stage274",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 37,
+    "vision": true
+  },
+  {
+    "id": 275,
+    "kind": "train",
+    "title": "Stage 275 - Shifted-window GPS, excluded S38, seed 42",
+    "directory": "results/swin_comparison_v1/stage275",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "vision": false
+  },
+  {
+    "id": 276,
+    "kind": "train",
+    "title": "Stage 276 - Shifted-window GPS + RGB, excluded S38, seed 42",
+    "directory": "results/swin_comparison_v1/stage276",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 38,
+    "vision": true
+  },
+  {
+    "id": 277,
+    "kind": "train",
+    "title": "Stage 277 - Shifted-window GPS, excluded S39, seed 42",
+    "directory": "results/swin_comparison_v1/stage277",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "vision": false
+  },
+  {
+    "id": 278,
+    "kind": "train",
+    "title": "Stage 278 - Shifted-window GPS + RGB, excluded S39, seed 42",
+    "directory": "results/swin_comparison_v1/stage278",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 42,
+    "holdout": 39,
+    "vision": true
+  },
+  {
+    "id": 279,
+    "kind": "train",
+    "title": "Stage 279 - Shifted-window GPS, pooled, seed 7",
+    "directory": "results/swin_comparison_v1/stage279",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 280,
+    "kind": "train",
+    "title": "Stage 280 - Shifted-window GPS + RGB, pooled, seed 7",
+    "directory": "results/swin_comparison_v1/stage280",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 281,
+    "kind": "train",
+    "title": "Stage 281 - Shifted-window GPS, excluded S36, seed 7",
+    "directory": "results/swin_comparison_v1/stage281",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "vision": false
+  },
+  {
+    "id": 282,
+    "kind": "train",
+    "title": "Stage 282 - Shifted-window GPS + RGB, excluded S36, seed 7",
+    "directory": "results/swin_comparison_v1/stage282",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 36,
+    "vision": true
+  },
+  {
+    "id": 283,
+    "kind": "train",
+    "title": "Stage 283 - Shifted-window GPS, excluded S37, seed 7",
+    "directory": "results/swin_comparison_v1/stage283",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "vision": false
+  },
+  {
+    "id": 284,
+    "kind": "train",
+    "title": "Stage 284 - Shifted-window GPS + RGB, excluded S37, seed 7",
+    "directory": "results/swin_comparison_v1/stage284",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 37,
+    "vision": true
+  },
+  {
+    "id": 285,
+    "kind": "train",
+    "title": "Stage 285 - Shifted-window GPS, excluded S38, seed 7",
+    "directory": "results/swin_comparison_v1/stage285",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "vision": false
+  },
+  {
+    "id": 286,
+    "kind": "train",
+    "title": "Stage 286 - Shifted-window GPS + RGB, excluded S38, seed 7",
+    "directory": "results/swin_comparison_v1/stage286",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 38,
+    "vision": true
+  },
+  {
+    "id": 287,
+    "kind": "train",
+    "title": "Stage 287 - Shifted-window GPS, excluded S39, seed 7",
+    "directory": "results/swin_comparison_v1/stage287",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "vision": false
+  },
+  {
+    "id": 288,
+    "kind": "train",
+    "title": "Stage 288 - Shifted-window GPS + RGB, excluded S39, seed 7",
+    "directory": "results/swin_comparison_v1/stage288",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 7,
+    "holdout": 39,
+    "vision": true
+  },
+  {
+    "id": 289,
+    "kind": "train",
+    "title": "Stage 289 - Shifted-window GPS, pooled, seed 13",
+    "directory": "results/swin_comparison_v1/stage289",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "vision": false
+  },
+  {
+    "id": 290,
+    "kind": "train",
+    "title": "Stage 290 - Shifted-window GPS + RGB, pooled, seed 13",
+    "directory": "results/swin_comparison_v1/stage290",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": null,
+    "vision": true
+  },
+  {
+    "id": 291,
+    "kind": "train",
+    "title": "Stage 291 - Shifted-window GPS, excluded S36, seed 13",
+    "directory": "results/swin_comparison_v1/stage291",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "vision": false
+  },
+  {
+    "id": 292,
+    "kind": "train",
+    "title": "Stage 292 - Shifted-window GPS + RGB, excluded S36, seed 13",
+    "directory": "results/swin_comparison_v1/stage292",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 36,
+    "vision": true
+  },
+  {
+    "id": 293,
+    "kind": "train",
+    "title": "Stage 293 - Shifted-window GPS, excluded S37, seed 13",
+    "directory": "results/swin_comparison_v1/stage293",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "vision": false
+  },
+  {
+    "id": 294,
+    "kind": "train",
+    "title": "Stage 294 - Shifted-window GPS + RGB, excluded S37, seed 13",
+    "directory": "results/swin_comparison_v1/stage294",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 37,
+    "vision": true
+  },
+  {
+    "id": 295,
+    "kind": "train",
+    "title": "Stage 295 - Shifted-window GPS, excluded S38, seed 13",
+    "directory": "results/swin_comparison_v1/stage295",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "vision": false
+  },
+  {
+    "id": 296,
+    "kind": "train",
+    "title": "Stage 296 - Shifted-window GPS + RGB, excluded S38, seed 13",
+    "directory": "results/swin_comparison_v1/stage296",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 38,
+    "vision": true
+  },
+  {
+    "id": 297,
+    "kind": "train",
+    "title": "Stage 297 - Shifted-window GPS, excluded S39, seed 13",
+    "directory": "results/swin_comparison_v1/stage297",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "vision": false
+  },
+  {
+    "id": 298,
+    "kind": "train",
+    "title": "Stage 298 - Shifted-window GPS + RGB, excluded S39, seed 13",
+    "directory": "results/swin_comparison_v1/stage298",
+    "models": [
+      "fusion_ce"
+    ],
+    "epochs": 12,
+    "unit": "epochs",
+    "seed": 13,
+    "holdout": 39,
+    "vision": true
+  },
+  {
+    "id": 299,
+    "kind": "report",
+    "title": "Stage 299 - Paired three-seed comparison with GPS and geometry",
+    "directory": "results/swin_comparison_v1/stage299",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]

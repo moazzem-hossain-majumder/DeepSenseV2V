@@ -1,0 +1,79 @@
+{
+  "36": {
+    "windows": 23187,
+    "splits": {
+      "train": 8789,
+      "test": 5983,
+      "val": 5236,
+      "calib": 3179
+    },
+    "blocks": {
+      "calib": 3,
+      "test": 3,
+      "train": 10,
+      "val": 3
+    },
+    "actual_horizon_seconds": {
+      "count": 23187,
+      "nonfinite": 0,
+      "min": 0.4740220000021509,
+      "p01": 0.4990990000005695,
+      "p05": 0.49927300000126706,
+      "median": 0.4999980000065989,
+      "p95": 0.5007297000018298,
+      "p99": 0.5009080000018002,
+      "max": 0.5255879999967874
+    }
+  },
+  "scope": "Smoke-only train sample scaler; not a production training fit. Front RGB5 view. No test metrics.",
+  "selected": [
+    {
+      "scenario": 36,
+      "block_key": "36:0",
+      "x_indices": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "y_index": 13
+    },
+    {
+      "scenario": 36,
+      "block_key": "36:1",
+      "x_indices": [
+        3124,
+        3126,
+        3128,
+        3130,
+        3132
+      ],
+      "y_index": 3137
+    },
+    {
+      "scenario": 36,
+      "block_key": "36:6",
+      "x_indices": [
+        6261,
+        6263,
+        6265,
+        6267,
+        6269
+      ],
+      "y_index": 6274
+    },
+    {
+      "scenario": 36,
+      "block_key": "36:9",
+      "x_indices": [
+        9386,
+        9388,
+        9390,
+        9392,
+        9394
+      ],
+      "y_index": 9399
+    }
+  ]
+}

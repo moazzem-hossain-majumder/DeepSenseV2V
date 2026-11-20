@@ -1,0 +1,110 @@
+[
+  {
+    "id": 72,
+    "title": "Stage 72 - timestamp provenance and sequence offsets",
+    "kind": "timing",
+    "source": null,
+    "directory": "results/pathway_v1/stage72",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 73,
+    "title": "Stage 73 - RGB gradient and saturation audit 49",
+    "kind": "probe",
+    "source": 49,
+    "directory": "results/pathway_v1/stage73",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 74,
+    "title": "Stage 74 - RGB gradient and saturation audit 50",
+    "kind": "probe",
+    "source": 50,
+    "directory": "results/pathway_v1/stage74",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 75,
+    "title": "Stage 75 - RGB gradient and saturation audit 51",
+    "kind": "probe",
+    "source": 51,
+    "directory": "results/pathway_v1/stage75",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 76,
+    "title": "Stage 76 - RGB gradient and saturation audit 53",
+    "kind": "probe",
+    "source": 53,
+    "directory": "results/pathway_v1/stage76",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 77,
+    "title": "Stage 77 - RGB gradient and saturation audit 55",
+    "kind": "probe",
+    "source": 55,
+    "directory": "results/pathway_v1/stage77",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 78,
+    "title": "Stage 78 - RGB gradient and saturation audit 57",
+    "kind": "probe",
+    "source": 57,
+    "directory": "results/pathway_v1/stage78",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 79,
+    "title": "Stage 79 - RGB gradient and saturation audit 59",
+    "kind": "probe",
+    "source": 59,
+    "directory": "results/pathway_v1/stage79",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  },
+  {
+    "id": 80,
+    "title": "Stage 80 - learning-pathway evidence and experiment specification",
+    "kind": "report",
+    "source": null,
+    "directory": "results/pathway_v1/stage80",
+    "models": [
+      "analysis"
+    ],
+    "epochs": 1,
+    "unit": "analysis passes"
+  }
+]
