@@ -94,13 +94,7 @@ All historical experimental logs, protocols, and diagnostic cycles are preserved
 
 ---
 
-## 6. Legacy Single-Scenario Archive
-
-The earlier single-scenario (Scenario 36 only) development artifacts, initial drafts, exploratory notebooks, and unconstrained models have been permanently preserved in [the legacy archive](archive/scenario36_legacy_2026-11-09/ARCHIVE.md). The archive manifest records original paths and verified SHA-256 hashes for all 56 archived files.
-
----
-
-## 7. Execution and Verification
+## 6. Execution and Verification
 
 All training runs are frozen. To run the analytical validation diagnostics or re-verify reported numbers without GPU execution:
 ```powershell

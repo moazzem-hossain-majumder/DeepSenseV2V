@@ -62,11 +62,11 @@ Every claim is categorized into one of three verified states:
 |    |                                               |                                   | N = 10 recording blocks.    | vs. 10 physical clusters. |
 +----+-----------------------------------------------+-----------------------------------+-----------------------------+---------------------------+
 | C10| "Dataset was collected in Bangladesh."        | Legacy repo draft & earlier notes | DeepSense 6G source paper:  | [FALSE / FACTUAL ERROR]   |
-|    |                                               | in `archive/`                     | Collected exclusively in    | Corrected: Tempe, Arizona;|
+|    |                                               | (deleted historical draft)        | Collected exclusively in    | Corrected: Tempe, Arizona;|
 |    |                                               |                                   | Phoenix/Tempe, Arizona, USA.| Bangladesh is motivational|
 +----+-----------------------------------------------+-----------------------------------+-----------------------------+---------------------------+
 | C11| "Official DeepSense Challenge Baseline        | Root README (historical);         | `results/power_loss_review_`| [SUPERSEDED HISTORICAL]   |
-|    | reproduced on local blocked splits."          | `archive/scenario36_legacy/`      | `v1/REPORT.md`              | Challenge split was never |
+|    | reproduced on local blocked splits."          | superseded exploratory notes      | `v1/REPORT.md`              | Challenge split was never |
 |    |                                               |                                   |                             | released; local is blocked|
 +----+-----------------------------------------------+-----------------------------------+-----------------------------+---------------------------+
 | C12| "Calibration and test partitions evaluated    | Stage 34–35 placeholder plans     | File system access audit:   | [CORRECTLY RESERVED]      |

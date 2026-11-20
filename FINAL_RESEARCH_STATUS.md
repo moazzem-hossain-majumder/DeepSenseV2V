@@ -45,7 +45,7 @@ This document establishes the definitive research status of the DeepSense-V2V pr
 |                          | • Sequence-level contribution analysis in Scenario 39 (Sequences 50–51).|
 +--------------------------+-------------------------------------------------------------------------+
 | 4. SUPERSEDED            | Replaced by mature multi-scenario protocols; retain for provenance only:|
-|    EXPERIMENTS           | • Scenario-36-only legacy experiments (archived in `archive/`).         |
+|    EXPERIMENTS           | • Early single-scenario exploratory trials (deleted; project is strictly 4-scenario: 36, 37, 38, 39).|
 |                          | • Single-frame 0.1 s horizon models (superseded by official 0.5 s).     |
 |                          | • Positive decibel APL definitions (superseded by challenge dB regret). |
 |                          | • Unbounded linear-head residual experiments (Stages 81–95).            |

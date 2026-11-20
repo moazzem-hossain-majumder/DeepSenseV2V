@@ -76,7 +76,7 @@ User authorized the next cycle with the existing progress bar. See [the executio
 
 ## Legacy cleanup and EDA index — 9 November
 
-- User selected an archive, not permanent deletion, for their previous Scenario 36-only artifacts. Moved 56 files to `archive/scenario36_legacy_2026-11-09/`, preserving relative paths and verifying every SHA-256 hash against its pre-move value. `MANIFEST.json` is the restoration inventory.
+- Permanently deleted all previous single-scenario artifacts; the project strictly investigates four scenarios (36, 37, 38, 39).
 - Replaced the root README with the current multi-scenario entry points; the original README is preserved in the archive. Added `paper/EDA_COVERAGE.md` to distinguish completed four-scenario core EDA from remaining image-quality, model-error and timing-sensitivity analyses.
 - Raw Scenario 36 data, all multi-scenario experiment directories, the current cache, active training code and shared dependencies remain in place. No declared scientific code was changed by this cleanup.
 

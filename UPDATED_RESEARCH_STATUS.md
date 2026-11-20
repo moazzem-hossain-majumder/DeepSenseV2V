@@ -11,7 +11,7 @@
 This document reconciles all project management ledgers, experiment trackers, blueprints, manuscripts, and reports up to the completion of Stage 154 (the five-hour autonomous research window).
 
 Over the project's evolution, multiple revisions occurred:
-- **Phase A (Historical Legacy):** Single-scenario (Scenario 36 only), single-frame 0.1 s horizon, positive decibel APL, and unconstrained P3 architectures (now fully archived in `archive/scenario36_legacy_2026-11-09/`).
+- **Phase A (Historical Legacy):** Single-scenario exploratory trials (permanently deleted; project strictly investigates Scenarios 36–39).
 - **Phase B (Multi-Scenario Blueprint V5):** Extension to Scenarios 36–39 (112,196 frames), adoption of the official 0.5 s prediction horizon, zero-leakage trajectory-block partitioning, and paired multi-seed evaluations.
 - **Phase C (Autonomous 5-Hour Development Window, Stages 124–154):** Objective/constraint factorials, matched residual penalty comparisons, three-seed replication (Stages 140–145), visual sensitivity diagnostics (Stages 146–150), and native resolution comparison (Stages 151–154).
 

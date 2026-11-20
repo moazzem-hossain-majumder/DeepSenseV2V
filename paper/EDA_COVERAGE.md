@@ -30,7 +30,3 @@ Checked against the actual saved outputs on 2026-11-09.
 - Completed model-dependent robustness, calibrated reliability and locked-test analysis where the declared gates permit them. These are evaluation stages rather than raw descriptive EDA.
 
 Descriptive all-data statistics must not become test-tuned preprocessing or selection criteria. The readiness report contains historical training-readiness notes; current execution status belongs to [the experiment tracker](EXPERIMENT_TRACKER.md).
-
-## Archived material
-
-The previous Scenario 36-only notebook suite, EDA figures and tables are preserved in [the legacy archive](../archive/scenario36_legacy_2026-11-09/ARCHIVE.md). They are separate from the four-scenario EDA above.

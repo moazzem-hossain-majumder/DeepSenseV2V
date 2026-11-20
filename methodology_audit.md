@@ -52,7 +52,7 @@ The research repository implements a multi-stage machine learning and statistica
 
 ## 2. Discrepancy Analysis: Documentation vs. Implementation
 
-A rigorous cross-examination of the documentation (`README.md`, `DEEPSENSE_PROJECT_BLUEPRINT_V4.md`), source code (`src/`), and stored experimental artifacts (`results/`, `archive/`) reveals critical discrepancies:
+A rigorous cross-examination of the documentation (`README.md`, `DEEPSENSE_PROJECT_BLUEPRINT_V4.md`), source code (`src/`), and stored experimental artifacts (`results/`) reveals critical discrepancies:
 
 ### A. Documented vs. Implemented Architectures
 1. **Model Parameterization:** Early documentation (V4 Blueprint) describes P3 as a lightweight model designed for fast mobile deployment. In reality, `src/models.py` implements an 18.2M-parameter model with ResNet-18 (5 layers un-frozen from `layer2`), BiGRU (3 layers, hidden size 256), and a 3-layer 8-head Transformer Encoder with a 512-dim MLP head.

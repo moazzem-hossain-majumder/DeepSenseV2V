@@ -34,11 +34,12 @@ def resolve_image_path(rel_path, data_root="."):
         return _RESOLVED_PATH_CACHE[rel_path]
 
     candidates = [
-        os.path.join(data_root, "scenario36", rel_path),
         os.path.join(data_root, rel_path),
-        os.path.join(data_root, "scenario36", rel_path.replace("scenario36/", "")),
         rel_path
     ]
+    for s in (36, 37, 38, 39):
+        candidates.append(os.path.join(data_root, f"scenario{s}", rel_path))
+        candidates.append(os.path.join(data_root, f"scenario{s}", rel_path.replace(f"scenario{s}/", "")))
     for c in candidates:
         if os.path.exists(c) and os.path.isfile(c):
             _RESOLVED_PATH_CACHE[rel_path] = c

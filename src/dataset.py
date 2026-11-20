@@ -144,11 +144,12 @@ def load_or_build_rgb_cache(p_dict, raw_df, data_root=".", img_size=(96, 96)):
     def load_frame(i):
         rel_p = rgb_paths_all[i]
         candidates = [
-            os.path.join(data_root, "scenario36", rel_p),
             os.path.join(data_root, rel_p),
-            os.path.join(data_root, "scenario36", rel_p.replace("scenario36/", "")),
             rel_p
         ]
+        for s in (36, 37, 38, 39):
+            candidates.append(os.path.join(data_root, f"scenario{s}", rel_p))
+            candidates.append(os.path.join(data_root, f"scenario{s}", rel_p.replace(f"scenario{s}/", "")))
         chosen = None
         for c in candidates:
             if os.path.exists(c) and os.path.isfile(c):
