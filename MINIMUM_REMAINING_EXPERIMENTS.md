@@ -104,7 +104,7 @@ Ground the paper's beamforming metrics in the IEEE 802.11ad/ay millimeter-wave s
 | Single-Beam Prediction   | 1         | 0.1 ms     | 0.5%       | 0.45 ms       | EXCELLENT (9.2x)| 51.67%          |
 +--------------------------+-----------+------------+------------+---------------+-----------------+-----------------+
 Notes: Assumes 20 ms transmission frame, 100 μs probing per beam, 150 μs DSP processing, 200 μs control feedback.
-Relative velocity = 30 m/s (Doppler shift ~12 kHz, coherence time T_c = 4.16 ms).
+Relative velocity = 30 m/s (Doppler shift $f_d \approx 6$ kHz, $T_{c,\text{small}} \approx 83.33\,\mu$s, spatial beam coherence $\Delta t_{\text{beam}} \approx 52\text{--}175$ ms).
 ```
 
 ---

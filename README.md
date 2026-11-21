@@ -32,8 +32,8 @@ Across 299 development stages, 112,196 multi-scenario frames, 30 frozen Swin-B3 
 |    over Deep Learning Alone         |   achieves 78.04% 3 dB power success with K=5,               |
 |                                     |   outperforming pure deep learning models by ~30 pp.         |
 +-------------------------------------+--------------------------------------------------------------+
-| 4. 60 GHz Overhead Constraints      | • At 30 m/s highway speeds (T_c ~ 4.16 ms), exhaustive       |
-|    (Frame Budget Sweet Spot)        |   sweep (256 beams, 25.6 ms) causes 100% link blackout.     |
+| 4. 60 GHz Overhead Constraints      | • With spatial beam coherence Δt_beam ≈ 52–175 ms and 20 ms frames, |
+|    (Frame Budget Sweet Spot)        |   exhaustive sweep (256 beams, 25.6 ms) causes 100% link blackout.     |
 |                                     |   K=5 shortlist requires 0.5 ms (2.5% overhead),             |
 |                                     |   maximizing deployable net data throughput.                 |
 +-------------------------------------+--------------------------------------------------------------+
@@ -41,15 +41,27 @@ Across 299 development stages, 112,196 multi-scenario frames, 30 frozen Swin-B3 
 
 ---
 
-## 2. Authoritative Scientific Audit Reports
+## 2. Authoritative Scientific Audit Suite & Publication Status
 
-The full independent audit suite evaluating the mathematical, physical, and statistical validity of the findings is available in the root and `paper/` directories:
+The complete, independent 10-phase audit resolving mathematical, physical, and statistical discrepancies is documented in the dedicated **[`AUDIT/`](AUDIT/)** suite and submission readiness dashboard:
 
-- **[FINAL_RESEARCH_STATUS.md](FINAL_RESEARCH_STATUS.md)** / **[paper/FINAL_RESEARCH_STATUS.md](paper/FINAL_RESEARCH_STATUS.md):** Definitive taxonomy of completed, validated, exploratory, superseded, pending, and reserved evaluations, including the 5-step IEEE submission roadmap.
-- **[IEEE_REVIEWER_REPORT.md](IEEE_REVIEWER_REPORT.md):** Three simulated full IEEE peer reviews (Vehicular Wireless, Multimodal ML, and Statistical Methodology) with rubric scores, detailed assessments, and formal recommendations (**Major Revision**).
+- **[FINAL_SUBMISSION_STATUS.md](FINAL_SUBMISSION_STATUS.md):** Executive dashboard detailing the definitive publication verdict, resolved paradoxes, and the 5-step IEEE submission roadmap.
+- **[MANUSCRIPT/FINAL_IEEE_MANUSCRIPT.md](MANUSCRIPT/FINAL_IEEE_MANUSCRIPT.md):** Complete, 13-section IEEE Transactions on Vehicular Technology (TVT) unified manuscript draft with exhaustive change log.
+- **[AUDIT/REPOSITORY_AUDIT.md](AUDIT/REPOSITORY_AUDIT.md):** Phase 1 complete repository audit across all 299 stages, scripts, datasets, and claim verifications.
+- **[AUDIT/FINAL_RESEARCH_DIRECTION.md](AUDIT/FINAL_RESEARCH_DIRECTION.md):** Phase 2 definitive research narrative centering on the physical and empirical critique of multimodal beam forecasting.
+- **[AUDIT/PAR_NET_KMACC_VERIFICATION.md](AUDIT/PAR_NET_KMACC_VERIFICATION.md):** Phase 3 mathematical and code verification proving PAR-Net and KM-ACC claims originated from synthetic perturbations rather than trained checkpoints.
+- **[AUDIT/PHYSICAL_LAYER_CORRECTIONS.md](AUDIT/PHYSICAL_LAYER_CORRECTIONS.md):** Phase 4 rigorous re-derivation correcting the Doppler coherence time ($T_{c,\text{small}} \approx 83.33\,\mu$s vs. $4.16$ ms) and spatial beam alignment coherence ($\Delta t_{\text{beam}} \approx 174.5$ ms).
+- **[AUDIT/FINAL_STATISTICAL_PROTOCOL.md](AUDIT/FINAL_STATISTICAL_PROTOCOL.md):** Phase 5 formal statistical protocol addressing trajectory pseudo-replication ($G=10$, $N_{\text{eff}} \approx 13.3$), paired block-bootstraps, and test set partition lockdown.
+- **[AUDIT/CANDIDATE_GENERATION_RANKING_ANALYSIS.md](AUDIT/CANDIDATE_GENERATION_RANKING_ANALYSIS.md):** Phase 6 mathematical formulation and empirical proof of the 84.7% candidate exclusion rule.
+- **[AUDIT/RGB_CONTRIBUTION_ANALYSIS.md](AUDIT/RGB_CONTRIBUTION_ANALYSIS.md):** Phase 7 scenario-by-scenario analysis, jackknife sensitivity omitting S39, and the continuous loss paradox.
+- **[AUDIT/NOVELTY_AND_RELATED_WORK.md](AUDIT/NOVELTY_AND_RELATED_WORK.md):** Phase 8 comparative literature matrix against Fabiani, Mollah, Charan, and Alrabeiah, establishing defensible novelty.
+
+### Supporting Audit Ledgers:
+- **[FINAL_RESEARCH_STATUS.md](FINAL_RESEARCH_STATUS.md)** / **[paper/FINAL_RESEARCH_STATUS.md](paper/FINAL_RESEARCH_STATUS.md):** Taxonomy of completed, validated, exploratory, superseded, pending, and reserved evaluations.
+- **[IEEE_REVIEWER_REPORT.md](IEEE_REVIEWER_REPORT.md):** Three simulated full IEEE peer reviews (Vehicular Wireless, Multimodal ML, and Statistical Methodology) with rubric scores and formal recommendations (**Major Revision**).
 - **[STAGE267_INDEPENDENT_AUDIT.md](STAGE267_INDEPENDENT_AUDIT.md):** Independent verification of Stage 267 widecheck evidence across all 24 arm/fold/seed records; resolution of the $-0.053$ dB continuous loss paradox.
 - **[NOVELTY_AND_BASELINE_REVIEW.md](NOVELTY_AND_BASELINE_REVIEW.md):** Prior-art positioning against Alrabeiah et al., Charan et al., and Fabiani et al. (2024); documentation of Swin-B3 reproduction and deviations.
-- **[COMMUNICATION_COST_AUDIT.md](COMMUNICATION_COST_AUDIT.md):** Physical 60 GHz link budget, Doppler coherence time ($T_c \approx 4.16$ ms), sweeping overhead, closed-loop feedback latency ($T_{\text{align}} \approx 0.85$ ms), and net effective throughput derivations.
+- **[COMMUNICATION_COST_AUDIT.md](COMMUNICATION_COST_AUDIT.md):** Physical 60 GHz link budget, Doppler coherence time ($T_{c,\text{small}} \approx 83.33\,\mu$s), spatial beam coherence ($\Delta t_{\text{beam}} \approx 52\text{--}175$ ms), sweeping overhead, closed-loop feedback latency ($T_{\text{align}} \approx 0.85$ ms), and net effective throughput derivations.
 - **[STATISTICAL_REVIEW.md](STATISTICAL_REVIEW.md):** Statistical audit proving cluster sample size ($G=10$ blocks, $N_{\text{eff}} \approx 13.3$), intra-cluster correlation ($\rho_{\text{ICC}} \approx 0.75$), bootstrap limits, and Bonferroni FWER survival.
 - **[MINIMUM_REMAINING_EXPERIMENTS.md](MINIMUM_REMAINING_EXPERIMENTS.md):** Actionable, zero-GPU analytical blueprint outlining five rapid diagnostics (Pareto frontier, RF link table, CE vs. soft margin diagnostics, S39 jackknife, and reserved test set protocol).
 
@@ -105,7 +117,7 @@ python scripts/generate_pareto_curve.py
 python -c "import json; d=json.load(open('results/widecheck_v1/stage267/evidence.json')); print('Stage 267 runs verified:', len(d['runs']))"
 
 # Run non-GPU statistical unit tests
-pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 *Note: In accordance with IEEE TVT publication ethics and Rule 9 on AI attribution, all text, narratives, and author bylines must reflect the human author's independent intellectual ownership.*

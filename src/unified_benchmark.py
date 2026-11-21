@@ -304,7 +304,10 @@ def run_benchmark():
         speed = context[:, 4]
         yaw_rate = np.abs(context[:, 2])
 
-        # Active refinement: boost high-power alternatives within candidate subset
+        # Active refinement: exploratory synthetic perturbation on candidate subset
+        # NOTE [Audit Verification]: As audited in AUDIT/PAR_NET_KMACC_VERIFICATION.md,
+        # the cosine perturbation below was an early proof-of-concept heuristic to explore
+        # alternative-beam sensitivity, not a trained neural network checkpoint.
         for i in range(len(refined_logits)):
             cand = top20_cand[i]
             # Refined logit: geometry base + bounded kinematic confidence boost
@@ -348,7 +351,10 @@ def run_benchmark():
     })
 
     # -------------------------------------------------------------
-    # 6. Ablation Suite for PAR-Net
+    # 6. Ablation Suite for PAR-Net (Exploratory / Historical)
+    # NOTE [Audit Verification]: Rows A1-A4 are hardcoded illustrative diagnostic tuples
+    # from early conceptual modeling. No trained PyTorch checkpoints exist for these ablations.
+    # See AUDIT/PAR_NET_KMACC_VERIFICATION.md for complete verification provenance.
     # -------------------------------------------------------------
     ablations = [
         ("A1", "PAR-Net w/o RGB (GPS + Geometry Only)", 81.10, 4.37, +2.54, "[+1.22, +3.85]", 0.0001),

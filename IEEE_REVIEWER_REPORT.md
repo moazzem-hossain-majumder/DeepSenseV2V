@@ -48,8 +48,8 @@ The unanimous verdict of the panel is that if the authors re-frame the manuscrip
 
 ### 1.1 Problem Significance and Communications Context
 Beam management in 60 GHz vehicle-to-vehicle (V2V) communications is governed by extreme path loss, Doppler shifts, and narrow half-power beamwidths (HPBW $\approx 5^\circ$ for standard $16 \times 16$ planar arrays). In dynamic vehicular environments at highway speeds (up to 30 m/s relative velocity), the channel coherence time is extremely brief:
-$$T_c \approx \frac{c}{2 f_c v} \approx \frac{3 \times 10^8}{2 \times 60 \times 10^9 \times 30} = 4.16\text{ ms}$$
-Within a standard 20 ms MAC transmission frame, beam alignment overhead must remain strictly negligible ($<5\%$). 
+$$T_{c,\text{small}} \approx \frac{c}{2 f_c v} \approx \frac{3 \times 10^8}{2 \times 60 \times 10^9 \times 30} \approx 83.33\,\mu\text{s}$$
+While small-scale multipath Doppler coherence is $T_{c,\text{small}} \approx 83.33\,\mu\text{s}$ (managed by physical-layer pilot channel estimation within a packet), directional beam alignment tracks macro-angular trajectory displacement, where spatial beam coherence is $\Delta t_{\text{beam}} = \theta_{\text{3dB}} / \dot{\theta} \approx 52\text{--}175\text{ ms}$ (requiring periodic alignment refresh every $10\text{--}20\text{ ms}$). Within a standard 20 ms MAC transmission frame, beam alignment overhead must remain strictly negligible ($<5\%$). 
 
 Exhaustive sweeping across a 256-beam codebook requires $256 \times 0.1\text{ ms} = 25.6\text{ ms}$, which exceeds the frame duration (128% overhead) and results in total communication blackout. Thus, predictive candidate shortlisting is an indispensable physical requirement.
 
@@ -63,7 +63,7 @@ Exhaustive sweeping across a 256-beam codebook requires $256 \times 0.1\text{ ms
 2. **Probing Overhead Scaling with $K$:** Widening the candidate shortlist from $K=20$ to $K=40$ consumes an additional $2.0$ ms of probing overhead (increasing frame penalty from $10\%$ to $20\%$). The visual model's incremental gain at $K=40$ is only $+0.011$ percentage points. In a real 60 GHz transceiver, spending $2.0$ ms more probing time for a $0.011$ pp gain reduces net throughput; this trade-off must be explicitly formalized in the paper.
 3. **Closed-Loop Feedback Latency:** The authors must explicitly state the closed-loop beam alignment timeline:
    $$T_{\text{align}} = K \cdot T_{\text{probe}} + T_{\text{proc}} + T_{\text{feedback}} \approx 5 \times 100\,\mu\text{s} + 150\,\mu\text{s} + 200\,\mu\text{s} = 0.85\text{ ms}$$
-   Confirming that $K=5$ operates well within the 4.16 ms coherence window.
+   Confirming that $K=5$ operates well within the 10--20 ms beam refresh window ($\Delta t_{\text{beam}} \approx 52\text{--}175\text{ ms}$).
 
 ### 1.4 Required Action Items for Revision
 - Provide a dedicated table in Section IV contrasting Exhaustive Sweep ($K=256$), Analytic Geometry ($K=5$), Learned GPS ($K=5$), and Multimodal RGB ($K=5, 20, 40$) in terms of probing time, frame overhead (%), effective throughput (Mbps), and 3 dB outage probability.
@@ -141,7 +141,7 @@ To satisfy the reviewers and guarantee acceptance in IEEE Transactions on Vehicu
 |                          | Present the work as an essential corrective to multimodal hype.         |
 +--------------------------+-------------------------------------------------------------------------+
 | Section I (Intro)        | Frame mmWave V2V beam tracking as a physical alignment problem         |
-|                          | governed by Doppler coherence (4.16 ms) and probing budgets.            |
+|                          | governed by beam coherence ($\Delta t_{\text{beam}} \approx 175$ ms) and probing budgets. |
 +--------------------------+-------------------------------------------------------------------------+
 | Section II (Related)     | Differentiate from prior DeepSense-V2V papers (Alrabeiah, Charan) by     |
 |                          | identifying that they evaluated only single scenarios or exact hits.   |

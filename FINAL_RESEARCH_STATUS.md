@@ -75,7 +75,7 @@ The following authoritative audit reports provide complete technical, communicat
 
 1. **[STAGE267_INDEPENDENT_AUDIT.md](STAGE267_INDEPENDENT_AUDIT.md):** Complete independent numerical verification of Stage 267 widecheck evidence across all 24 arm/fold/seed records. Mathematical resolution of the $-0.053$ dB paradox and analysis of candidate access scaling.
 2. **[NOVELTY_AND_BASELINE_REVIEW.md](NOVELTY_AND_BASELINE_REVIEW.md):** Critical literature positioning against published benchmarks (Alrabeiah 2020, Charan 2022, Fabiani 2024). Establishes true novelty in Candidate Exclusion Dominance (84.7%) and the Alternative-Beam Paradox ($H_2$). Documents Swin-B3 reproduction parameters and deviations.
-3. **[COMMUNICATION_COST_AUDIT.md](COMMUNICATION_COST_AUDIT.md):** Complete 60 GHz physical layer derivation (Doppler, coherence time $T_c \approx 4.16$ ms, beam probing overhead, closed-loop feedback latency $T_{\text{align}} \approx 0.85$ ms). Formal proof that $K=5$ maximizes effective data throughput, whereas large candidate sets ($K \ge 20$) degrade net link capacity.
+3. **[COMMUNICATION_COST_AUDIT.md](COMMUNICATION_COST_AUDIT.md):** Complete 60 GHz physical layer derivation (Doppler $T_{c,\text{small}} \approx 83.33\,\mu$s, spatial beam coherence $\Delta t_{\text{beam}} \approx 52\text{--}175$ ms, beam probing overhead, closed-loop feedback latency $T_{\text{align}} \approx 0.85$ ms). Formal proof that $K=5$ maximizes effective data throughput, whereas large candidate sets ($K \ge 20$) degrade net link capacity.
 4. **[STATISTICAL_REVIEW.md](STATISTICAL_REVIEW.md):** Rigorous statistical methodology audit establishing effective sample size ($N_{\text{eff}} \approx 13.3$ from 10 recording blocks vs. 16,643 sliding windows), intra-cluster correlation ($\rho_{\text{ICC}} \approx 0.75$), bootstrap limits, Scenario 39 dominance, and family-wise error rate (FWER) Bonferroni robustness.
 5. **[IEEE_REVIEWER_REPORT.md](IEEE_REVIEWER_REPORT.md):** Three simulated full IEEE peer reviews (Vehicular Wireless, Multimodal ML, and Statistical Methodology) with rubric scores, detailed assessments, and formal recommendations (Major Revision), providing clear instructions for manuscript re-structuring.
 6. **[MINIMUM_REMAINING_EXPERIMENTS.md](MINIMUM_REMAINING_EXPERIMENTS.md):** Actionable, non-GPU analytical blueprint outlining five rapid diagnostics (Pareto frontier, RF link table, CE vs. soft margin diagnostics, S39 jackknife, and reserved test set protocol).
@@ -95,7 +95,7 @@ The following authoritative audit reports provide complete technical, communicat
 |                                                                                                    |
 |  [Step 2: Analytical Polish (Zero Retraining)]                                                     |
 |    • Generate Candidate-Set Pareto Frontier (K=1 to 64) from existing .npz validation files.       |
-|    • Add 60 GHz link-budget and coherence-time equations (T_c ~ 4.16 ms vs. sweep latencies).      |
+|    • Add 60 GHz link-budget and coherence-time equations (T_c ~ 83.3 us, Delta t_beam ~ 175 ms).   |
 |    • Add Scenario 39 sensitivity disclosure to the Discussion section.                             |
 |                                                                                                    |
 |  [Step 3: Human Author Textual Ownership (IEEE TVT Compliance)]                                    |

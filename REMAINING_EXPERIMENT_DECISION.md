@@ -64,8 +64,9 @@ Instead of expensive and risky GPU training, we recommend a **strictly bounded, 
 
 ### Hypothesis F: Practical Probing Overhead and Vehicular Coherence Time
 - **Research Justification:** A standard 60 GHz mmWave frame consists of preamble, beam training pilots, and data payload. In high-mobility V2V communications ($v_{\text{rel}} \ge 30\text{ m/s}$), the channel coherence time is bounded by:
-  $$T_c \approx \frac{c}{2 f_c v_{\text{rel}}} = \frac{3 \times 10^8}{2 \times (60 \times 10^9) \times 30} \approx 4.16\text{ ms}$$
-- **Analysis:** Sweeping an entire 256-beam codebook requires $256 \times T_{\text{pilot}}$. If $T_{\text{pilot}} = 100\ \mu\text{s}$, a full sweep requires $25.6\text{ ms}$, which is **more than $6\times$ larger than the channel coherence time**! Sweeping a 5-beam shortlist requires only $0.5\text{ ms}$, consuming only $12\%$ of the coherence budget and leaving $88\%$ of the frame for data payload transmission.
+  $$T_{c,\text{small}} \approx \frac{c}{2 f_c v_{\text{rel}}} = \frac{3 \times 10^8}{2 \times (60 \times 10^9) \times 30} \approx 83.33\,\mu\text{s}$$
+  While small-scale phase coherence is $83.33\,\mu\text{s}$ (tracked via OFDM pilots), directional spatial beam alignment is governed by angular trajectory displacement: $\Delta t_{\text{beam}} = \theta_{\text{3dB}} / \dot{\theta} \approx 52\text{--}175\text{ ms}$, requiring periodic alignment refresh within a standard $20\text{ ms}$ transmission frame.
+- **Analysis:** Sweeping an entire 256-beam codebook requires $256 \times T_{\text{pilot}}$. If $T_{\text{pilot}} = 100\ \mu\text{s}$, a full sweep requires $25.6\text{ ms}$, which exceeds the entire $20\text{ ms}$ transmission frame! Sweeping a 5-beam shortlist requires only $0.5\text{ ms}$, consuming only $2.5\%$ of the frame budget and leaving $97.5\%$ of the frame for data payload transmission.
 - **Action:** Formulate an analytical link-budget and frame-timing subsection in Section 1 of the manuscript. This grounds the 5-beam shortlist choice in physical RF reality and directly appeals to vehicular communications reviewers.
 
 ### Hypothesis B: Geometry-Assisted Candidate Generation
